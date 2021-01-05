@@ -3,6 +3,7 @@ title: "MicroPython With ESP32"
 date: 2019-07-08T00:43:00+08:00
 draft: false
 ---
+## install esptool
 pip install esptool
 sudo esptool.py --chip esp32 --port /dev/ttyUSB0 erase_flash
 #download fireware 
@@ -10,9 +11,11 @@ http://www.micropython.org/download#esp32
 sudo esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x1000 ~/install/esp32-20190707-v1.11-126-g7c2e83324.bin
 picocom -b 115200 /dev/ttyUSB0
 
-#install emp-ide
+## install emp-ide
 http://www.1zlab.com/wiki/micropython-esp32/emp-ide-userguide/
-```
+
+## code example
+```python
 import network
 wifi = network.WLAN(network.STA_IF)
 wifi.active(True)
