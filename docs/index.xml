@@ -434,8 +434,8 @@ XXXXXCrystal X XX ScrumXXXXX XXXXXXX XX XX XXX XXXX XXXXXX XXXXXXXXX X X X
       <pubDate>Wed, 18 Oct 2017 22:20:00 +0800</pubDate>
       
       <guid>https://starwild.github.io/posts/%E5%A4%A7%E5%A4%B4%E4%B8%8E%E5%B0%8F%E5%A4%B4/</guid>
-      <description>整数：6699 如果左边是起始地址0，右边无限大。 大头：数据从左到右存放-&amp;gt;1A2B 小头：数据从右到左存放-&amp;gt;2B1A
-阵营 #  优缺点 #  现状 #  </description>
+      <description>例子 #  整数：6699 如果左边是起始地址0，右边无限大。 大头：数据从左到右存放-&amp;gt;1A2B 小头：数据从右到左存放-&amp;gt;2B1A
+代码 #  int main(void) { int i = 0x12345678; if(*((char*)&amp;amp;i) == 0x12) printf(&amp;#34;大端&amp;#34;); else printf(&amp;#34;小端&amp;#34;); return 0; } </description>
     </item>
     
     <item>
