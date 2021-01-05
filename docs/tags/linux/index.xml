@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on starwild</title>
+    <link>https://starwild.github.io/tags/linux/</link>
+    <description>Recent content in linux on starwild</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 24 Aug 2019 16:52:00 +0800</lastBuildDate><atom:link href="https://starwild.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>systemd manual</title>
+      <link>https://starwild.github.io/posts/systemd-manual/</link>
+      <pubDate>Sat, 24 Aug 2019 16:52:00 +0800</pubDate>
+      
+      <guid>https://starwild.github.io/posts/systemd-manual/</guid>
+      <description>使用脚本启动主程序，在使用systemd时，需要删除nohup启动，切保证启动脚本中不会报错。
+参考 http://www.jinbuguo.com/systemd/systemd.index.html http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
+cp test.service /usr/lib/systemd/system
+systemctl daemon-reload systemctl enable test systemctl start test systemctl disable test systemctl stop test systemctl restart test systemctl reload test
+test.service
+[Unit] Description= Documentation= After=network.target Wants= [Service] #EnvironmentFile= WorkingDirectory=/home/z/Workspace/systemd/ ExecStart=/bin/bash /home/z/Workspace/systemd/start.sh # simple fork oneshot  Type=simple # control-group process mixed none # KillMode= control-group  # RemainAfterExit=yes 进程退出后服务仍然执行 # on-success on-failure always on Restart=always RestartSec=10s [Install] WantedBy=multi-user.target </description>
+    </item>
+    
+  </channel>
+</rss>

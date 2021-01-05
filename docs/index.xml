@@ -100,11 +100,8 @@ tutum/mysql
 参考 http://www.jinbuguo.com/systemd/systemd.index.html http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
 cp test.service /usr/lib/systemd/system
 systemctl daemon-reload systemctl enable test systemctl start test systemctl disable test systemctl stop test systemctl restart test systemctl reload test
-test.service [Unit] Description= Documentation= After=network.target Wants=
-[Service] #EnvironmentFile= WorkingDirectory=/home/z/Workspace/systemd/ ExecStart=/bin/bash /home/z/Workspace/systemd/start.sh
-simple fork oneshot #  Type=simple
-control-group process mixed none #  KillMode= control-group #  RemainAfterExit=yes 进程退出后服务仍然执行 #  on-success on-failure always on #  Restart=always RestartSec=10s
-[Install] WantedBy=multi-user.target</description>
+test.service
+[Unit] Description= Documentation= After=network.target Wants= [Service] #EnvironmentFile= WorkingDirectory=/home/z/Workspace/systemd/ ExecStart=/bin/bash /home/z/Workspace/systemd/start.sh # simple fork oneshot  Type=simple # control-group process mixed none # KillMode= control-group  # RemainAfterExit=yes 进程退出后服务仍然执行 # on-success on-failure always on Restart=always RestartSec=10s [Install] WantedBy=multi-user.target </description>
     </item>
     
     <item>

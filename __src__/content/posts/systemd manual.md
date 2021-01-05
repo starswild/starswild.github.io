@@ -2,6 +2,8 @@
 title: "systemd manual"
 date: 2019-08-24T16:52:00+08:00
 draft: false
+tags: 
+    - linux
 ---
 使用脚本启动主程序，在使用systemd时，需要删除nohup启动，切保证启动脚本中不会报错。
 
@@ -20,6 +22,7 @@ systemctl restart test
 systemctl reload test
 
 test.service
+```bash
 [Unit]
 Description=
 Documentation=
@@ -41,3 +44,4 @@ RestartSec=10s
 
 [Install]
 WantedBy=multi-user.target
+```
