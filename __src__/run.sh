@@ -14,7 +14,7 @@ server() {
 }
 
 commit() {
-	cd $BASE/..
+	cd $BASE/../..
 	echo "i am in $PWD"
 	git add .
 	git commit -m "$(date +%Y-%m-%d\ %H:%M:%S)"
