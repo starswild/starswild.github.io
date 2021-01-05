@@ -3,12 +3,10 @@ title: "Python实例手册"
 date: 2018-03-16T15:33:36+08:00
 draft: false
 ---
-	Python实例手册
 
-#encoding:utf8
-# 设定编码-支持中文
+# Python实例手册
 
-0说明
+## 说明
 
 	手册制作: 雪松 littlepy reboot
 	更新日期: 2014-10-29
@@ -31,18 +29,18 @@ draft: false
 	# LazyManage运维批量管理软件下载[python]:
 	http://hi.baidu.com/quanzhou722/item/4213db3626a949fe96f88d3c
 
-1 基础
+## 1 基础
 
-	查看帮助
+### 查看帮助
 		import os
 		for i in dir(os):
 			print i         # 模块的方法
 		help(os.path)       # 方法的帮助
 
-	调试
+### 调试
 		python -m trace -t aaaaaa.py
 	
-	pip模块安装
+### pip模块安装
 		
 		yum install python-pip            # centos安装pip
 		sudo apt-get install python-pip   # ubuntu安装pip
@@ -60,7 +58,7 @@ draft: false
 		pip install --upgrade Package   # 更新一个软件包
 		pip uninstall Package           # 卸载软件包
 
-	变量
+### 变量
 
 		r=r'\n'          # 输出时原型打印
 		u=u'中文'        # 定义为unicode编码
@@ -72,13 +70,13 @@ draft: false
 		locals().values()                         # 所有局部变量值的列表
 		os.popen("date -d @{0} +'%Y-%m-%d %H:%M:%S'".format(12)).read()    # 特殊情况引用变量 {0} 代表第一个参数
 
-	打印
+### 打印
 
 		# 字符串 %s  整数 %d  浮点 %f  原样打印 %r
 		print '字符串: %s 整数: %d 浮点: %f 原样打印: %r' % ('aa',2,1.0,'r')
 		print 'abc',      # 有逗号,代表不换行打印,在次打印会接着本行打印
 
-	列表
+### 列表
 
 		# 列表元素的个数最多 536870912
 		shoplist = ['apple', 'mango', 'carrot', 'banana']
@@ -94,12 +92,12 @@ draft: false
 		list(set(['qwe', 'as', '123', '123']))   # 将列表通过集合去重复
 		eval("['1','a']")                        # 将字符串当表达式求值,得到列表
 
-	元组
+### 元组
 
 		# 不可变
 		zoo = ('wolf', 'elephant', 'penguin')
 
-	字典
+### 字典
 
 		ab = {       'Swaroop'   : 'swaroopch@byteofpython.info',
 					 'Larry'     : 'larry@wall.org',
@@ -120,7 +118,7 @@ draft: false
 			
 			a[2] = copy.deepcopy(a[1])    # 复制出第二个key，互不影响  {1: {1: 2, 3: 4},2: {1: 2, 3: 4}}
 
-	流程结构
+### 流程结构
 
 		if判断
 
@@ -182,7 +180,7 @@ draft: false
 			[ i for i in range(8) if i %2 == 0 ]
 			[0,2,4,6]
 
-	tab补全
+### tab补全
 
 		# vim /usr/lib/python2.7/dist-packages/tab.py
 		# python startup file
@@ -196,7 +194,7 @@ draft: false
 		# history file
 		histfile = os.path.join(os.environ['HOME'], '.pythonhistory')
 
-	函数
+### 函数
 
 		def printMax(a, b = 1):
 			if a > b:
@@ -218,7 +216,7 @@ draft: false
 
 		update('aaa',uu='uu',id=3)
 
-	模块
+### 模块
 
 		# Filename: mymodule.py
 		def sayhi():
@@ -230,7 +228,7 @@ draft: false
 		from mymodule import sayhi, version
 		mymodule.sayhi()   # 使用模块中函数方法
 
-	类对象的方法
+### 类对象的方法
 
 		class Person:
 			# 实例化初始化的方法
@@ -259,7 +257,7 @@ draft: false
 				print 'Salary: "%d"' % self.salary
 		t = Teacher('Mrs. Shrividya', 40, 30000)
 
-	执行模块类中的所有方法
+### 执行模块类中的所有方法
 
 		# moniItems.py
 		import sys, time
@@ -289,7 +287,7 @@ draft: false
 		m = mon()
 		m.runAllGet()
 
-	文件处理
+### 文件处理
 
 		# 模式: 读'r'  写[清空整个文件]'w' 追加[文件需要存在]'a' 读写'r+' 二进制文件'b'  'rb','wb','rb+'
 
@@ -349,7 +347,7 @@ draft: false
 			for line in list:
 				print line              #  ['192.168.1.5', 'web']
 
-	内建函数
+### 内建函数
 
 		dir(sys)            # 显示对象的属性
 		help(sys)           # 交互式帮助
@@ -383,7 +381,7 @@ draft: false
 		isinstance(object,int)    # 测试对象类型 int 
 		xrange([lower,]stop[,step])            # 函数与range()类似，但xrnage()并不创建列表，而是返回一个xrange对象
 
-	字符串相关模块
+### 字符串相关模块
 
 		string         # 字符串操作相关函数和工具
 		re             # 正则表达式
@@ -402,7 +400,7 @@ draft: false
 		textwrap       # 文本包装和填充
 		unicodedate    # unicode数据库
 
-	列表类型内建函数
+### 列表类型内建函数
 
 		list.append(obj)                 # 向列表中添加一个对象obj
 		list.count(obj)                  # 返回一个对象obj在列表中出现的次数
@@ -414,7 +412,7 @@ draft: false
 		list.reverse()                   # 原地翻转列表
 		list.sort(func=None,key=None,reverse=False)  # 以指定的方式排序列表中成员,如果func和key参数指定,则按照指定的方式比较各个元素,如果reverse标志被置为True,则列表以反序排列
 
-	序列类型操作符
+### 序列类型操作符
 
 		seq[ind]              # 获取下标为ind的元素
 		seq[ind1:ind2]        # 获得下标从ind1到ind2的元素集合
@@ -423,7 +421,7 @@ draft: false
 		obj in seq            # 判断obj元素是否包含在seq中
 		obj not in seq        # 判断obj元素是否不包含在seq中
 
-	字符串类型内建方法
+### 字符串类型内建方法
 
 		string.expandtabs(tabsize=8)                  # tab符号转为空格 #默认8个空格
 		string.endswith(obj,beg=0,end=len(staring))   # 检测字符串是否已obj结束,如果是返回True #如果beg或end指定检测范围是否已obj结束
@@ -447,7 +445,7 @@ draft: false
 		string.split("分隔符")                        # 把string切片成一个列表
 		":".join(string.split())                      # 以:作为分隔符,将所有元素合并为一个新的字符串
 
-	序列类型相关的模块
+### 序列类型相关的模块
 
 		array         # 一种受限制的可变序列类型,元素必须相同类型
 		copy          # 提供浅拷贝和深拷贝的能力
@@ -459,7 +457,7 @@ draft: false
 		types         # 包含python支持的所有类型
 		collections   # 高性能容器数据类型
 
-	字典内建方法
+### 字典内建方法
 
 		dict.clear()                            # 删除字典中所有元素
 		dict copy()                             # 返回字典(浅复制)的一个副本
@@ -478,7 +476,7 @@ draft: false
 		len(mapping)          # 返回映射的长度(键-值对的个数)
 		hash(obj)             # 返回obj哈希值,判断某个对象是否可做一个字典的键值		
 		
-	集合方法
+### 集合方法
 
 		s.update(t)                         # 用t中的元素修改s,s现在包含s或t的成员   s |= t
 		s.intersection_update(t)            # s中的成员是共用属于s和t的元素          s &= t
@@ -503,7 +501,7 @@ draft: false
 		s < t                               # 子集测试;s!=t且s中所有元素都是t的成员
 		s > t                               # 超集测试;s!=t且t中所有元素都是s的成员
 
-	序列化
+### 序列化
 
 		#!/usr/bin/python
 		import cPickle
@@ -517,7 +515,7 @@ draft: false
 		account_list = cPickle.load(pkl_file)
 		pkl_file.close()
 
-	文件对象方法
+### 文件对象方法
 		
 		file.close()                     # 关闭文件
 		file.fileno()                    # 返回文件的描述符
@@ -534,7 +532,7 @@ draft: false
 		file.write(str)                  # 向文件写入字符串
 		file.writelines(seq)             # 向文件写入字符串序列seq;seq应该是一个返回字符串的可迭代对象
 
-	文件对象的属性
+### 文件对象的属性
 		
 		file.closed          # 表示文件已被关闭,否则为False
 		file.encoding        # 文件所使用的编码  当unicode字符串被写入数据时,它将自动使用file.encoding转换为字节字符串;若file.encoding为None时使用系统默认编码
@@ -543,7 +541,7 @@ draft: false
 		file.newlines        # 未读取到行分隔符时为None,只有一种行分隔符时为一个字符串,当文件有多种类型的行结束符时,则为一个包含所有当前所遇到的行结束符的列表
 		file.softspace       # 为0表示在输出一数据后,要加上一个空格符,1表示不加
 
-	异常处理
+### 异常处理
 	
 		# try 中使用 sys.exit(2) 会被捕获,无法退出脚本,可使用 os._exit(2) 退出脚本
 		
@@ -687,7 +685,7 @@ draft: false
 				f.flush()
 				f.close()
 
-	调试log
+### 调试log
 
 		# cgitb覆盖了默认sys.excepthook全局异常拦截器
 		def func(a, b):
@@ -697,7 +695,7 @@ draft: false
 			cgitb.enable(format='text')
 			func(1, 0)
 
-	函数式编程的内建函数
+### 函数式编程的内建函数
 
 		apply(func[,nkw][,kw])          # 用可选的参数来调用func,nkw为非关键字参数,kw为关键字参数;返回值是函数调用的返回值
 		filter(func,seq)                # 调用一个布尔函数func来迭代遍历每个seq中的元素;返回一个使func返回值为true的元素的序列
@@ -720,7 +718,7 @@ draft: false
 		def add(x,y): return x+y
 		reduce(add, range(1, 11))      # 结果55  是1到10的和  x的值是上一次函数返回的结果，y是列表中循环的值
 
-	re正则
+### re正则
 
 		compile(pattern,flags=0)          # 对正则表达式模式pattern进行编译,flags是可选标识符,并返回一个regex对象
 		match(pattern,string,flags=0)     # 尝试用正则表达式模式pattern匹配字符串string,flags是可选标识符,如果匹配成功,则返回一个匹配对象;否则返回None
@@ -748,7 +746,7 @@ draft: false
 			s = requests.post(url=QueryAdd, data={'IP':Ip})
 			re.findall(u'\u4e2d\u56fd', s.text, re.S)
 
-	编码转换
+### 编码转换
 
 		a='中文'                    # 编码未定义按输入终端utf8或gbk
 		u=u'中文'                   # 定义为unicode编码  u值为 u'\u4e2d\u6587'
@@ -759,16 +757,16 @@ draft: false
 		ord('4')                    # 字符转ASCII码
 		chr(52)                     # ASCII码转字符
 
-	遍历递归
+### 遍历递归
 
 		[os.path.join(x[0],y) for x in os.walk('/root/python/5') for y in x[2]]
 
 		for i in os.walk('/root/python/5/work/server'):
 			print i
 
-2 常用模块
+## 2 常用模块
 
-	sys
+### sys
 
 		sys.argv              # 取参数列表
 		sys.exit(2)           # 退出脚本返回状态 会被try截取
@@ -786,7 +784,7 @@ draft: false
 		sys.stdin.readline()  # 从标准输入读一行
 		sys.stdout.write("a") # 屏幕输出a 
 
-	os
+### os
 
 		# 相对sys模块 os模块更为底层 os._exit() try无法抓取
 		os.popen('id').read()      # 执行系统命令得到返回结果
@@ -889,24 +887,24 @@ draft: false
 			curdir          # 当前工作目录的字符串名称
 			pardir          # 父目录字符串名称
 
-	commands
+### commands
 	
 		commands.getstatusoutput('id')       # 返回元组(状态,标准输出)
 		commands.getoutput('id')             # 只返回执行的结果, 忽略返回值
 		commands.getstatus('file')           # 返回ls -ld file执行的结果
 			
-	文件和目录管理
+### 文件和目录管理
 	
 		import shutil
 		shutil.copyfile('data.db', 'archive.db')             # 拷贝文件
 		shutil.move('/build/executables', 'installdir')      # 移动文件或目录
 
-	文件通配符
+### 文件通配符
 
 		import glob
 		glob.glob('*.py')    # 查找当前目录下py结尾的文件
 
-	随机模块
+### 随机模块
 	
 		import random
 		random.choice(['apple', 'pear', 'banana'])   # 随机取列表一个参数
@@ -914,7 +912,7 @@ draft: false
 		random.random()                 # 随机浮点数
 		random.randrange(6)             # 随机整数范围
 	
-	发送邮件
+### 发送邮件
 
 		发送邮件内容
 
@@ -1002,7 +1000,7 @@ draft: false
 			else:
 				print "发送失败"
 
-	解压缩
+### 解压缩
 
 		gzip压缩
 
@@ -1063,7 +1061,7 @@ draft: false
 				#f.extractall()                           # 解压全部
 				f.close()
 
-	时间
+### 时间
 
 		import time
 		time.time()                          # 时间戳[浮点]
@@ -1107,7 +1105,7 @@ draft: false
 			d3 = d1 + datetime.timedelta(hours=10)
 			d3.ctime()
 
-	参数[optparse]
+### 参数[optparse]
 		import os, sys
 		import time
 		import optparse
@@ -1139,7 +1137,7 @@ draft: false
 		if __name__ == '__main__':
 			main()
 
-	hash
+### hash
 
 		import md5
 		m = md5.new('123456').hexdigest()
@@ -1152,17 +1150,17 @@ draft: false
 		hashlib.new("md5", "string").hexdigest()               # 对字符串加密
 		hashlib.new("md5", open("file").read()).hexdigest()    # 查看文件MD5值
 
-	隐藏输入密码
+### 隐藏输入密码
 
 		import getpass
 		passwd=getpass.getpass()
 
-	string打印a-z
+### string打印a-z
 		import string
 		string.lowercase       # a-z小写
 		string.uppercase       # A-Z大小
 
-	paramiko [ssh客户端]
+### paramiko [ssh客户端]
 
 		安装
 			sudo apt-get install python-setuptools 
@@ -1171,7 +1169,7 @@ draft: false
 			sudo apt-get install build-essential
 
 		paramiko实例(账号密码登录执行命令)
-
+```python
 			#!/usr/bin/python
 			#ssh
 			import paramiko
@@ -1192,9 +1190,9 @@ draft: false
 					for line in cmd_result:
 							print line,
 			s.close()
-
+```
 		paramiko实例(传送文件)
-
+```python
 			#!/usr/bin/evn python
 			import os
 			import paramiko
@@ -1212,9 +1210,9 @@ draft: false
 			sftp.put('pwd','/tmp/pwd')                                 # 上传
 			sftp.close()
 			ssh.close()
-
+```
 		paramiko实例(密钥执行命令)
-
+```python
 			#!/usr/bin/python
 			#ssh
 			import paramiko
@@ -1234,9 +1232,9 @@ draft: false
 			for line in cmd_result:
 					print line,
 			s.close()
-
+```
 		ssh并发(Pool控制最大并发)
-
+```python
 			#!/usr/bin/env python
 			#encoding:utf8
 			#ssh_concurrent.py
@@ -1286,9 +1284,9 @@ draft: false
 
 			for res in result:
 				res.get(timeout=35)
-
+```
 		ssh并发(取文件状态并发送邮件)
-
+```python
 			#!/usr/bin/python
 			#encoding:utf8
 			#config file: ip.list
@@ -1424,9 +1422,9 @@ draft: false
 					print "发送成功"
 				else:
 					print "发送失败"
-
+```
 		LazyManage并发批量操作(判断非root交互到root操作)
-
+```python
 			#!/usr/bin/python
 			#encoding:utf8
 			# LzayManage.py
@@ -1615,3 +1613,4 @@ draft: false
 				Help()
 				while True:
 					i = raw_i
+```

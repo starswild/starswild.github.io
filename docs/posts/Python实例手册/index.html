@@ -5,15 +5,9 @@
   <meta name="generator" content="Hugo 0.80.0-DEV" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Python实例手册 #encoding:utf8
-设定编码-支持中文 #  0说明
-手册制作: 雪松 littlepy reboot更新日期: 2014-10-29欢迎系统运维加入Q群: 198173206 # 加群请回答问题欢迎运维开发加入Q群: 365534424 # 不定期技术分享请使用&quot;notepad&#43;&#43;&quot;打开此文档,&quot;alt&#43;0&quot;将函数折叠后方便查阅请勿删除信息，转载请说明出处，抵制不道德行为。错误在所难免，还望指正！# python实例手册下载地址:http://hi.baidu.com/quanzhou722/item/cf4471f8e23d3149932af2a7# shell实例手册最新下载地址:http://hi.baidu.com/quanzhou722/item/f4a4f3c9eb37f02d46d5c0d9# LazyManage运维批量管理软件下载[shell]:http://hi.baidu.com/quanzhou722/item/4ccf7e88a877eaccef083d1a# LazyManage运维批量管理软件下载[python]:http://hi.baidu.com/quanzhou722/item/4213db3626a949fe96f88d3c 1 基础
-查看帮助import osfor i in dir(os):print i # 模块的方法help(os.path) # 方法的帮助调试python -m trace -t aaaaaa.pypip模块安装yum install python-pip # centos安装pipsudo apt-get install python-pip # ubuntu安装pippip官方安装脚本wget https://raw.">
+<meta name="description" content="Python实例手册 #  说明 #  手册制作: 雪松 littlepy reboot更新日期: 2014-10-29欢迎系统运维加入Q群: 198173206 # 加群请回答问题欢迎运维开发加入Q群: 365534424 # 不定期技术分享请使用&quot;notepad&#43;&#43;&quot;打开此文档,&quot;alt&#43;0&quot;将函数折叠后方便查阅请勿删除信息，转载请说明出处，抵制不道德行为。错误在所难免，还望指正！# python实例手册下载地址:http://hi.baidu.com/quanzhou722/item/cf4471f8e23d3149932af2a7# shell实例手册最新下载地址:http://hi.baidu.com/quanzhou722/item/f4a4f3c9eb37f02d46d5c0d9# LazyManage运维批量管理软件下载[shell]:http://hi.baidu.com/quanzhou722/item/4ccf7e88a877eaccef083d1a# LazyManage运维批量管理软件下载[python]:http://hi.baidu.com/quanzhou722/item/4213db3626a949fe96f88d3c 1 基础 #  查看帮助 #   import osfor i in dir(os):print i # 模块的方法help(os.path) # 方法的帮助 调试 #   python -m trace -t aaaaaa.py pip模块安装 #   yum install python-pip # centos安装pipsudo apt-get install python-pip # ubuntu安装pippip官方安装脚本wget https://raw.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Python实例手册" />
-<meta property="og:description" content="Python实例手册 #encoding:utf8
-设定编码-支持中文 #  0说明
-手册制作: 雪松 littlepy reboot更新日期: 2014-10-29欢迎系统运维加入Q群: 198173206 # 加群请回答问题欢迎运维开发加入Q群: 365534424 # 不定期技术分享请使用&quot;notepad&#43;&#43;&quot;打开此文档,&quot;alt&#43;0&quot;将函数折叠后方便查阅请勿删除信息，转载请说明出处，抵制不道德行为。错误在所难免，还望指正！# python实例手册下载地址:http://hi.baidu.com/quanzhou722/item/cf4471f8e23d3149932af2a7# shell实例手册最新下载地址:http://hi.baidu.com/quanzhou722/item/f4a4f3c9eb37f02d46d5c0d9# LazyManage运维批量管理软件下载[shell]:http://hi.baidu.com/quanzhou722/item/4ccf7e88a877eaccef083d1a# LazyManage运维批量管理软件下载[python]:http://hi.baidu.com/quanzhou722/item/4213db3626a949fe96f88d3c 1 基础
-查看帮助import osfor i in dir(os):print i # 模块的方法help(os.path) # 方法的帮助调试python -m trace -t aaaaaa.pypip模块安装yum install python-pip # centos安装pipsudo apt-get install python-pip # ubuntu安装pippip官方安装脚本wget https://raw." />
+<meta property="og:description" content="Python实例手册 #  说明 #  手册制作: 雪松 littlepy reboot更新日期: 2014-10-29欢迎系统运维加入Q群: 198173206 # 加群请回答问题欢迎运维开发加入Q群: 365534424 # 不定期技术分享请使用&quot;notepad&#43;&#43;&quot;打开此文档,&quot;alt&#43;0&quot;将函数折叠后方便查阅请勿删除信息，转载请说明出处，抵制不道德行为。错误在所难免，还望指正！# python实例手册下载地址:http://hi.baidu.com/quanzhou722/item/cf4471f8e23d3149932af2a7# shell实例手册最新下载地址:http://hi.baidu.com/quanzhou722/item/f4a4f3c9eb37f02d46d5c0d9# LazyManage运维批量管理软件下载[shell]:http://hi.baidu.com/quanzhou722/item/4ccf7e88a877eaccef083d1a# LazyManage运维批量管理软件下载[python]:http://hi.baidu.com/quanzhou722/item/4213db3626a949fe96f88d3c 1 基础 #  查看帮助 #   import osfor i in dir(os):print i # 模块的方法help(os.path) # 方法的帮助 调试 #   python -m trace -t aaaaaa.py pip模块安装 #   yum install python-pip # centos安装pipsudo apt-get install python-pip # ubuntu安装pippip官方安装脚本wget https://raw." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://starwild.github.io/posts/Python%E5%AE%9E%E4%BE%8B%E6%89%8B%E5%86%8C/" />
 <meta property="article:published_time" content="2018-03-16T15:33:36+08:00" />
@@ -22,7 +16,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
-<script defer src="/en.search.min.66851c13bef93846ad79d95a2a7844186a61298ac76c9839466e4b313e983ba6.js" integrity="sha256-ZoUcE775OEatedlaKnhEGGphKYrHbJg5Rm5LMT6YO6Y="></script>
+<script defer src="/en.search.min.7d56fe63ff09d965e59ba391b0fce579c728ff7a3cd3f733fc41af455a29ad25.js" integrity="sha256-fVb&#43;Y/8J2WXlm6ORsPzlecco/3o80/cz/EGvRVoprSU="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -123,7 +117,65 @@ https://github.com/alex-shpak/hugo-book
     
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#设定编码-支持中文">设定编码-支持中文</a></li>
+    <li><a href="#python实例手册">Python实例手册</a>
+      <ul>
+        <li><a href="#说明">说明</a></li>
+        <li><a href="#1-基础">1 基础</a>
+          <ul>
+            <li><a href="#查看帮助">查看帮助</a></li>
+            <li><a href="#调试">调试</a></li>
+            <li><a href="#pip模块安装">pip模块安装</a></li>
+            <li><a href="#变量">变量</a></li>
+            <li><a href="#打印">打印</a></li>
+            <li><a href="#列表">列表</a></li>
+            <li><a href="#元组">元组</a></li>
+            <li><a href="#字典">字典</a></li>
+            <li><a href="#流程结构">流程结构</a></li>
+            <li><a href="#tab补全">tab补全</a></li>
+            <li><a href="#函数">函数</a></li>
+            <li><a href="#模块">模块</a></li>
+            <li><a href="#类对象的方法">类对象的方法</a></li>
+            <li><a href="#执行模块类中的所有方法">执行模块类中的所有方法</a></li>
+            <li><a href="#文件处理">文件处理</a></li>
+            <li><a href="#内建函数">内建函数</a></li>
+            <li><a href="#字符串相关模块">字符串相关模块</a></li>
+            <li><a href="#列表类型内建函数">列表类型内建函数</a></li>
+            <li><a href="#序列类型操作符">序列类型操作符</a></li>
+            <li><a href="#字符串类型内建方法">字符串类型内建方法</a></li>
+            <li><a href="#序列类型相关的模块">序列类型相关的模块</a></li>
+            <li><a href="#字典内建方法">字典内建方法</a></li>
+            <li><a href="#集合方法">集合方法</a></li>
+            <li><a href="#序列化">序列化</a></li>
+            <li><a href="#文件对象方法">文件对象方法</a></li>
+            <li><a href="#文件对象的属性">文件对象的属性</a></li>
+            <li><a href="#异常处理">异常处理</a></li>
+            <li><a href="#调试log">调试log</a></li>
+            <li><a href="#函数式编程的内建函数">函数式编程的内建函数</a></li>
+            <li><a href="#re正则">re正则</a></li>
+            <li><a href="#编码转换">编码转换</a></li>
+            <li><a href="#遍历递归">遍历递归</a></li>
+          </ul>
+        </li>
+        <li><a href="#2-常用模块">2 常用模块</a>
+          <ul>
+            <li><a href="#sys">sys</a></li>
+            <li><a href="#os">os</a></li>
+            <li><a href="#commands">commands</a></li>
+            <li><a href="#文件和目录管理">文件和目录管理</a></li>
+            <li><a href="#文件通配符">文件通配符</a></li>
+            <li><a href="#随机模块">随机模块</a></li>
+            <li><a href="#发送邮件">发送邮件</a></li>
+            <li><a href="#解压缩">解压缩</a></li>
+            <li><a href="#时间">时间</a></li>
+            <li><a href="#参数optparse">参数[optparse]</a></li>
+            <li><a href="#hash">hash</a></li>
+            <li><a href="#隐藏输入密码">隐藏输入密码</a></li>
+            <li><a href="#string打印a-z">string打印a-z</a></li>
+            <li><a href="#paramiko-ssh客户端">paramiko [ssh客户端]</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -149,14 +201,14 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-  <p><pre><code>Python实例手册
-</code></pre>
-<p>#encoding:utf8</p>
-<h1 id="设定编码-支持中文">
-  设定编码-支持中文
-  <a class="anchor" href="#%e8%ae%be%e5%ae%9a%e7%bc%96%e7%a0%81-%e6%94%af%e6%8c%81%e4%b8%ad%e6%96%87">#</a>
+  <p><h1 id="python实例手册">
+  Python实例手册
+  <a class="anchor" href="#python%e5%ae%9e%e4%be%8b%e6%89%8b%e5%86%8c">#</a>
 </h1>
-<p>0说明</p>
+<h2 id="说明">
+  说明
+  <a class="anchor" href="#%e8%af%b4%e6%98%8e">#</a>
+</h2>
 <pre><code>手册制作: 雪松 littlepy reboot
 更新日期: 2014-10-29
 欢迎系统运维加入Q群: 198173206  # 加群请回答问题
@@ -178,19 +230,30 @@ http://hi.baidu.com/quanzhou722/item/4ccf7e88a877eaccef083d1a
 # LazyManage运维批量管理软件下载[python]:
 http://hi.baidu.com/quanzhou722/item/4213db3626a949fe96f88d3c
 </code></pre>
-<p>1 基础</p>
-<pre><code>查看帮助
-    import os
+<h2 id="1-基础">
+  1 基础
+  <a class="anchor" href="#1-%e5%9f%ba%e7%a1%80">#</a>
+</h2>
+<h3 id="查看帮助">
+  查看帮助
+  <a class="anchor" href="#%e6%9f%a5%e7%9c%8b%e5%b8%ae%e5%8a%a9">#</a>
+</h3>
+<pre><code>    import os
     for i in dir(os):
         print i         # 模块的方法
     help(os.path)       # 方法的帮助
-
-调试
-    python -m trace -t aaaaaa.py
-
-pip模块安装
-	
-    yum install python-pip            # centos安装pip
+</code></pre>
+<h3 id="调试">
+  调试
+  <a class="anchor" href="#%e8%b0%83%e8%af%95">#</a>
+</h3>
+<pre><code>    python -m trace -t aaaaaa.py
+</code></pre>
+<h3 id="pip模块安装">
+  pip模块安装
+  <a class="anchor" href="#pip%e6%a8%a1%e5%9d%97%e5%ae%89%e8%a3%85">#</a>
+</h3>
+<pre><code>    yum install python-pip            # centos安装pip
     sudo apt-get install python-pip   # ubuntu安装pip
     pip官方安装脚本
         wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
@@ -205,10 +268,12 @@ pip模块安装
     pip show --files Package        # 查看哪些包有更新
     pip install --upgrade Package   # 更新一个软件包
     pip uninstall Package           # 卸载软件包
-
-变量
-
-    r=r'\n'          # 输出时原型打印
+</code></pre>
+<h3 id="变量">
+  变量
+  <a class="anchor" href="#%e5%8f%98%e9%87%8f">#</a>
+</h3>
+<pre><code>    r=r'\n'          # 输出时原型打印
     u=u'中文'        # 定义为unicode编码
     global x         # 全局变量
     a = 0 or 2 or 1  # 布尔运算赋值,a值为True既不处理后面,a值为2.  None、字符串''、空元组()、空列表[],空字典{}、0、空字符串都是false
@@ -217,16 +282,20 @@ pip模块安装
     locals()                                  # 所有局部变量组成的字典
     locals().values()                         # 所有局部变量值的列表
     os.popen(&quot;date -d @{0} +'%Y-%m-%d %H:%M:%S'&quot;.format(12)).read()    # 特殊情况引用变量 {0} 代表第一个参数
-
-打印
-
-    # 字符串 %s  整数 %d  浮点 %f  原样打印 %r
+</code></pre>
+<h3 id="打印">
+  打印
+  <a class="anchor" href="#%e6%89%93%e5%8d%b0">#</a>
+</h3>
+<pre><code>    # 字符串 %s  整数 %d  浮点 %f  原样打印 %r
     print '字符串: %s 整数: %d 浮点: %f 原样打印: %r' % ('aa',2,1.0,'r')
     print 'abc',      # 有逗号,代表不换行打印,在次打印会接着本行打印
-
-列表
-
-    # 列表元素的个数最多 536870912
+</code></pre>
+<h3 id="列表">
+  列表
+  <a class="anchor" href="#%e5%88%97%e8%a1%a8">#</a>
+</h3>
+<pre><code>    # 列表元素的个数最多 536870912
     shoplist = ['apple', 'mango', 'carrot', 'banana']
     shoplist[2] = 'aa'
     del shoplist[0]
@@ -239,15 +308,19 @@ pip模块安装
     sys.path[1:1]=[5] # 在位置1前面插入列表中一个值
     list(set(['qwe', 'as', '123', '123']))   # 将列表通过集合去重复
     eval(&quot;['1','a']&quot;)                        # 将字符串当表达式求值,得到列表
-
-元组
-
-    # 不可变
+</code></pre>
+<h3 id="元组">
+  元组
+  <a class="anchor" href="#%e5%85%83%e7%bb%84">#</a>
+</h3>
+<pre><code>    # 不可变
     zoo = ('wolf', 'elephant', 'penguin')
-
-字典
-
-    ab = {       'Swaroop'   : 'swaroopch@byteofpython.info',
+</code></pre>
+<h3 id="字典">
+  字典
+  <a class="anchor" href="#%e5%ad%97%e5%85%b8">#</a>
+</h3>
+<pre><code>    ab = {       'Swaroop'   : 'swaroopch@byteofpython.info',
                  'Larry'     : 'larry@wall.org',
          }
     ab['c'] = 80      # 添加字典元素
@@ -265,10 +338,12 @@ pip模块安装
         c = copy.deepcopy(a)          # 再次赋值 b[1][1] = 9999 拷贝字典为新的字典,互不干扰
 		
         a[2] = copy.deepcopy(a[1])    # 复制出第二个key，互不影响  {1: {1: 2, 3: 4},2: {1: 2, 3: 4}}
-
-流程结构
-
-    if判断
+</code></pre>
+<h3 id="流程结构">
+  流程结构
+  <a class="anchor" href="#%e6%b5%81%e7%a8%8b%e7%bb%93%e6%9e%84">#</a>
+</h3>
+<pre><code>    if判断
 
         # 布尔值操作符 and or not 实现多重判断
         if a == b:
@@ -327,10 +402,12 @@ pip模块安装
         [16,-4,10]
         [ i for i in range(8) if i %2 == 0 ]
         [0,2,4,6]
-
-tab补全
-
-    # vim /usr/lib/python2.7/dist-packages/tab.py
+</code></pre>
+<h3 id="tab补全">
+  tab补全
+  <a class="anchor" href="#tab%e8%a1%a5%e5%85%a8">#</a>
+</h3>
+<pre><code>    # vim /usr/lib/python2.7/dist-packages/tab.py
     # python startup file
     import sys
     import readline
@@ -341,10 +418,12 @@ tab补全
     readline.parse_and_bind('tab: complete')
     # history file
     histfile = os.path.join(os.environ['HOME'], '.pythonhistory')
-
-函数
-
-    def printMax(a, b = 1):
+</code></pre>
+<h3 id="函数">
+  函数
+  <a class="anchor" href="#%e5%87%bd%e6%95%b0">#</a>
+</h3>
+<pre><code>    def printMax(a, b = 1):
         if a &gt; b:
             print a
             return a
@@ -363,10 +442,12 @@ tab补全
         print sql
 
     update('aaa',uu='uu',id=3)
-
-模块
-
-    # Filename: mymodule.py
+</code></pre>
+<h3 id="模块">
+  模块
+  <a class="anchor" href="#%e6%a8%a1%e5%9d%97">#</a>
+</h3>
+<pre><code>    # Filename: mymodule.py
     def sayhi():
         print 'mymodule'
     version = '0.1'
@@ -375,10 +456,12 @@ tab补全
     import mymodule
     from mymodule import sayhi, version
     mymodule.sayhi()   # 使用模块中函数方法
-
-类对象的方法
-
-    class Person:
+</code></pre>
+<h3 id="类对象的方法">
+  类对象的方法
+  <a class="anchor" href="#%e7%b1%bb%e5%af%b9%e8%b1%a1%e7%9a%84%e6%96%b9%e6%b3%95">#</a>
+</h3>
+<pre><code>    class Person:
         # 实例化初始化的方法
         def __init__(self, name ,age):
             self.name = name
@@ -404,10 +487,12 @@ tab补全
             Person.tell(self)
             print 'Salary: &quot;%d&quot;' % self.salary
     t = Teacher('Mrs. Shrividya', 40, 30000)
-
-执行模块类中的所有方法
-
-    # moniItems.py
+</code></pre>
+<h3 id="执行模块类中的所有方法">
+  执行模块类中的所有方法
+  <a class="anchor" href="#%e6%89%a7%e8%a1%8c%e6%a8%a1%e5%9d%97%e7%b1%bb%e4%b8%ad%e7%9a%84%e6%89%80%e6%9c%89%e6%96%b9%e6%b3%95">#</a>
+</h3>
+<pre><code>    # moniItems.py
     import sys, time
     import inspect
 
@@ -434,10 +519,12 @@ tab补全
     from moniItems import mon
     m = mon()
     m.runAllGet()
-
-文件处理
-
-    # 模式: 读'r'  写[清空整个文件]'w' 追加[文件需要存在]'a' 读写'r+' 二进制文件'b'  'rb','wb','rb+'
+</code></pre>
+<h3 id="文件处理">
+  文件处理
+  <a class="anchor" href="#%e6%96%87%e4%bb%b6%e5%a4%84%e7%90%86">#</a>
+</h3>
+<pre><code>    # 模式: 读'r'  写[清空整个文件]'w' 追加[文件需要存在]'a' 读写'r+' 二进制文件'b'  'rb','wb','rb+'
 
     写文件
         i={'ddd':'ccc'}
@@ -494,10 +581,12 @@ tab补全
         list = csv.reader(file('a.txt'))
         for line in list:
             print line              #  ['192.168.1.5', 'web']
-
-内建函数
-
-    dir(sys)            # 显示对象的属性
+</code></pre>
+<h3 id="内建函数">
+  内建函数
+  <a class="anchor" href="#%e5%86%85%e5%bb%ba%e5%87%bd%e6%95%b0">#</a>
+</h3>
+<pre><code>    dir(sys)            # 显示对象的属性
     help(sys)           # 交互式帮助
     int(obj)            # 转型为整形
     str(obj)            # 转为字符串
@@ -528,10 +617,12 @@ tab补全
     zip(s,t)            # 返回一个合并后的列表  s = ['11','22']  t = ['aa','bb']  [('11', 'aa'), ('22', 'bb')]
     isinstance(object,int)    # 测试对象类型 int 
     xrange([lower,]stop[,step])            # 函数与range()类似，但xrnage()并不创建列表，而是返回一个xrange对象
-
-字符串相关模块
-
-    string         # 字符串操作相关函数和工具
+</code></pre>
+<h3 id="字符串相关模块">
+  字符串相关模块
+  <a class="anchor" href="#%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%9b%b8%e5%85%b3%e6%a8%a1%e5%9d%97">#</a>
+</h3>
+<pre><code>    string         # 字符串操作相关函数和工具
     re             # 正则表达式
     struct         # 字符串和二进制之间的转换
     c/StringIO     # 字符串缓冲对象,操作方法类似于file对象
@@ -547,10 +638,12 @@ tab补全
     stringprep     # 提供用于IP协议的Unicode字符串
     textwrap       # 文本包装和填充
     unicodedate    # unicode数据库
-
-列表类型内建函数
-
-    list.append(obj)                 # 向列表中添加一个对象obj
+</code></pre>
+<h3 id="列表类型内建函数">
+  列表类型内建函数
+  <a class="anchor" href="#%e5%88%97%e8%a1%a8%e7%b1%bb%e5%9e%8b%e5%86%85%e5%bb%ba%e5%87%bd%e6%95%b0">#</a>
+</h3>
+<pre><code>    list.append(obj)                 # 向列表中添加一个对象obj
     list.count(obj)                  # 返回一个对象obj在列表中出现的次数
     list.extend(seq)                 # 把序列seq的内容添加到列表中
     list.index(obj,i=0,j=len(list))  # 返回list[k] == obj 的k值,并且k的范围在i&lt;=k&lt;j;否则异常
@@ -559,19 +652,23 @@ tab补全
     list.remove(obj)                 # 从列表中删除对象obj
     list.reverse()                   # 原地翻转列表
     list.sort(func=None,key=None,reverse=False)  # 以指定的方式排序列表中成员,如果func和key参数指定,则按照指定的方式比较各个元素,如果reverse标志被置为True,则列表以反序排列
-
-序列类型操作符
-
-    seq[ind]              # 获取下标为ind的元素
+</code></pre>
+<h3 id="序列类型操作符">
+  序列类型操作符
+  <a class="anchor" href="#%e5%ba%8f%e5%88%97%e7%b1%bb%e5%9e%8b%e6%93%8d%e4%bd%9c%e7%ac%a6">#</a>
+</h3>
+<pre><code>    seq[ind]              # 获取下标为ind的元素
     seq[ind1:ind2]        # 获得下标从ind1到ind2的元素集合
     seq * expr            # 序列重复expr次
     seq1 + seq2           # 连接seq1和seq2
     obj in seq            # 判断obj元素是否包含在seq中
     obj not in seq        # 判断obj元素是否不包含在seq中
-
-字符串类型内建方法
-
-    string.expandtabs(tabsize=8)                  # tab符号转为空格 #默认8个空格
+</code></pre>
+<h3 id="字符串类型内建方法">
+  字符串类型内建方法
+  <a class="anchor" href="#%e5%ad%97%e7%ac%a6%e4%b8%b2%e7%b1%bb%e5%9e%8b%e5%86%85%e5%bb%ba%e6%96%b9%e6%b3%95">#</a>
+</h3>
+<pre><code>    string.expandtabs(tabsize=8)                  # tab符号转为空格 #默认8个空格
     string.endswith(obj,beg=0,end=len(staring))   # 检测字符串是否已obj结束,如果是返回True #如果beg或end指定检测范围是否已obj结束
     string.count(str,beg=0,end=len(string))       # 检测str在string里出现次数  f.count('\n',0,len(f)) 判断文件行数
     string.find(str,beg=0,end=len(string))        # 检测str是否包含在string中
@@ -592,10 +689,12 @@ tab补全
     string.isdigit()                              # 只包含数字返回True
     string.split(&quot;分隔符&quot;)                        # 把string切片成一个列表
     &quot;:&quot;.join(string.split())                      # 以:作为分隔符,将所有元素合并为一个新的字符串
-
-序列类型相关的模块
-
-    array         # 一种受限制的可变序列类型,元素必须相同类型
+</code></pre>
+<h3 id="序列类型相关的模块">
+  序列类型相关的模块
+  <a class="anchor" href="#%e5%ba%8f%e5%88%97%e7%b1%bb%e5%9e%8b%e7%9b%b8%e5%85%b3%e7%9a%84%e6%a8%a1%e5%9d%97">#</a>
+</h3>
+<pre><code>    array         # 一种受限制的可变序列类型,元素必须相同类型
     copy          # 提供浅拷贝和深拷贝的能力
     operator      # 包含函数调用形式的序列操作符 operator.concat(m,n)
     re            # perl风格的正则表达式查找
@@ -604,10 +703,12 @@ tab补全
     textwrap      # 用作包装/填充文本的函数,也有一个类
     types         # 包含python支持的所有类型
     collections   # 高性能容器数据类型
-
-字典内建方法
-
-    dict.clear()                            # 删除字典中所有元素
+</code></pre>
+<h3 id="字典内建方法">
+  字典内建方法
+  <a class="anchor" href="#%e5%ad%97%e5%85%b8%e5%86%85%e5%bb%ba%e6%96%b9%e6%b3%95">#</a>
+</h3>
+<pre><code>    dict.clear()                            # 删除字典中所有元素
     dict copy()                             # 返回字典(浅复制)的一个副本
     dict.fromkeys(seq,val=None)             # 创建并返回一个新字典,以seq中的元素做该字典的键,val做该字典中所有键对的初始值
     dict.get(key,default=None)              # 对字典dict中的键key,返回它对应的值value,如果字典中不存在此键,则返回default值
@@ -623,10 +724,12 @@ tab补全
     dict([container])     # 创建字典的工厂函数。提供容器类(container),就用其中的条目填充字典
     len(mapping)          # 返回映射的长度(键-值对的个数)
     hash(obj)             # 返回obj哈希值,判断某个对象是否可做一个字典的键值		
-	
-集合方法
-
-    s.update(t)                         # 用t中的元素修改s,s现在包含s或t的成员   s |= t
+</code></pre>
+<h3 id="集合方法">
+  集合方法
+  <a class="anchor" href="#%e9%9b%86%e5%90%88%e6%96%b9%e6%b3%95">#</a>
+</h3>
+<pre><code>    s.update(t)                         # 用t中的元素修改s,s现在包含s或t的成员   s |= t
     s.intersection_update(t)            # s中的成员是共用属于s和t的元素          s &amp;= t
     s.difference_update(t)              # s中的成员是属于s但不包含在t中的元素    s -= t
     s.symmetric_difference_update(t)    # s中的成员更新为那些包含在s或t中,但不是s和t共有的元素  s ^= t
@@ -648,10 +751,12 @@ tab补全
     s != t                              # 不等价测试 
     s &lt; t                               # 子集测试;s!=t且s中所有元素都是t的成员
     s &gt; t                               # 超集测试;s!=t且t中所有元素都是s的成员
-
-序列化
-
-    #!/usr/bin/python
+</code></pre>
+<h3 id="序列化">
+  序列化
+  <a class="anchor" href="#%e5%ba%8f%e5%88%97%e5%8c%96">#</a>
+</h3>
+<pre><code>    #!/usr/bin/python
     import cPickle
     obj = {'1':['4124','1241','124'],'2':['12412','142','1241']}
 
@@ -662,10 +767,12 @@ tab补全
     pkl_file = open('account.pkl','rb')
     account_list = cPickle.load(pkl_file)
     pkl_file.close()
-
-文件对象方法
-	
-    file.close()                     # 关闭文件
+</code></pre>
+<h3 id="文件对象方法">
+  文件对象方法
+  <a class="anchor" href="#%e6%96%87%e4%bb%b6%e5%af%b9%e8%b1%a1%e6%96%b9%e6%b3%95">#</a>
+</h3>
+<pre><code>    file.close()                     # 关闭文件
     file.fileno()                    # 返回文件的描述符
     file.flush()                     # 刷新文件的内部缓冲区
     file.isatty()                    # 判断file是否是一个类tty设备
@@ -679,19 +786,23 @@ tab补全
     file.truncate(size=file.tell())  # 截取文件到最大size字节,默认为当前文件位置
     file.write(str)                  # 向文件写入字符串
     file.writelines(seq)             # 向文件写入字符串序列seq;seq应该是一个返回字符串的可迭代对象
-
-文件对象的属性
-	
-    file.closed          # 表示文件已被关闭,否则为False
+</code></pre>
+<h3 id="文件对象的属性">
+  文件对象的属性
+  <a class="anchor" href="#%e6%96%87%e4%bb%b6%e5%af%b9%e8%b1%a1%e7%9a%84%e5%b1%9e%e6%80%a7">#</a>
+</h3>
+<pre><code>    file.closed          # 表示文件已被关闭,否则为False
     file.encoding        # 文件所使用的编码  当unicode字符串被写入数据时,它将自动使用file.encoding转换为字节字符串;若file.encoding为None时使用系统默认编码
     file.mode            # Access文件打开时使用的访问模式
     file.name            # 文件名
     file.newlines        # 未读取到行分隔符时为None,只有一种行分隔符时为一个字符串,当文件有多种类型的行结束符时,则为一个包含所有当前所遇到的行结束符的列表
     file.softspace       # 为0表示在输出一数据后,要加上一个空格符,1表示不加
-
-异常处理
-
-    # try 中使用 sys.exit(2) 会被捕获,无法退出脚本,可使用 os._exit(2) 退出脚本
+</code></pre>
+<h3 id="异常处理">
+  异常处理
+  <a class="anchor" href="#%e5%bc%82%e5%b8%b8%e5%a4%84%e7%90%86">#</a>
+</h3>
+<pre><code>    # try 中使用 sys.exit(2) 会被捕获,无法退出脚本,可使用 os._exit(2) 退出脚本
 	
     class ShortInputException(Exception):  # 继承Exception异常的类,定义自己的异常
         def __init__(self, length, atleast):
@@ -832,20 +943,24 @@ tab补全
             f.write(&quot;%s %s %s %s %s\n&quot; %(traceback_details['filename'],traceback_details['lineno'],traceback_details['name'],traceback_details['type'],traceback_details['message'], ))
             f.flush()
             f.close()
-
-调试log
-
-    # cgitb覆盖了默认sys.excepthook全局异常拦截器
+</code></pre>
+<h3 id="调试log">
+  调试log
+  <a class="anchor" href="#%e8%b0%83%e8%af%95log">#</a>
+</h3>
+<pre><code>    # cgitb覆盖了默认sys.excepthook全局异常拦截器
     def func(a, b):
         return a / b
     if __name__ == '__main__':
         import cgitb
         cgitb.enable(format='text')
         func(1, 0)
-
-函数式编程的内建函数
-
-    apply(func[,nkw][,kw])          # 用可选的参数来调用func,nkw为非关键字参数,kw为关键字参数;返回值是函数调用的返回值
+</code></pre>
+<h3 id="函数式编程的内建函数">
+  函数式编程的内建函数
+  <a class="anchor" href="#%e5%87%bd%e6%95%b0%e5%bc%8f%e7%bc%96%e7%a8%8b%e7%9a%84%e5%86%85%e5%bb%ba%e5%87%bd%e6%95%b0">#</a>
+</h3>
+<pre><code>    apply(func[,nkw][,kw])          # 用可选的参数来调用func,nkw为非关键字参数,kw为关键字参数;返回值是函数调用的返回值
     filter(func,seq)                # 调用一个布尔函数func来迭代遍历每个seq中的元素;返回一个使func返回值为true的元素的序列
     map(func,seq1[,seq2])           # 将函数func作用于给定序列(s)的每个元素,并用一个列表来提供返回值;如果func为None,func表现为一个身份函数,返回一个含有每个序列中元素集合的n个元组的列表
     reduce(func,seq[,init])         # 将二元函数作用于seq序列的元素,每次携带一堆(先前的结果以及下一个序列元素),连续地将现有的结果和下一个值作用在获得的随后的结果上,最后减少我们的序列为一个单一的返回值;如果初始值init给定,第一个比较会是init和第一个序列元素而不是序列的头两个元素
@@ -865,10 +980,12 @@ tab补全
     # reduce 通过函数会先接收初始值和序列的第一个元素，然后是返回值和下一个元素，依此类推
     def add(x,y): return x+y
     reduce(add, range(1, 11))      # 结果55  是1到10的和  x的值是上一次函数返回的结果，y是列表中循环的值
-
-re正则
-
-    compile(pattern,flags=0)          # 对正则表达式模式pattern进行编译,flags是可选标识符,并返回一个regex对象
+</code></pre>
+<h3 id="re正则">
+  re正则
+  <a class="anchor" href="#re%e6%ad%a3%e5%88%99">#</a>
+</h3>
+<pre><code>    compile(pattern,flags=0)          # 对正则表达式模式pattern进行编译,flags是可选标识符,并返回一个regex对象
     match(pattern,string,flags=0)     # 尝试用正则表达式模式pattern匹配字符串string,flags是可选标识符,如果匹配成功,则返回一个匹配对象;否则返回None
     search(pattern,string,flags=0)    # 在字符串string中搜索正则表达式模式pattern的第一次出现,flags是可选标识符,如果匹配成功,则返回一个匹配对象;否则返回None
     findall(pattern,string[,flags])   # 在字符串string中搜索正则表达式模式pattern的所有(非重复)出现:返回一个匹配对象的列表  # pattern=u'\u4e2d\u6587' 代表UNICODE
@@ -893,10 +1010,12 @@ re正则
         Ip='222.129.184.52'
         s = requests.post(url=QueryAdd, data={'IP':Ip})
         re.findall(u'\u4e2d\u56fd', s.text, re.S)
-
-编码转换
-
-    a='中文'                    # 编码未定义按输入终端utf8或gbk
+</code></pre>
+<h3 id="编码转换">
+  编码转换
+  <a class="anchor" href="#%e7%bc%96%e7%a0%81%e8%bd%ac%e6%8d%a2">#</a>
+</h3>
+<pre><code>    a='中文'                    # 编码未定义按输入终端utf8或gbk
     u=u'中文'                   # 定义为unicode编码  u值为 u'\u4e2d\u6587'
     u.encode('utf8')            # 转为utf8格式 u值为 '\xe4\xb8\xad\xe6\x96\x87'
     print u                     # 结果显示 中文
@@ -904,18 +1023,25 @@ re正则
     print u.encode('gbk')       # 当前终端为utf8 故乱码
     ord('4')                    # 字符转ASCII码
     chr(52)                     # ASCII码转字符
-
-遍历递归
-
-    [os.path.join(x[0],y) for x in os.walk('/root/python/5') for y in x[2]]
+</code></pre>
+<h3 id="遍历递归">
+  遍历递归
+  <a class="anchor" href="#%e9%81%8d%e5%8e%86%e9%80%92%e5%bd%92">#</a>
+</h3>
+<pre><code>    [os.path.join(x[0],y) for x in os.walk('/root/python/5') for y in x[2]]
 
     for i in os.walk('/root/python/5/work/server'):
         print i
 </code></pre>
-<p>2 常用模块</p>
-<pre><code>sys
-
-    sys.argv              # 取参数列表
+<h2 id="2-常用模块">
+  2 常用模块
+  <a class="anchor" href="#2-%e5%b8%b8%e7%94%a8%e6%a8%a1%e5%9d%97">#</a>
+</h2>
+<h3 id="sys">
+  sys
+  <a class="anchor" href="#sys">#</a>
+</h3>
+<pre><code>    sys.argv              # 取参数列表
     sys.exit(2)           # 退出脚本返回状态 会被try截取
     sys.exc_info()        # 获取当前正在处理的异常类
     sys.version           # 获取Python解释程序的版本信息
@@ -930,10 +1056,12 @@ re正则
     sys.exec_prefix       # 返回平台独立的python文件安装的位置
     sys.stdin.readline()  # 从标准输入读一行
     sys.stdout.write(&quot;a&quot;) # 屏幕输出a 
-
-os
-
-    # 相对sys模块 os模块更为底层 os._exit() try无法抓取
+</code></pre>
+<h3 id="os">
+  os
+  <a class="anchor" href="#os">#</a>
+</h3>
+<pre><code>    # 相对sys模块 os模块更为底层 os._exit() try无法抓取
     os.popen('id').read()      # 执行系统命令得到返回结果
     os.system()                # 得到返回状态 返回无法截取
     os.name                    # 返回系统平台 Linux/Unix用户是'posix'
@@ -1033,35 +1161,45 @@ os
         pathsep         # 用于分割文件路径的字符串
         curdir          # 当前工作目录的字符串名称
         pardir          # 父目录字符串名称
-
-commands
-
-    commands.getstatusoutput('id')       # 返回元组(状态,标准输出)
+</code></pre>
+<h3 id="commands">
+  commands
+  <a class="anchor" href="#commands">#</a>
+</h3>
+<pre><code>    commands.getstatusoutput('id')       # 返回元组(状态,标准输出)
     commands.getoutput('id')             # 只返回执行的结果, 忽略返回值
     commands.getstatus('file')           # 返回ls -ld file执行的结果
-		
-文件和目录管理
-
-    import shutil
+</code></pre>
+<h3 id="文件和目录管理">
+  文件和目录管理
+  <a class="anchor" href="#%e6%96%87%e4%bb%b6%e5%92%8c%e7%9b%ae%e5%bd%95%e7%ae%a1%e7%90%86">#</a>
+</h3>
+<pre><code>    import shutil
     shutil.copyfile('data.db', 'archive.db')             # 拷贝文件
     shutil.move('/build/executables', 'installdir')      # 移动文件或目录
-
-文件通配符
-
-    import glob
+</code></pre>
+<h3 id="文件通配符">
+  文件通配符
+  <a class="anchor" href="#%e6%96%87%e4%bb%b6%e9%80%9a%e9%85%8d%e7%ac%a6">#</a>
+</h3>
+<pre><code>    import glob
     glob.glob('*.py')    # 查找当前目录下py结尾的文件
-
-随机模块
-
-    import random
+</code></pre>
+<h3 id="随机模块">
+  随机模块
+  <a class="anchor" href="#%e9%9a%8f%e6%9c%ba%e6%a8%a1%e5%9d%97">#</a>
+</h3>
+<pre><code>    import random
     random.choice(['apple', 'pear', 'banana'])   # 随机取列表一个参数
     random.sample(xrange(100), 10)  # 不重复抽取10个
     random.random()                 # 随机浮点数
     random.randrange(6)             # 随机整数范围
-
-发送邮件
-
-    发送邮件内容
+</code></pre>
+<h3 id="发送邮件">
+  发送邮件
+  <a class="anchor" href="#%e5%8f%91%e9%80%81%e9%82%ae%e4%bb%b6">#</a>
+</h3>
+<pre><code>    发送邮件内容
 
         #!/usr/bin/python
         #encoding:utf8
@@ -1146,10 +1284,12 @@ commands
             print &quot;发送成功&quot;
         else:
             print &quot;发送失败&quot;
-
-解压缩
-
-    gzip压缩
+</code></pre>
+<h3 id="解压缩">
+  解压缩
+  <a class="anchor" href="#%e8%a7%a3%e5%8e%8b%e7%bc%a9">#</a>
+</h3>
+<pre><code>    gzip压缩
 
         import gzip
         f_in = open('file.log', 'rb')
@@ -1207,10 +1347,12 @@ commands
                 f.extract(file, r'/tmp/')             # 解压指定文件
             #f.extractall()                           # 解压全部
             f.close()
-
-时间
-
-    import time
+</code></pre>
+<h3 id="时间">
+  时间
+  <a class="anchor" href="#%e6%97%b6%e9%97%b4">#</a>
+</h3>
+<pre><code>    import time
     time.time()                          # 时间戳[浮点]
     time.localtime()[1] - 1              # 上个月
     int(time.time())                     # 时间戳[整s]
@@ -1251,9 +1393,12 @@ commands
         d1 = datetime.datetime.now()
         d3 = d1 + datetime.timedelta(hours=10)
         d3.ctime()
-
-参数[optparse]
-    import os, sys
+</code></pre>
+<h3 id="参数optparse">
+  参数[optparse]
+  <a class="anchor" href="#%e5%8f%82%e6%95%b0optparse">#</a>
+</h3>
+<pre><code>    import os, sys
     import time
     import optparse
     # python aaa.py -t file -p /etc/opt -o aaaaa
@@ -1283,10 +1428,12 @@ commands
 
     if __name__ == '__main__':
         main()
-
-hash
-
-    import md5
+</code></pre>
+<h3 id="hash">
+  hash
+  <a class="anchor" href="#hash">#</a>
+</h3>
+<pre><code>    import md5
     m = md5.new('123456').hexdigest()
 	
     import hashlib
@@ -1296,471 +1443,473 @@ hash
     m.hexdigest()                  # 加密后十进制结果
     hashlib.new(&quot;md5&quot;, &quot;string&quot;).hexdigest()               # 对字符串加密
     hashlib.new(&quot;md5&quot;, open(&quot;file&quot;).read()).hexdigest()    # 查看文件MD5值
-
-隐藏输入密码
-
-    import getpass
+</code></pre>
+<h3 id="隐藏输入密码">
+  隐藏输入密码
+  <a class="anchor" href="#%e9%9a%90%e8%97%8f%e8%be%93%e5%85%a5%e5%af%86%e7%a0%81">#</a>
+</h3>
+<pre><code>    import getpass
     passwd=getpass.getpass()
-
-string打印a-z
-    import string
+</code></pre>
+<h3 id="string打印a-z">
+  string打印a-z
+  <a class="anchor" href="#string%e6%89%93%e5%8d%b0a-z">#</a>
+</h3>
+<pre><code>    import string
     string.lowercase       # a-z小写
     string.uppercase       # A-Z大小
-
-paramiko [ssh客户端]
-
-    安装
+</code></pre>
+<h3 id="paramiko-ssh客户端">
+  paramiko [ssh客户端]
+  <a class="anchor" href="#paramiko-ssh%e5%ae%a2%e6%88%b7%e7%ab%af">#</a>
+</h3>
+<pre><code>    安装
         sudo apt-get install python-setuptools 
         easy_install
         sudo apt-get install python-all-dev
         sudo apt-get install build-essential
 
     paramiko实例(账号密码登录执行命令)
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">			<span style="color:#75715e">#!/usr/bin/python</span>
+			<span style="color:#75715e">#ssh</span>
+			<span style="color:#f92672">import</span> paramiko
+			<span style="color:#f92672">import</span> sys<span style="color:#f92672">,</span>os
 
-        #!/usr/bin/python
-        #ssh
-        import paramiko
-        import sys,os
+			host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;10.152.15.200&#39;</span>
+			user <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;peterli&#39;</span>
+			password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;123456&#39;</span>
 
-        host = '10.152.15.200'
-        user = 'peterli'
-        password = '123456'
+			s <span style="color:#f92672">=</span> paramiko<span style="color:#f92672">.</span>SSHClient()                                 <span style="color:#75715e"># 绑定实例</span>
+			s<span style="color:#f92672">.</span>load_system_host_keys()                                <span style="color:#75715e"># 加载本地HOST主机文件</span>
+			s<span style="color:#f92672">.</span>set_missing_host_key_policy(paramiko<span style="color:#f92672">.</span>AutoAddPolicy())  <span style="color:#75715e"># 允许连接不在know_hosts文件中的主机</span>
+			s<span style="color:#f92672">.</span>connect(host,<span style="color:#ae81ff">22</span>,user,password,timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)               <span style="color:#75715e"># 连接远程主机</span>
+			<span style="color:#66d9ef">while</span> True:
+					cmd<span style="color:#f92672">=</span>raw_input(<span style="color:#e6db74">&#39;cmd:&#39;</span>)
+					stdin,stdout,stderr <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>exec_command(cmd)        <span style="color:#75715e"># 执行命令</span>
+					cmd_result <span style="color:#f92672">=</span> stdout<span style="color:#f92672">.</span>read(),stderr<span style="color:#f92672">.</span>read()         <span style="color:#75715e"># 读取命令结果</span>
+					<span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> cmd_result:
+							<span style="color:#66d9ef">print</span> line,
+			s<span style="color:#f92672">.</span>close()
+</code></pre></div><pre><code>    paramiko实例(传送文件)
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">			<span style="color:#75715e">#!/usr/bin/evn python</span>
+			<span style="color:#f92672">import</span> os
+			<span style="color:#f92672">import</span> paramiko
+			host<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;127.0.0.1&#39;</span>
+			port<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>
+			username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;peterli&#39;</span>
+			password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;123456&#39;</span>
+			ssh<span style="color:#f92672">=</span>paramiko<span style="color:#f92672">.</span>Transport((host,port))
+			privatekeyfile <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>expanduser(<span style="color:#e6db74">&#39;~/.ssh/id_rsa&#39;</span>) 
+			mykey <span style="color:#f92672">=</span> paramiko<span style="color:#f92672">.</span>RSAKey<span style="color:#f92672">.</span>from_private_key_file( os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>expanduser(<span style="color:#e6db74">&#39;~/.ssh/id_rsa&#39;</span>))   <span style="color:#75715e"># 加载key 不使用key可不加</span>
+			ssh<span style="color:#f92672">.</span>connect(username<span style="color:#f92672">=</span>username,password<span style="color:#f92672">=</span>password)           <span style="color:#75715e"># 连接远程主机</span>
+			<span style="color:#75715e"># 使用key把 password=password 换成 pkey=mykey</span>
+			sftp<span style="color:#f92672">=</span>paramiko<span style="color:#f92672">.</span>SFTPClient<span style="color:#f92672">.</span>from_transport(ssh)               <span style="color:#75715e"># SFTP使用Transport通道</span>
+			sftp<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;/etc/passwd&#39;</span>,<span style="color:#e6db74">&#39;pwd1&#39;</span>)                             <span style="color:#75715e"># 下载 两端都要指定文件名</span>
+			sftp<span style="color:#f92672">.</span>put(<span style="color:#e6db74">&#39;pwd&#39;</span>,<span style="color:#e6db74">&#39;/tmp/pwd&#39;</span>)                                 <span style="color:#75715e"># 上传</span>
+			sftp<span style="color:#f92672">.</span>close()
+			ssh<span style="color:#f92672">.</span>close()
+</code></pre></div><pre><code>    paramiko实例(密钥执行命令)
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">			<span style="color:#75715e">#!/usr/bin/python</span>
+			<span style="color:#75715e">#ssh</span>
+			<span style="color:#f92672">import</span> paramiko
+			<span style="color:#f92672">import</span> sys<span style="color:#f92672">,</span>os
+			host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;10.152.15.123&#39;</span>
+			user <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;peterli&#39;</span>
+			s <span style="color:#f92672">=</span> paramiko<span style="color:#f92672">.</span>SSHClient()
+			s<span style="color:#f92672">.</span>load_system_host_keys()
+			s<span style="color:#f92672">.</span>set_missing_host_key_policy(paramiko<span style="color:#f92672">.</span>AutoAddPolicy())
+			privatekeyfile <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>expanduser(<span style="color:#e6db74">&#39;~/.ssh/id_rsa&#39;</span>)             <span style="color:#75715e"># 定义key路径</span>
+			mykey <span style="color:#f92672">=</span> paramiko<span style="color:#f92672">.</span>RSAKey<span style="color:#f92672">.</span>from_private_key_file(privatekeyfile)
+			<span style="color:#75715e"># mykey=paramiko.DSSKey.from_private_key_file(privatekeyfile,password=&#39;061128&#39;)   # DSSKey方式 password是key的密码</span>
+			s<span style="color:#f92672">.</span>connect(host,<span style="color:#ae81ff">22</span>,user,pkey<span style="color:#f92672">=</span>mykey,timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
+			cmd<span style="color:#f92672">=</span>raw_input(<span style="color:#e6db74">&#39;cmd:&#39;</span>)
+			stdin,stdout,stderr <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>exec_command(cmd)
+			cmd_result <span style="color:#f92672">=</span> stdout<span style="color:#f92672">.</span>read(),stderr<span style="color:#f92672">.</span>read()
+			<span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> cmd_result:
+					<span style="color:#66d9ef">print</span> line,
+			s<span style="color:#f92672">.</span>close()
+</code></pre></div><pre><code>    ssh并发(Pool控制最大并发)
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">			<span style="color:#75715e">#!/usr/bin/env python</span>
+			<span style="color:#75715e">#encoding:utf8</span>
+			<span style="color:#75715e">#ssh_concurrent.py</span>
 
-        s = paramiko.SSHClient()                                 # 绑定实例
-        s.load_system_host_keys()                                # 加载本地HOST主机文件
-        s.set_missing_host_key_policy(paramiko.AutoAddPolicy())  # 允许连接不在know_hosts文件中的主机
-        s.connect(host,22,user,password,timeout=5)               # 连接远程主机
-        while True:
-                cmd=raw_input('cmd:')
-                stdin,stdout,stderr = s.exec_command(cmd)        # 执行命令
-                cmd_result = stdout.read(),stderr.read()         # 读取命令结果
-                for line in cmd_result:
-                        print line,
-        s.close()
+			<span style="color:#f92672">import</span> multiprocessing
+			<span style="color:#f92672">import</span> sys<span style="color:#f92672">,</span>os<span style="color:#f92672">,</span>time
+			<span style="color:#f92672">import</span> paramiko
 
-    paramiko实例(传送文件)
+			<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ssh_cmd</span>(host,port,user,passwd,cmd):
+				msg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;-----------Result:</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">----------&#34;</span> <span style="color:#f92672">%</span> host
 
-        #!/usr/bin/evn python
-        import os
-        import paramiko
-        host='127.0.0.1'
-        port=22
-        username = 'peterli'
-        password = '123456'
-        ssh=paramiko.Transport((host,port))
-        privatekeyfile = os.path.expanduser('~/.ssh/id_rsa') 
-        mykey = paramiko.RSAKey.from_private_key_file( os.path.expanduser('~/.ssh/id_rsa'))   # 加载key 不使用key可不加
-        ssh.connect(username=username,password=password)           # 连接远程主机
-        # 使用key把 password=password 换成 pkey=mykey
-        sftp=paramiko.SFTPClient.from_transport(ssh)               # SFTP使用Transport通道
-        sftp.get('/etc/passwd','pwd1')                             # 下载 两端都要指定文件名
-        sftp.put('pwd','/tmp/pwd')                                 # 上传
-        sftp.close()
-        ssh.close()
+				s <span style="color:#f92672">=</span> paramiko<span style="color:#f92672">.</span>SSHClient()
+				s<span style="color:#f92672">.</span>load_system_host_keys()
+				s<span style="color:#f92672">.</span>set_missing_host_key_policy(paramiko<span style="color:#f92672">.</span>AutoAddPolicy())
+				<span style="color:#66d9ef">try</span>:
+					s<span style="color:#f92672">.</span>connect(host,<span style="color:#ae81ff">22</span>,user,passwd,timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>) 
+					stdin,stdout,stderr <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>exec_command(cmd)
 
-    paramiko实例(密钥执行命令)
+					cmd_result <span style="color:#f92672">=</span> stdout<span style="color:#f92672">.</span>read(),stderr<span style="color:#f92672">.</span>read()
+					<span style="color:#66d9ef">print</span> msg
+					<span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> cmd_result:
+							<span style="color:#66d9ef">print</span> line,
 
-        #!/usr/bin/python
-        #ssh
-        import paramiko
-        import sys,os
-        host = '10.152.15.123'
-        user = 'peterli'
-        s = paramiko.SSHClient()
-        s.load_system_host_keys()
-        s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        privatekeyfile = os.path.expanduser('~/.ssh/id_rsa')             # 定义key路径
-        mykey = paramiko.RSAKey.from_private_key_file(privatekeyfile)
-        # mykey=paramiko.DSSKey.from_private_key_file(privatekeyfile,password='061128')   # DSSKey方式 password是key的密码
-        s.connect(host,22,user,pkey=mykey,timeout=5)
-        cmd=raw_input('cmd:')
-        stdin,stdout,stderr = s.exec_command(cmd)
-        cmd_result = stdout.read(),stderr.read()
-        for line in cmd_result:
-                print line,
-        s.close()
+					s<span style="color:#f92672">.</span>close()
+				<span style="color:#66d9ef">except</span> paramiko<span style="color:#f92672">.</span>AuthenticationException:
+					<span style="color:#66d9ef">print</span> msg
+					<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#39;AuthenticationException Failed&#39;</span>
+				<span style="color:#66d9ef">except</span> paramiko<span style="color:#f92672">.</span>BadHostKeyException:
+					<span style="color:#66d9ef">print</span> msg
+					<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Bad host key&#34;</span>	
 
-    ssh并发(Pool控制最大并发)
+			result <span style="color:#f92672">=</span> []
+			p <span style="color:#f92672">=</span> multiprocessing<span style="color:#f92672">.</span>Pool(processes<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>)
+			cmd<span style="color:#f92672">=</span>raw_input(<span style="color:#e6db74">&#39;CMD:&#39;</span>)
+			f<span style="color:#f92672">=</span>open(<span style="color:#e6db74">&#39;serverlist.conf&#39;</span>)
+			list <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readlines()
+			f<span style="color:#f92672">.</span>close()
+			<span style="color:#66d9ef">for</span> IP <span style="color:#f92672">in</span> list:
+				<span style="color:#66d9ef">print</span> IP
+				host<span style="color:#f92672">=</span>IP<span style="color:#f92672">.</span>split()[<span style="color:#ae81ff">0</span>]
+				port<span style="color:#f92672">=</span>int(IP<span style="color:#f92672">.</span>split()[<span style="color:#ae81ff">1</span>])
+				user<span style="color:#f92672">=</span>IP<span style="color:#f92672">.</span>split()[<span style="color:#ae81ff">2</span>]
+				passwd<span style="color:#f92672">=</span>IP<span style="color:#f92672">.</span>split()[<span style="color:#ae81ff">3</span>]
+				result<span style="color:#f92672">.</span>append(p<span style="color:#f92672">.</span>apply_async(ssh_cmd,(host,port,user,passwd,cmd)))
 
-        #!/usr/bin/env python
-        #encoding:utf8
-        #ssh_concurrent.py
+			p<span style="color:#f92672">.</span>close()
 
-        import multiprocessing
-        import sys,os,time
-        import paramiko
+			<span style="color:#66d9ef">for</span> res <span style="color:#f92672">in</span> result:
+				res<span style="color:#f92672">.</span>get(timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">35</span>)
+</code></pre></div><pre><code>    ssh并发(取文件状态并发送邮件)
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">			<span style="color:#75715e">#!/usr/bin/python</span>
+			<span style="color:#75715e">#encoding:utf8</span>
+			<span style="color:#75715e">#config file: ip.list</span>
 
-        def ssh_cmd(host,port,user,passwd,cmd):
-            msg = &quot;-----------Result:%s----------&quot; % host
+			<span style="color:#f92672">import</span> paramiko
+			<span style="color:#f92672">import</span> multiprocessing
+			<span style="color:#f92672">import</span> smtplib
+			<span style="color:#f92672">import</span> sys<span style="color:#f92672">,</span>os<span style="color:#f92672">,</span>time<span style="color:#f92672">,</span>datetime<span style="color:#f92672">,</span>socket<span style="color:#f92672">,</span>re
+			<span style="color:#f92672">from</span> email.mime.text <span style="color:#f92672">import</span> MIMEText
 
-            s = paramiko.SSHClient()
-            s.load_system_host_keys()
-            s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-            try:
-                s.connect(host,22,user,passwd,timeout=5) 
-                stdin,stdout,stderr = s.exec_command(cmd)
+			<span style="color:#75715e"># 配置文件(IP列表)</span>
+			Conf <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ip.list&#39;</span>
+			user_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;peterli&#39;</span>
+			user_pwd <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;passwd&#39;</span>
+			port <span style="color:#f92672">=</span> <span style="color:#ae81ff">22</span>
+			PATH <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/home/peterli/&#39;</span>
 
-                cmd_result = stdout.read(),stderr.read()
-                print msg
-                for line in cmd_result:
-                        print line,
+			<span style="color:#75715e"># 设置服务器名称、用户名、密码以及邮件后缀 </span>
+			mail_host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;smtp.163.com&#34;</span>
+			mail_user <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;xuesong&#34;</span>
+			mail_pass <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mailpasswd&#34;</span>
+			mail_postfix <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;163.com&#34;</span>
+			mailto_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;272121935@qq.com&#34;</span>,<span style="color:#e6db74">&#34;quanzhou722@163.com&#34;</span>]
+			title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;file check&#39;</span>
 
-                s.close()
-            except paramiko.AuthenticationException:
-                print msg
-                print 'AuthenticationException Failed'
-            except paramiko.BadHostKeyException:
-                print msg
-                print &quot;Bad host key&quot;	
+			DATE1<span style="color:#f92672">=</span>(datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now() <span style="color:#f92672">+</span> datetime<span style="color:#f92672">.</span>timedelta(days<span style="color:#f92672">=-</span><span style="color:#ae81ff">1</span>) )<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#39;%Y%m</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#39;</span>)
+			file_path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(PATH,DATE1)
 
-        result = []
-        p = multiprocessing.Pool(processes=20)
-        cmd=raw_input('CMD:')
-        f=open('serverlist.conf')
-        list = f.readlines()
-        f.close()
-        for IP in list:
-            print IP
-            host=IP.split()[0]
-            port=int(IP.split()[1])
-            user=IP.split()[2]
-            passwd=IP.split()[3]
-            result.append(p.apply_async(ssh_cmd,(host,port,user,passwd,cmd)))
+			<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Ssh_Cmd</span>(file_path,host_ip,user_name,user_pwd,port<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>):
 
-        p.close()
-
-        for res in result:
-            res.get(timeout=35)
-
-    ssh并发(取文件状态并发送邮件)
-
-        #!/usr/bin/python
-        #encoding:utf8
-        #config file: ip.list
-
-        import paramiko
-        import multiprocessing
-        import smtplib
-        import sys,os,time,datetime,socket,re
-        from email.mime.text import MIMEText
-
-        # 配置文件(IP列表)
-        Conf = 'ip.list'
-        user_name = 'peterli'
-        user_pwd = 'passwd'
-        port = 22
-        PATH = '/home/peterli/'
-
-        # 设置服务器名称、用户名、密码以及邮件后缀 
-        mail_host = &quot;smtp.163.com&quot;
-        mail_user = &quot;xuesong&quot;
-        mail_pass = &quot;mailpasswd&quot;
-        mail_postfix = &quot;163.com&quot;
-        mailto_list = [&quot;272121935@qq.com&quot;,&quot;quanzhou722@163.com&quot;]
-        title = 'file check'
-
-        DATE1=(datetime.datetime.now() + datetime.timedelta(days=-1) ).strftime('%Y%m%d')
-        file_path = '%s%s' %(PATH,DATE1)
-
-        def Ssh_Cmd(file_path,host_ip,user_name,user_pwd,port=22):
-
-            s = paramiko.SSHClient()
-            s.load_system_host_keys()
-            s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-			
-            try:
-                s.connect(hostname=host_ip,port=port,username=user_name,password=user_pwd)
-                stdin,stdout,stderr = s.exec_command('stat %s' %file_path)
-                stat_result = '%s%s' %(stdout.read(),stderr.read())
-                if stat_result.find('No such file or directory') == -1:
-                    file_status = 'OK\t'
-                    stdin,stdout,stderr = s.exec_command('du -sh %s' %file_path)
-                    cmd1_result = '%s_%s' %(stat_result.split()[32],stat_result.split()[33].split('.')[0])
-                    cmd2_result = ('%s%s' %(stdout.read(),stderr.read())).split()[0] 
-                else:
-                    file_status = '未生成\t'
-                    cmd1_result = 'null'
-                    cmd2_result = 'null'
-                q.put(['Login successful'])
-                s.close()
-            except socket.error:
-                file_status = '主机或端口错误'
-                cmd1_result = '-'
-                cmd2_result = '-'
-            except paramiko.AuthenticationException:
-                file_status = '用户或密码错误'
-                cmd1_result = '-'
-                cmd2_result = '-'
-            except paramiko.BadHostKeyException:
-                file_status = 'Bad host key'
-                cmd1_result = '-'
-                cmd2_result = '-'
-            except:
-                file_status = 'ssh异常'
-                cmd1_result = '-'
-                cmd2_result = '-'
-            r.put('%s\t-\t%s\t%s\t%s\t%s\n' %(time.strftime('%Y-%m-%d_%H:%M'),host_ip,file_status,cmd2_result,cmd1_result))
-
-        def Concurrent(Conf,file_path,user_name,user_pwd,port):
-            # 执行总计
-            total = 0
-            # 读取配置文件
-            f=open(Conf)
-            list = f.readlines()
-            f.close()
-            # 并发执行
-            process_list = []
-            log_file = file('file_check.log', 'w')
-            log_file.write('检查时间\t\t业务\tIP\t\t文件状态\t大小\t生成时间\n') 
-            for host_info in list:
-                # 判断配置文件中注释行跳过
-                if host_info.startswith('#'):
-                    continue
-                # 取变量,其中任意变量未取到就跳过执行
-                try:
-                    host_ip=host_info.split()[0].strip()
-                    #user_name=host_info.split()[1]
-                    #user_pwd=host_info.split()[2]
-                except:
-                    log_file.write('Profile error: %s\n' %(host_info))
-                    continue
-                #try:
-                #	port=int(host_info.split()[3])
-                #except:
-                #	port=22
-                total +=1
-                p = multiprocessing.Process(target=Ssh_Cmd,args=(file_path,host_ip,user_name,user_pwd,port))
-                p.start()
-                process_list.append(p)
-            for j in process_list:
-                j.join()
-            for j in process_list:
-                log_file.write(r.get())
-
-            successful = q.qsize()
-            log_file.write('执行完毕。 总执行:%s 登录成功:%s 登录失败:%s\n' %(total,successful,total - successful))
-            log_file.flush()
-            log_file.close()
-
-        def send_mail(to_list, sub):
-            me = mail_user + &quot;&lt;&quot;+mail_user+&quot;@&quot;+mail_postfix+&quot;&gt;&quot;
-            fp = open('file_check.log')
-            msg = MIMEText(fp.read(),_charset=&quot;utf-8&quot;)
-            fp.close()
-            msg['Subject'] = sub
-            msg['From'] = me
-            msg['To'] = &quot;;&quot;.join(to_list)
-            try:
-                send_smtp = smtplib.SMTP()
-                send_smtp.connect(mail_host)
-                send_smtp.login(mail_user, mail_pass)
-                send_smtp.sendmail(me, to_list, msg.as_string())
-                send_smtp.close()
-                return True
-            except Exception, e:
-                print str(e)[1]
-                return False
-
-        if __name__ == '__main__':
-            q = multiprocessing.Queue()
-            r = multiprocessing.Queue()
-            Concurrent(Conf,file_path,user_name,user_pwd,port)
-            if send_mail(mailto_list,title):
-                print &quot;发送成功&quot;
-            else:
-                print &quot;发送失败&quot;
-
-    LazyManage并发批量操作(判断非root交互到root操作)
-
-        #!/usr/bin/python
-        #encoding:utf8
-        # LzayManage.py
-        # config file: serverlist.conf
-
-        import paramiko
-        import multiprocessing
-        import sys,os,time,socket,re
-
-        def Ssh_Cmd(host_ip,Cmd,user_name,user_pwd,port=22):
-            s = paramiko.SSHClient()
-            s.load_system_host_keys()
-            s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-            s.connect(hostname=host_ip,port=port,username=user_name,password=user_pwd)
-            stdin,stdout,stderr = s.exec_command(Cmd)
-            Result = '%s%s' %(stdout.read(),stderr.read())
-            q.put('successful')
-            s.close()
-            return Result.strip()
-
-        def Ssh_Su_Cmd(host_ip,Cmd,user_name,user_pwd,root_name,root_pwd,port=22):
-            s = paramiko.SSHClient()
-            s.load_system_host_keys()
-            s.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-            s.connect(hostname=host_ip,port=port,username=user_name,password=user_pwd)
-            ssh = s.invoke_shell()
-            time.sleep(0.1)
-            ssh.send('su - %s\n' %(root_name))
-            buff = ''
-            while not buff.endswith('Password: '):
-                resp = ssh.recv(9999)
-                buff +=resp
-            ssh.send('%s\n' %(root_pwd))
-            buff = ''
-            while True:
-                resp = ssh.recv(9999)
-                buff +=resp
-                if ': incorrect password' in buff:
-                    su_correct='passwd_error'
-                    break
-                elif buff.endswith('# '):
-                    su_correct='passwd_correct'
-                    break
-            if su_correct == 'passwd_correct':
-                ssh.send('%s\n' %(Cmd))
-                buff = ''
-                while True:
-                    resp = ssh.recv(9999)
-                    if resp.endswith('# '):
-                        buff +=re.sub('\[.*@.*\]# $','',resp)
-                        break
-                    buff +=resp
-                Result = buff.lstrip('%s' %(Cmd))
-                q.put('successful')
-            elif su_correct == 'passwd_error':
-                Result = &quot;\033[31mroot密码错误\033[m&quot;
-            s.close()
-            return Result.strip()
-
-        def Send_File(host_ip,PathList,user_name,user_pwd,Remote='/tmp',port=22):
-            s=paramiko.Transport((host_ip,port))
-            s.connect(username=user_name,password=user_pwd)
-            sftp=paramiko.SFTPClient.from_transport(s) 
-            for InputPath in PathList:
-                LocalPath = re.sub('^\./','',InputPath.rstrip('/'))
-                RemotePath = '%s/%s' %( Remote , os.path.basename( LocalPath ))
-                try:
-                    sftp.rmdir(RemotePath)
-                except:
-                    pass
-                try:
-                    sftp.remove(RemotePath)
-                except:
-                    pass
-                if os.path.isdir(LocalPath):
-                    sftp.mkdir(RemotePath)
-                    for path,dirs,files in os.walk(LocalPath):
-                        for dir in dirs:
-                            dir_path = os.path.join(path,dir)
-                            sftp.mkdir('%s/%s' %(RemotePath,re.sub('^%s/' %LocalPath,'',dir_path)))
-                        for file in files:
-                            file_path = os.path.join(path,file)
-                            sftp.put( file_path,'%s/%s' %(RemotePath,re.sub('^%s/' %LocalPath,'',file_path)))
-                else:
-                    sftp.put(LocalPath,RemotePath)
-            q.put('successful')
-            sftp.close()
-            s.close()
-            Result = '%s  \033[32m传送完成\033[m' % PathList
-            return Result
-
-        def Ssh(host_ip,Operation,user_name,user_pwd,root_name,root_pwd,Cmd=None,PathList=None,port=22):
-            msg = &quot;\033[32m-----------Result:%s----------\033[m&quot; % host_ip
-            try:
-                if Operation == 'Ssh_Cmd':
-                    Result = Ssh_Cmd(host_ip=host_ip,Cmd=Cmd,user_name=user_name,user_pwd=user_pwd,port=port)
-                elif Operation == 'Ssh_Su_Cmd':
-                    Result = Ssh_Su_Cmd(host_ip=host_ip,Cmd=Cmd,user_name=user_name,user_pwd=user_pwd,root_name=root_name,root_pwd=root_pwd,port=port)
-                elif Operation == 'Ssh_Script':
-                    Send_File(host_ip=host_ip,PathList=PathList,user_name=user_name,user_pwd=user_pwd,port=port)
-                    Script_Head = open(PathList[0]).readline().strip()
-                    LocalPath = re.sub('^\./','',PathList[0].rstrip('/'))
-                    Cmd = '%s /tmp/%s' %( re.sub('^#!','',Script_Head), os.path.basename( LocalPath ))
-                    Result = Ssh_Cmd(host_ip=host_ip,Cmd=Cmd,user_name=user_name,user_pwd=user_pwd,port=port)
-                elif Operation == 'Ssh_Su_Script':
-                    Send_File(host_ip=host_ip,PathList=PathList,user_name=user_name,user_pwd=user_pwd,port=port)
-                    Script_Head = open(PathList[0]).readline().strip()
-                    LocalPath = re.sub('^\./','',PathList[0].rstrip('/'))
-                    Cmd = '%s /tmp/%s' %( re.sub('^#!','',Script_Head), os.path.basename( LocalPath ))
-                    Result = Ssh_Su_Cmd(host_ip=host_ip,Cmd=Cmd,user_name=user_name,user_pwd=user_pwd,root_name=root_name,root_pwd=root_pwd,port=port)
-                elif Operation == 'Send_File':
-                    Result = Send_File(host_ip=host_ip,PathList=PathList,user_name=user_name,user_pwd=user_pwd,port=port)
-                else:
-                    Result = '操作不存在'
+				s <span style="color:#f92672">=</span> paramiko<span style="color:#f92672">.</span>SSHClient()
+				s<span style="color:#f92672">.</span>load_system_host_keys()
+				s<span style="color:#f92672">.</span>set_missing_host_key_policy(paramiko<span style="color:#f92672">.</span>AutoAddPolicy())
 				
-            except socket.error:
-                Result = '\033[31m主机或端口错误\033[m'
-            except paramiko.AuthenticationException:
-                Result = '\033[31m用户名或密码错误\033[m'
-            except paramiko.BadHostKeyException:
-                Result = '\033[31mBad host key\033[m['
-            except IOError:
-                Result = '\033[31m远程主机已存在非空目录或没有写权限\033[m'
-            except:
-                Result = '\033[31m未知错误\033[m'
-            r.put('%s\n%s\n' %(msg,Result))
+				<span style="color:#66d9ef">try</span>:
+					s<span style="color:#f92672">.</span>connect(hostname<span style="color:#f92672">=</span>host_ip,port<span style="color:#f92672">=</span>port,username<span style="color:#f92672">=</span>user_name,password<span style="color:#f92672">=</span>user_pwd)
+					stdin,stdout,stderr <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>exec_command(<span style="color:#e6db74">&#39;stat </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>file_path)
+					stat_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(stdout<span style="color:#f92672">.</span>read(),stderr<span style="color:#f92672">.</span>read())
+					<span style="color:#66d9ef">if</span> stat_result<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#39;No such file or directory&#39;</span>) <span style="color:#f92672">==</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>:
+						file_status <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;OK</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#39;</span>
+						stdin,stdout,stderr <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>exec_command(<span style="color:#e6db74">&#39;du -sh </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>file_path)
+						cmd1_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">_</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(stat_result<span style="color:#f92672">.</span>split()[<span style="color:#ae81ff">32</span>],stat_result<span style="color:#f92672">.</span>split()[<span style="color:#ae81ff">33</span>]<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;.&#39;</span>)[<span style="color:#ae81ff">0</span>])
+						cmd2_result <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(stdout<span style="color:#f92672">.</span>read(),stderr<span style="color:#f92672">.</span>read()))<span style="color:#f92672">.</span>split()[<span style="color:#ae81ff">0</span>] 
+					<span style="color:#66d9ef">else</span>:
+						file_status <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;未生成</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#39;</span>
+						cmd1_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;null&#39;</span>
+						cmd2_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;null&#39;</span>
+					q<span style="color:#f92672">.</span>put([<span style="color:#e6db74">&#39;Login successful&#39;</span>])
+					s<span style="color:#f92672">.</span>close()
+				<span style="color:#66d9ef">except</span> socket<span style="color:#f92672">.</span>error:
+					file_status <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;主机或端口错误&#39;</span>
+					cmd1_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span>
+					cmd2_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span>
+				<span style="color:#66d9ef">except</span> paramiko<span style="color:#f92672">.</span>AuthenticationException:
+					file_status <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;用户或密码错误&#39;</span>
+					cmd1_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span>
+					cmd2_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span>
+				<span style="color:#66d9ef">except</span> paramiko<span style="color:#f92672">.</span>BadHostKeyException:
+					file_status <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Bad host key&#39;</span>
+					cmd1_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span>
+					cmd2_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span>
+				<span style="color:#66d9ef">except</span>:
+					file_status <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ssh异常&#39;</span>
+					cmd1_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span>
+					cmd2_result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span>
+				r<span style="color:#f92672">.</span>put(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">-</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(time<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#39;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">_%H:%M&#39;</span>),host_ip,file_status,cmd2_result,cmd1_result))
 
-        def Concurrent(Conf,Operation,user_name,user_pwd,root_name,root_pwd,Cmd=None,PathList=None,port=22):
-            # 读取配置文件
-            f=open(Conf)
-            list = f.readlines()
-            f.close()
-            # 执行总计
-            total = 0
-            # 并发执行
-            for host_info in list:
-                # 判断配置文件中注释行跳过
-                if host_info.startswith('#'):
-                    continue
-                # 取变量,其中任意变量未取到就跳过执行
-                try:
-                    host_ip=host_info.split()[0]
-                    #user_name=host_info.split()[1]
-                    #user_pwd=host_info.split()[2]
-                except:
-                    print('Profile error: %s' %(host_info) )
-                    continue
-                try:
-                    port=int(host_info.split()[3])
-                except:
-                    port=22
-                total +=1
-                p = multiprocessing.Process(target=Ssh,args=(host_ip,Operation,user_name,user_pwd,root_name,root_pwd,Cmd,PathList,port))
-                p.start()
-            # 打印执行结果
-            for j in range(total):
-                print(r.get() )
-            if Operation == 'Ssh_Script' or Operation == 'Ssh_Su_Script':
-                successful = q.qsize() / 2
-            else:
-                successful = q.qsize()
-            print('\033[32m执行完毕[总执行:%s 成功:%s 失败:%s]\033[m' %(total,successful,total - successful) )
-            q.close()
-            r.close()
+			<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Concurrent</span>(Conf,file_path,user_name,user_pwd,port):
+				<span style="color:#75715e"># 执行总计</span>
+				total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+				<span style="color:#75715e"># 读取配置文件</span>
+				f<span style="color:#f92672">=</span>open(Conf)
+				list <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readlines()
+				f<span style="color:#f92672">.</span>close()
+				<span style="color:#75715e"># 并发执行</span>
+				process_list <span style="color:#f92672">=</span> []
+				log_file <span style="color:#f92672">=</span> file(<span style="color:#e6db74">&#39;file_check.log&#39;</span>, <span style="color:#e6db74">&#39;w&#39;</span>)
+				log_file<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#39;检查时间</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">业务</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">IP</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">文件状态</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">大小</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">生成时间</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>) 
+				<span style="color:#66d9ef">for</span> host_info <span style="color:#f92672">in</span> list:
+					<span style="color:#75715e"># 判断配置文件中注释行跳过</span>
+					<span style="color:#66d9ef">if</span> host_info<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#39;#&#39;</span>):
+						<span style="color:#66d9ef">continue</span>
+					<span style="color:#75715e"># 取变量,其中任意变量未取到就跳过执行</span>
+					<span style="color:#66d9ef">try</span>:
+						host_ip<span style="color:#f92672">=</span>host_info<span style="color:#f92672">.</span>split()[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>strip()
+						<span style="color:#75715e">#user_name=host_info.split()[1]</span>
+						<span style="color:#75715e">#user_pwd=host_info.split()[2]</span>
+					<span style="color:#66d9ef">except</span>:
+						log_file<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#39;Profile error: </span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(host_info))
+						<span style="color:#66d9ef">continue</span>
+					<span style="color:#75715e">#try:</span>
+					<span style="color:#75715e">#	port=int(host_info.split()[3])</span>
+					<span style="color:#75715e">#except:</span>
+					<span style="color:#75715e">#	port=22</span>
+					total <span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+					p <span style="color:#f92672">=</span> multiprocessing<span style="color:#f92672">.</span>Process(target<span style="color:#f92672">=</span>Ssh_Cmd,args<span style="color:#f92672">=</span>(file_path,host_ip,user_name,user_pwd,port))
+					p<span style="color:#f92672">.</span>start()
+					process_list<span style="color:#f92672">.</span>append(p)
+				<span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> process_list:
+					j<span style="color:#f92672">.</span>join()
+				<span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> process_list:
+					log_file<span style="color:#f92672">.</span>write(r<span style="color:#f92672">.</span>get())
 
-        def Help():
-            print('''	1.执行命令
-            2.执行脚本      \033[32m[位置1脚本(必须带脚本头),后可带执行脚本所需要的包\文件\文件夹路径,空格分隔]\033[m
-            3.发送文件      \033[32m[传送的包\文件\文件夹路径,空格分隔]\033[m
-            退出: 0\exit\quit
-            帮助: help\h\?
-            注意: 发送文件默认为/tmp下,如已存在同名文件会被强制覆盖,非空目录则中断操作.执行脚本先将本地脚本及包发送远程主机上,发送规则同发送文件
-            ''')
+				successful <span style="color:#f92672">=</span> q<span style="color:#f92672">.</span>qsize()
+				log_file<span style="color:#f92672">.</span>write(<span style="color:#e6db74">&#39;执行完毕。 总执行:</span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> 登录成功:</span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> 登录失败:</span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(total,successful,total <span style="color:#f92672">-</span> successful))
+				log_file<span style="color:#f92672">.</span>flush()
+				log_file<span style="color:#f92672">.</span>close()
 
-        if __name__=='__main__':
-            # 定义root账号信息
-            root_name = 'root'
-            root_pwd = 'peterli'
-            user_name='peterli'
-            user_pwd='&lt;++(3Ie'
-            # 配置文件
-            Conf='serverlist.conf'
-            if not os.path.isfile(Conf):
-                print('\033[33m配置文件 %s 不存在\033[m' %(Conf) )
-                sys.exit()
-            Help()
-            while True:
-                i = raw_i</code></pre>
-</p>
+			<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">send_mail</span>(to_list, sub):
+				me <span style="color:#f92672">=</span> mail_user <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;&#34;</span><span style="color:#f92672">+</span>mail_user<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;@&#34;</span><span style="color:#f92672">+</span>mail_postfix<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;&gt;&#34;</span>
+				fp <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#39;file_check.log&#39;</span>)
+				msg <span style="color:#f92672">=</span> MIMEText(fp<span style="color:#f92672">.</span>read(),_charset<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>)
+				fp<span style="color:#f92672">.</span>close()
+				msg[<span style="color:#e6db74">&#39;Subject&#39;</span>] <span style="color:#f92672">=</span> sub
+				msg[<span style="color:#e6db74">&#39;From&#39;</span>] <span style="color:#f92672">=</span> me
+				msg[<span style="color:#e6db74">&#39;To&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;;&#34;</span><span style="color:#f92672">.</span>join(to_list)
+				<span style="color:#66d9ef">try</span>:
+					send_smtp <span style="color:#f92672">=</span> smtplib<span style="color:#f92672">.</span>SMTP()
+					send_smtp<span style="color:#f92672">.</span>connect(mail_host)
+					send_smtp<span style="color:#f92672">.</span>login(mail_user, mail_pass)
+					send_smtp<span style="color:#f92672">.</span>sendmail(me, to_list, msg<span style="color:#f92672">.</span>as_string())
+					send_smtp<span style="color:#f92672">.</span>close()
+					<span style="color:#66d9ef">return</span> True
+				<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span>, e:
+					<span style="color:#66d9ef">print</span> str(e)[<span style="color:#ae81ff">1</span>]
+					<span style="color:#66d9ef">return</span> False
+
+			<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+				q <span style="color:#f92672">=</span> multiprocessing<span style="color:#f92672">.</span>Queue()
+				r <span style="color:#f92672">=</span> multiprocessing<span style="color:#f92672">.</span>Queue()
+				Concurrent(Conf,file_path,user_name,user_pwd,port)
+				<span style="color:#66d9ef">if</span> send_mail(mailto_list,title):
+					<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;发送成功&#34;</span>
+				<span style="color:#66d9ef">else</span>:
+					<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;发送失败&#34;</span>
+</code></pre></div><pre><code>    LazyManage并发批量操作(判断非root交互到root操作)
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">			<span style="color:#75715e">#!/usr/bin/python</span>
+			<span style="color:#75715e">#encoding:utf8</span>
+			<span style="color:#75715e"># LzayManage.py</span>
+			<span style="color:#75715e"># config file: serverlist.conf</span>
+
+			<span style="color:#f92672">import</span> paramiko
+			<span style="color:#f92672">import</span> multiprocessing
+			<span style="color:#f92672">import</span> sys<span style="color:#f92672">,</span>os<span style="color:#f92672">,</span>time<span style="color:#f92672">,</span>socket<span style="color:#f92672">,</span>re
+
+			<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Ssh_Cmd</span>(host_ip,Cmd,user_name,user_pwd,port<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>):
+				s <span style="color:#f92672">=</span> paramiko<span style="color:#f92672">.</span>SSHClient()
+				s<span style="color:#f92672">.</span>load_system_host_keys()
+				s<span style="color:#f92672">.</span>set_missing_host_key_policy(paramiko<span style="color:#f92672">.</span>AutoAddPolicy())
+				s<span style="color:#f92672">.</span>connect(hostname<span style="color:#f92672">=</span>host_ip,port<span style="color:#f92672">=</span>port,username<span style="color:#f92672">=</span>user_name,password<span style="color:#f92672">=</span>user_pwd)
+				stdin,stdout,stderr <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>exec_command(Cmd)
+				Result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(stdout<span style="color:#f92672">.</span>read(),stderr<span style="color:#f92672">.</span>read())
+				q<span style="color:#f92672">.</span>put(<span style="color:#e6db74">&#39;successful&#39;</span>)
+				s<span style="color:#f92672">.</span>close()
+				<span style="color:#66d9ef">return</span> Result<span style="color:#f92672">.</span>strip()
+
+			<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Ssh_Su_Cmd</span>(host_ip,Cmd,user_name,user_pwd,root_name,root_pwd,port<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>):
+				s <span style="color:#f92672">=</span> paramiko<span style="color:#f92672">.</span>SSHClient()
+				s<span style="color:#f92672">.</span>load_system_host_keys()
+				s<span style="color:#f92672">.</span>set_missing_host_key_policy(paramiko<span style="color:#f92672">.</span>AutoAddPolicy())
+				s<span style="color:#f92672">.</span>connect(hostname<span style="color:#f92672">=</span>host_ip,port<span style="color:#f92672">=</span>port,username<span style="color:#f92672">=</span>user_name,password<span style="color:#f92672">=</span>user_pwd)
+				ssh <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>invoke_shell()
+				time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.1</span>)
+				ssh<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;su - </span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(root_name))
+				buff <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+				<span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> buff<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#39;Password: &#39;</span>):
+					resp <span style="color:#f92672">=</span> ssh<span style="color:#f92672">.</span>recv(<span style="color:#ae81ff">9999</span>)
+					buff <span style="color:#f92672">+=</span>resp
+				ssh<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(root_pwd))
+				buff <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+				<span style="color:#66d9ef">while</span> True:
+					resp <span style="color:#f92672">=</span> ssh<span style="color:#f92672">.</span>recv(<span style="color:#ae81ff">9999</span>)
+					buff <span style="color:#f92672">+=</span>resp
+					<span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;: incorrect password&#39;</span> <span style="color:#f92672">in</span> buff:
+						su_correct<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;passwd_error&#39;</span>
+						<span style="color:#66d9ef">break</span>
+					<span style="color:#66d9ef">elif</span> buff<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#39;# &#39;</span>):
+						su_correct<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;passwd_correct&#39;</span>
+						<span style="color:#66d9ef">break</span>
+				<span style="color:#66d9ef">if</span> su_correct <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;passwd_correct&#39;</span>:
+					ssh<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(Cmd))
+					buff <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+					<span style="color:#66d9ef">while</span> True:
+						resp <span style="color:#f92672">=</span> ssh<span style="color:#f92672">.</span>recv(<span style="color:#ae81ff">9999</span>)
+						<span style="color:#66d9ef">if</span> resp<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#39;# &#39;</span>):
+							buff <span style="color:#f92672">+=</span>re<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">&#39;\[.*@.*\]# $&#39;</span>,<span style="color:#e6db74">&#39;&#39;</span>,resp)
+							<span style="color:#66d9ef">break</span>
+						buff <span style="color:#f92672">+=</span>resp
+					Result <span style="color:#f92672">=</span> buff<span style="color:#f92672">.</span>lstrip(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(Cmd))
+					q<span style="color:#f92672">.</span>put(<span style="color:#e6db74">&#39;successful&#39;</span>)
+				<span style="color:#66d9ef">elif</span> su_correct <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;passwd_error&#39;</span>:
+					Result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[31mroot密码错误</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m&#34;</span>
+				s<span style="color:#f92672">.</span>close()
+				<span style="color:#66d9ef">return</span> Result<span style="color:#f92672">.</span>strip()
+
+			<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Send_File</span>(host_ip,PathList,user_name,user_pwd,Remote<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/tmp&#39;</span>,port<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>):
+				s<span style="color:#f92672">=</span>paramiko<span style="color:#f92672">.</span>Transport((host_ip,port))
+				s<span style="color:#f92672">.</span>connect(username<span style="color:#f92672">=</span>user_name,password<span style="color:#f92672">=</span>user_pwd)
+				sftp<span style="color:#f92672">=</span>paramiko<span style="color:#f92672">.</span>SFTPClient<span style="color:#f92672">.</span>from_transport(s) 
+				<span style="color:#66d9ef">for</span> InputPath <span style="color:#f92672">in</span> PathList:
+					LocalPath <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">&#39;^\./&#39;</span>,<span style="color:#e6db74">&#39;&#39;</span>,InputPath<span style="color:#f92672">.</span>rstrip(<span style="color:#e6db74">&#39;/&#39;</span>))
+					RemotePath <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>( Remote , os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>basename( LocalPath ))
+					<span style="color:#66d9ef">try</span>:
+						sftp<span style="color:#f92672">.</span>rmdir(RemotePath)
+					<span style="color:#66d9ef">except</span>:
+						<span style="color:#66d9ef">pass</span>
+					<span style="color:#66d9ef">try</span>:
+						sftp<span style="color:#f92672">.</span>remove(RemotePath)
+					<span style="color:#66d9ef">except</span>:
+						<span style="color:#66d9ef">pass</span>
+					<span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isdir(LocalPath):
+						sftp<span style="color:#f92672">.</span>mkdir(RemotePath)
+						<span style="color:#66d9ef">for</span> path,dirs,files <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>walk(LocalPath):
+							<span style="color:#66d9ef">for</span> dir <span style="color:#f92672">in</span> dirs:
+								dir_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(path,dir)
+								sftp<span style="color:#f92672">.</span>mkdir(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(RemotePath,re<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">&#39;^</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">/&#39;</span> <span style="color:#f92672">%</span>LocalPath,<span style="color:#e6db74">&#39;&#39;</span>,dir_path)))
+							<span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> files:
+								file_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(path,file)
+								sftp<span style="color:#f92672">.</span>put( file_path,<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(RemotePath,re<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">&#39;^</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">/&#39;</span> <span style="color:#f92672">%</span>LocalPath,<span style="color:#e6db74">&#39;&#39;</span>,file_path)))
+					<span style="color:#66d9ef">else</span>:
+						sftp<span style="color:#f92672">.</span>put(LocalPath,RemotePath)
+				q<span style="color:#f92672">.</span>put(<span style="color:#e6db74">&#39;successful&#39;</span>)
+				sftp<span style="color:#f92672">.</span>close()
+				s<span style="color:#f92672">.</span>close()
+				Result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">  </span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[32m传送完成</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m&#39;</span> <span style="color:#f92672">%</span> PathList
+				<span style="color:#66d9ef">return</span> Result
+
+			<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Ssh</span>(host_ip,Operation,user_name,user_pwd,root_name,root_pwd,Cmd<span style="color:#f92672">=</span>None,PathList<span style="color:#f92672">=</span>None,port<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>):
+				msg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[32m-----------Result:</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">----------</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m&#34;</span> <span style="color:#f92672">%</span> host_ip
+				<span style="color:#66d9ef">try</span>:
+					<span style="color:#66d9ef">if</span> Operation <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;Ssh_Cmd&#39;</span>:
+						Result <span style="color:#f92672">=</span> Ssh_Cmd(host_ip<span style="color:#f92672">=</span>host_ip,Cmd<span style="color:#f92672">=</span>Cmd,user_name<span style="color:#f92672">=</span>user_name,user_pwd<span style="color:#f92672">=</span>user_pwd,port<span style="color:#f92672">=</span>port)
+					<span style="color:#66d9ef">elif</span> Operation <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;Ssh_Su_Cmd&#39;</span>:
+						Result <span style="color:#f92672">=</span> Ssh_Su_Cmd(host_ip<span style="color:#f92672">=</span>host_ip,Cmd<span style="color:#f92672">=</span>Cmd,user_name<span style="color:#f92672">=</span>user_name,user_pwd<span style="color:#f92672">=</span>user_pwd,root_name<span style="color:#f92672">=</span>root_name,root_pwd<span style="color:#f92672">=</span>root_pwd,port<span style="color:#f92672">=</span>port)
+					<span style="color:#66d9ef">elif</span> Operation <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;Ssh_Script&#39;</span>:
+						Send_File(host_ip<span style="color:#f92672">=</span>host_ip,PathList<span style="color:#f92672">=</span>PathList,user_name<span style="color:#f92672">=</span>user_name,user_pwd<span style="color:#f92672">=</span>user_pwd,port<span style="color:#f92672">=</span>port)
+						Script_Head <span style="color:#f92672">=</span> open(PathList[<span style="color:#ae81ff">0</span>])<span style="color:#f92672">.</span>readline()<span style="color:#f92672">.</span>strip()
+						LocalPath <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">&#39;^\./&#39;</span>,<span style="color:#e6db74">&#39;&#39;</span>,PathList[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>rstrip(<span style="color:#e6db74">&#39;/&#39;</span>))
+						Cmd <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> /tmp/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>( re<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">&#39;^#!&#39;</span>,<span style="color:#e6db74">&#39;&#39;</span>,Script_Head), os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>basename( LocalPath ))
+						Result <span style="color:#f92672">=</span> Ssh_Cmd(host_ip<span style="color:#f92672">=</span>host_ip,Cmd<span style="color:#f92672">=</span>Cmd,user_name<span style="color:#f92672">=</span>user_name,user_pwd<span style="color:#f92672">=</span>user_pwd,port<span style="color:#f92672">=</span>port)
+					<span style="color:#66d9ef">elif</span> Operation <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;Ssh_Su_Script&#39;</span>:
+						Send_File(host_ip<span style="color:#f92672">=</span>host_ip,PathList<span style="color:#f92672">=</span>PathList,user_name<span style="color:#f92672">=</span>user_name,user_pwd<span style="color:#f92672">=</span>user_pwd,port<span style="color:#f92672">=</span>port)
+						Script_Head <span style="color:#f92672">=</span> open(PathList[<span style="color:#ae81ff">0</span>])<span style="color:#f92672">.</span>readline()<span style="color:#f92672">.</span>strip()
+						LocalPath <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">&#39;^\./&#39;</span>,<span style="color:#e6db74">&#39;&#39;</span>,PathList[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>rstrip(<span style="color:#e6db74">&#39;/&#39;</span>))
+						Cmd <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> /tmp/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>( re<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">&#39;^#!&#39;</span>,<span style="color:#e6db74">&#39;&#39;</span>,Script_Head), os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>basename( LocalPath ))
+						Result <span style="color:#f92672">=</span> Ssh_Su_Cmd(host_ip<span style="color:#f92672">=</span>host_ip,Cmd<span style="color:#f92672">=</span>Cmd,user_name<span style="color:#f92672">=</span>user_name,user_pwd<span style="color:#f92672">=</span>user_pwd,root_name<span style="color:#f92672">=</span>root_name,root_pwd<span style="color:#f92672">=</span>root_pwd,port<span style="color:#f92672">=</span>port)
+					<span style="color:#66d9ef">elif</span> Operation <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;Send_File&#39;</span>:
+						Result <span style="color:#f92672">=</span> Send_File(host_ip<span style="color:#f92672">=</span>host_ip,PathList<span style="color:#f92672">=</span>PathList,user_name<span style="color:#f92672">=</span>user_name,user_pwd<span style="color:#f92672">=</span>user_pwd,port<span style="color:#f92672">=</span>port)
+					<span style="color:#66d9ef">else</span>:
+						Result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;操作不存在&#39;</span>
+					
+				<span style="color:#66d9ef">except</span> socket<span style="color:#f92672">.</span>error:
+					Result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[31m主机或端口错误</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m&#39;</span>
+				<span style="color:#66d9ef">except</span> paramiko<span style="color:#f92672">.</span>AuthenticationException:
+					Result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[31m用户名或密码错误</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m&#39;</span>
+				<span style="color:#66d9ef">except</span> paramiko<span style="color:#f92672">.</span>BadHostKeyException:
+					Result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[31mBad host key</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m[&#39;</span>
+				<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">IOError</span>:
+					Result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[31m远程主机已存在非空目录或没有写权限</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m&#39;</span>
+				<span style="color:#66d9ef">except</span>:
+					Result <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[31m未知错误</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m&#39;</span>
+				r<span style="color:#f92672">.</span>put(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(msg,Result))
+
+			<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Concurrent</span>(Conf,Operation,user_name,user_pwd,root_name,root_pwd,Cmd<span style="color:#f92672">=</span>None,PathList<span style="color:#f92672">=</span>None,port<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>):
+				<span style="color:#75715e"># 读取配置文件</span>
+				f<span style="color:#f92672">=</span>open(Conf)
+				list <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readlines()
+				f<span style="color:#f92672">.</span>close()
+				<span style="color:#75715e"># 执行总计</span>
+				total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+				<span style="color:#75715e"># 并发执行</span>
+				<span style="color:#66d9ef">for</span> host_info <span style="color:#f92672">in</span> list:
+					<span style="color:#75715e"># 判断配置文件中注释行跳过</span>
+					<span style="color:#66d9ef">if</span> host_info<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#39;#&#39;</span>):
+						<span style="color:#66d9ef">continue</span>
+					<span style="color:#75715e"># 取变量,其中任意变量未取到就跳过执行</span>
+					<span style="color:#66d9ef">try</span>:
+						host_ip<span style="color:#f92672">=</span>host_info<span style="color:#f92672">.</span>split()[<span style="color:#ae81ff">0</span>]
+						<span style="color:#75715e">#user_name=host_info.split()[1]</span>
+						<span style="color:#75715e">#user_pwd=host_info.split()[2]</span>
+					<span style="color:#66d9ef">except</span>:
+						<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Profile error: </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>(host_info) )
+						<span style="color:#66d9ef">continue</span>
+					<span style="color:#66d9ef">try</span>:
+						port<span style="color:#f92672">=</span>int(host_info<span style="color:#f92672">.</span>split()[<span style="color:#ae81ff">3</span>])
+					<span style="color:#66d9ef">except</span>:
+						port<span style="color:#f92672">=</span><span style="color:#ae81ff">22</span>
+					total <span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+					p <span style="color:#f92672">=</span> multiprocessing<span style="color:#f92672">.</span>Process(target<span style="color:#f92672">=</span>Ssh,args<span style="color:#f92672">=</span>(host_ip,Operation,user_name,user_pwd,root_name,root_pwd,Cmd,PathList,port))
+					p<span style="color:#f92672">.</span>start()
+				<span style="color:#75715e"># 打印执行结果</span>
+				<span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(total):
+					<span style="color:#66d9ef">print</span>(r<span style="color:#f92672">.</span>get() )
+				<span style="color:#66d9ef">if</span> Operation <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;Ssh_Script&#39;</span> <span style="color:#f92672">or</span> Operation <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;Ssh_Su_Script&#39;</span>:
+					successful <span style="color:#f92672">=</span> q<span style="color:#f92672">.</span>qsize() <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+				<span style="color:#66d9ef">else</span>:
+					successful <span style="color:#f92672">=</span> q<span style="color:#f92672">.</span>qsize()
+				<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[32m执行完毕[总执行:</span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> 成功:</span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> 失败:</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">]</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m&#39;</span> <span style="color:#f92672">%</span>(total,successful,total <span style="color:#f92672">-</span> successful) )
+				q<span style="color:#f92672">.</span>close()
+				r<span style="color:#f92672">.</span>close()
+
+			<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">Help</span>():
+				<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;&#39;&#39;	1.执行命令
+</span><span style="color:#e6db74">				2.执行脚本      </span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[32m[位置1脚本(必须带脚本头),后可带执行脚本所需要的包\文件\文件夹路径,空格分隔]</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m
+</span><span style="color:#e6db74">				3.发送文件      </span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[32m[传送的包\文件\文件夹路径,空格分隔]</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m
+</span><span style="color:#e6db74">				退出: 0\exit\quit
+</span><span style="color:#e6db74">				帮助: help\h\?
+</span><span style="color:#e6db74">				注意: 发送文件默认为/tmp下,如已存在同名文件会被强制覆盖,非空目录则中断操作.执行脚本先将本地脚本及包发送远程主机上,发送规则同发送文件
+</span><span style="color:#e6db74">				&#39;&#39;&#39;</span>)
+
+			<span style="color:#66d9ef">if</span> __name__<span style="color:#f92672">==</span><span style="color:#e6db74">&#39;__main__&#39;</span>:
+				<span style="color:#75715e"># 定义root账号信息</span>
+				root_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;root&#39;</span>
+				root_pwd <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;peterli&#39;</span>
+				user_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;peterli&#39;</span>
+				user_pwd<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&lt;++(3Ie&#39;</span>
+				<span style="color:#75715e"># 配置文件</span>
+				Conf<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;serverlist.conf&#39;</span>
+				<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isfile(Conf):
+					<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[33m配置文件 </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> 不存在</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[m&#39;</span> <span style="color:#f92672">%</span>(Conf) )
+					sys<span style="color:#f92672">.</span>exit()
+				Help()
+				<span style="color:#66d9ef">while</span> True:
+					i <span style="color:#f92672">=</span> raw_i
+</code></pre></div></p>
 </article>
  
       
@@ -1802,7 +1951,65 @@ paramiko [ssh客户端]
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#设定编码-支持中文">设定编码-支持中文</a></li>
+    <li><a href="#python实例手册">Python实例手册</a>
+      <ul>
+        <li><a href="#说明">说明</a></li>
+        <li><a href="#1-基础">1 基础</a>
+          <ul>
+            <li><a href="#查看帮助">查看帮助</a></li>
+            <li><a href="#调试">调试</a></li>
+            <li><a href="#pip模块安装">pip模块安装</a></li>
+            <li><a href="#变量">变量</a></li>
+            <li><a href="#打印">打印</a></li>
+            <li><a href="#列表">列表</a></li>
+            <li><a href="#元组">元组</a></li>
+            <li><a href="#字典">字典</a></li>
+            <li><a href="#流程结构">流程结构</a></li>
+            <li><a href="#tab补全">tab补全</a></li>
+            <li><a href="#函数">函数</a></li>
+            <li><a href="#模块">模块</a></li>
+            <li><a href="#类对象的方法">类对象的方法</a></li>
+            <li><a href="#执行模块类中的所有方法">执行模块类中的所有方法</a></li>
+            <li><a href="#文件处理">文件处理</a></li>
+            <li><a href="#内建函数">内建函数</a></li>
+            <li><a href="#字符串相关模块">字符串相关模块</a></li>
+            <li><a href="#列表类型内建函数">列表类型内建函数</a></li>
+            <li><a href="#序列类型操作符">序列类型操作符</a></li>
+            <li><a href="#字符串类型内建方法">字符串类型内建方法</a></li>
+            <li><a href="#序列类型相关的模块">序列类型相关的模块</a></li>
+            <li><a href="#字典内建方法">字典内建方法</a></li>
+            <li><a href="#集合方法">集合方法</a></li>
+            <li><a href="#序列化">序列化</a></li>
+            <li><a href="#文件对象方法">文件对象方法</a></li>
+            <li><a href="#文件对象的属性">文件对象的属性</a></li>
+            <li><a href="#异常处理">异常处理</a></li>
+            <li><a href="#调试log">调试log</a></li>
+            <li><a href="#函数式编程的内建函数">函数式编程的内建函数</a></li>
+            <li><a href="#re正则">re正则</a></li>
+            <li><a href="#编码转换">编码转换</a></li>
+            <li><a href="#遍历递归">遍历递归</a></li>
+          </ul>
+        </li>
+        <li><a href="#2-常用模块">2 常用模块</a>
+          <ul>
+            <li><a href="#sys">sys</a></li>
+            <li><a href="#os">os</a></li>
+            <li><a href="#commands">commands</a></li>
+            <li><a href="#文件和目录管理">文件和目录管理</a></li>
+            <li><a href="#文件通配符">文件通配符</a></li>
+            <li><a href="#随机模块">随机模块</a></li>
+            <li><a href="#发送邮件">发送邮件</a></li>
+            <li><a href="#解压缩">解压缩</a></li>
+            <li><a href="#时间">时间</a></li>
+            <li><a href="#参数optparse">参数[optparse]</a></li>
+            <li><a href="#hash">hash</a></li>
+            <li><a href="#隐藏输入密码">隐藏输入密码</a></li>
+            <li><a href="#string打印a-z">string打印a-z</a></li>
+            <li><a href="#paramiko-ssh客户端">paramiko [ssh客户端]</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

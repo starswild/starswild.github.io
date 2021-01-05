@@ -280,10 +280,7 @@ code example #  import network wifi = network.WLAN(network.STA_IF) wifi.active(T
       <pubDate>Fri, 16 Mar 2018 15:33:36 +0800</pubDate>
       
       <guid>https://starwild.github.io/posts/Python%E5%AE%9E%E4%BE%8B%E6%89%8B%E5%86%8C/</guid>
-      <description>Python实例手册 #encoding:utf8
-设定编码-支持中文 #  0说明
-手册制作: 雪松 littlepy reboot更新日期: 2014-10-29欢迎系统运维加入Q群: 198173206 # 加群请回答问题欢迎运维开发加入Q群: 365534424 # 不定期技术分享请使用&amp;quot;notepad++&amp;quot;打开此文档,&amp;quot;alt+0&amp;quot;将函数折叠后方便查阅请勿删除信息，转载请说明出处，抵制不道德行为。错误在所难免，还望指正！# python实例手册下载地址:http://hi.baidu.com/quanzhou722/item/cf4471f8e23d3149932af2a7# shell实例手册最新下载地址:http://hi.baidu.com/quanzhou722/item/f4a4f3c9eb37f02d46d5c0d9# LazyManage运维批量管理软件下载[shell]:http://hi.baidu.com/quanzhou722/item/4ccf7e88a877eaccef083d1a# LazyManage运维批量管理软件下载[python]:http://hi.baidu.com/quanzhou722/item/4213db3626a949fe96f88d3c 1 基础
-查看帮助import osfor i in dir(os):print i # 模块的方法help(os.path) # 方法的帮助调试python -m trace -t aaaaaa.pypip模块安装yum install python-pip # centos安装pipsudo apt-get install python-pip # ubuntu安装pippip官方安装脚本wget https://raw.</description>
+      <description>Python实例手册 #  说明 #  手册制作: 雪松 littlepy reboot更新日期: 2014-10-29欢迎系统运维加入Q群: 198173206 # 加群请回答问题欢迎运维开发加入Q群: 365534424 # 不定期技术分享请使用&amp;quot;notepad++&amp;quot;打开此文档,&amp;quot;alt+0&amp;quot;将函数折叠后方便查阅请勿删除信息，转载请说明出处，抵制不道德行为。错误在所难免，还望指正！# python实例手册下载地址:http://hi.baidu.com/quanzhou722/item/cf4471f8e23d3149932af2a7# shell实例手册最新下载地址:http://hi.baidu.com/quanzhou722/item/f4a4f3c9eb37f02d46d5c0d9# LazyManage运维批量管理软件下载[shell]:http://hi.baidu.com/quanzhou722/item/4ccf7e88a877eaccef083d1a# LazyManage运维批量管理软件下载[python]:http://hi.baidu.com/quanzhou722/item/4213db3626a949fe96f88d3c 1 基础 #  查看帮助 #   import osfor i in dir(os):print i # 模块的方法help(os.path) # 方法的帮助 调试 #   python -m trace -t aaaaaa.py pip模块安装 #   yum install python-pip # centos安装pipsudo apt-get install python-pip # ubuntu安装pippip官方安装脚本wget https://raw.</description>
     </item>
     
     <item>
