@@ -8,7 +8,8 @@ tags:
 使用脚本启动主程序，在使用systemd时，需要删除nohup启动，切保证启动脚本中不会报错。
 
 
-参考 http://www.jinbuguo.com/systemd/systemd.index.html
+参考
+    http://www.jinbuguo.com/systemd/systemd.index.html
     http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
 
 cp test.service /usr/lib/systemd/system
