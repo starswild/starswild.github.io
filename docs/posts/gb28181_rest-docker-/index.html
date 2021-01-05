@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.80.0-DEV" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="启动mysql服务 sudo docker run -p 3306:3306 &ndash;name gb28181_mysql -v /home/z/docker/etc/mysql/my.cnf:/etc/mysql/my.cnf -d mariadb
+sudo docker run -d -p 3306:3306 -v /home/z/docker/mysql/data:/var/lib/mysql -v /home/z/docker/etc/mysql/my.cnf:/etc/mysql/my.cnf -e MYSQL_PASS=&ldquo;root&rdquo; tutum/mysql
+docker run
+&ndash;detach
+&ndash;publish=33006:3306
+&ndash;restart=always
+&ndash;privileged=true
+&ndash;env=MYSQL_ROOT_PASSWORD=root
+&ndash;name=mysql
+tutum/mysql
+&ndash;character-set-server=utf8
+&ndash;collation-server=utf8_general_ci
+&ndash;default-authentication-plugin=mysql_native_password &ndash;lower_case_table_names=1 ———————————————— 版权声明：本文为CSDN博主「fengzi-fengzi」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/qq_31864653/article/details/90769142
+/usr/sbin/mysqld &ndash;basedir=/usr &ndash;datadir=/var/lib/mysql &ndash;plugin-dir=/usr/lib/mysql/plugin &ndash;user=mysql &ndash;log-error=/var/log/mysql/error.log &ndash;pid-file=/var/run/mysqld/mysqld.pid &ndash;socket=/var/run/mysqld/mysqld.sock &ndash;port=3306 ######################################################################################### mkdir -p /root/docker/etc/mysql sudo docker run &ndash;name gb28181_mysql -d -p 33006:3306 &ndash;privileged=true -v /home/docker/root/etc/mysql:/etc/mysql -v /home/docker/root/var/lib/mysql:/var/lib/mysql -e MYSQL_PASS=&ldquo;root&rdquo; tutum/mysql docker exec -ti 7b3b /bin/bash">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="gb28181_rest docker " />
+<meta property="og:description" content="启动mysql服务 sudo docker run -p 3306:3306 &ndash;name gb28181_mysql -v /home/z/docker/etc/mysql/my.cnf:/etc/mysql/my.cnf -d mariadb
+sudo docker run -d -p 3306:3306 -v /home/z/docker/mysql/data:/var/lib/mysql -v /home/z/docker/etc/mysql/my.cnf:/etc/mysql/my.cnf -e MYSQL_PASS=&ldquo;root&rdquo; tutum/mysql
+docker run
+&ndash;detach
+&ndash;publish=33006:3306
+&ndash;restart=always
+&ndash;privileged=true
+&ndash;env=MYSQL_ROOT_PASSWORD=root
+&ndash;name=mysql
+tutum/mysql
+&ndash;character-set-server=utf8
+&ndash;collation-server=utf8_general_ci
+&ndash;default-authentication-plugin=mysql_native_password &ndash;lower_case_table_names=1 ———————————————— 版权声明：本文为CSDN博主「fengzi-fengzi」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/qq_31864653/article/details/90769142
+/usr/sbin/mysqld &ndash;basedir=/usr &ndash;datadir=/var/lib/mysql &ndash;plugin-dir=/usr/lib/mysql/plugin &ndash;user=mysql &ndash;log-error=/var/log/mysql/error.log &ndash;pid-file=/var/run/mysqld/mysqld.pid &ndash;socket=/var/run/mysqld/mysqld.sock &ndash;port=3306 ######################################################################################### mkdir -p /root/docker/etc/mysql sudo docker run &ndash;name gb28181_mysql -d -p 33006:3306 &ndash;privileged=true -v /home/docker/root/etc/mysql:/etc/mysql -v /home/docker/root/var/lib/mysql:/var/lib/mysql -e MYSQL_PASS=&ldquo;root&rdquo; tutum/mysql docker exec -ti 7b3b /bin/bash" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://starwild.github.io/posts/gb28181_rest-docker-/" />
+<meta property="article:published_time" content="2019-08-25T11:24:00+08:00" />
+<meta property="article:modified_time" content="2021-01-05T11:59:39+08:00" />
+<title>gb28181_rest docker  | starwild</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.0af7d82f9c2aa2b40eaca8674f7baf3f324570036fc8cb3ca3f65ffd78edab46.js" integrity="sha256-CvfYL5wqorQOrKhnT3uvPzJFcANvyMs8o/Zf/Xjtq0Y="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>starwild</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- - [Docs](/docs/) -->
+<ul>
+<li>
+  <a href="/posts/">Blog</a></li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/starwild" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>gb28181_rest docker </strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#etcmysqlmycnf-lower_case_table_names1">/etc/mysql/my.cnf #lower_case_table_names=1</a></li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/gb28181_rest-docker-/">gb28181_rest docker </a>
+  </h1>
+  
+  <h5>August 25, 2019</h5>
+
+
+
+  
+
+  
+
+
+  <p><p>启动mysql服务
+sudo docker run -p 3306:3306 &ndash;name gb28181_mysql -v /home/z/docker/etc/mysql/my.cnf:/etc/mysql/my.cnf -d mariadb</p>
+<p>sudo docker run -d -p 3306:3306 -v /home/z/docker/mysql/data:/var/lib/mysql -v /home/z/docker/etc/mysql/my.cnf:/etc/mysql/my.cnf  -e MYSQL_PASS=&ldquo;root&rdquo; tutum/mysql</p>
+<p>docker run<br>
+&ndash;detach<br>
+&ndash;publish=33006:3306<br>
+&ndash;restart=always<br>
+&ndash;privileged=true<br>
+&ndash;env=MYSQL_ROOT_PASSWORD=root<br>
+&ndash;name=mysql<br>
+tutum/mysql<br>
+&ndash;character-set-server=utf8<br>
+&ndash;collation-server=utf8_general_ci<br>
+&ndash;default-authentication-plugin=mysql_native_password
+&ndash;lower_case_table_names=1
+———————————————— 
+版权声明：本文为CSDN博主「fengzi-fengzi」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_31864653/article/details/90769142</p>
+<p>/usr/sbin/mysqld &ndash;basedir=/usr &ndash;datadir=/var/lib/mysql &ndash;plugin-dir=/usr/lib/mysql/plugin &ndash;user=mysql &ndash;log-error=/var/log/mysql/error.log &ndash;pid-file=/var/run/mysqld/mysqld.pid &ndash;socket=/var/run/mysqld/mysqld.sock &ndash;port=3306
+#########################################################################################
+mkdir -p /root/docker/etc/mysql
+sudo docker run &ndash;name gb28181_mysql -d -p 33006:3306 &ndash;privileged=true -v /home/docker/root/etc/mysql:/etc/mysql -v /home/docker/root/var/lib/mysql:/var/lib/mysql  -e MYSQL_PASS=&ldquo;root&rdquo; tutum/mysql
+docker exec -ti 7b3b /bin/bash</p>
+<h1 id="etcmysqlmycnf-lower_case_table_names1">
+  /etc/mysql/my.cnf #lower_case_table_names=1
+  <a class="anchor" href="#etcmysqlmycnf-lower_case_table_names1">#</a>
+</h1>
+<p>mysql
+grant all privileges on <em>.</em> to root@&quot;%&quot; identified by &ldquo;root&rdquo; with grant option; 
+flush privileges; 
+mysql -h 127.0.0.1 -uroot -proot -P 33006</p>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/starwild/starwild.github.io/commit/bdc9c9657cb5037b092e3cdf135d33c9e25166ef" title='Last modified by z | January 5, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>January 5, 2021</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/starwild/starwild.github.io/edit/master/content/posts/gb28181_rest%20docker%20.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#etcmysqlmycnf-lower_case_table_names1">/etc/mysql/my.cnf #lower_case_table_names=1</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
