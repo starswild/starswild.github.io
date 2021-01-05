@@ -193,6 +193,16 @@
   </url>
   
   <url>
+    <loc>https://starwild.github.io/tags/database/</loc>
+    <lastmod>2017-10-19T19:25:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://starwild.github.io/tags/</loc>
+    <lastmod>2017-10-19T19:25:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://starwild.github.io/posts/%E5%A4%A7%E5%A4%B4%E4%B8%8E%E5%B0%8F%E5%A4%B4/</loc>
     <lastmod>2017-10-18T22:20:00+08:00</lastmod>
   </url>
@@ -229,10 +239,6 @@
   <url>
     <loc>https://starwild.github.io/docs/</loc>
     <lastmod>2021-01-05T12:03:21+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://starwild.github.io/tags/</loc>
   </url>
   
 </urlset>
