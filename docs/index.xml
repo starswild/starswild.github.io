@@ -488,7 +488,7 @@ XXXXXCrystal X XX ScrumXXXXX XXXXXXX XX XX XXX XXXX XXXXXX XXXXXXXXX X X X
       <pubDate>Mon, 16 Oct 2017 22:12:00 +0800</pubDate>
       
       <guid>https://starwild.github.io/posts/IO%E6%A8%A1%E5%9E%8B%E4%B8%8ENIO%E6%A8%A1%E5%9E%8B/</guid>
-      <description>IO与NIO读取数据 #  +--------+ +--------+ +------+| Thread +------------------------------------&amp;gt; stream +-----&amp;gt; OS |+--------+ +--------+ +------++--------+ +---------++-- &amp;gt; buffer +---&amp;gt; channel +--+| +--------+ +---------+ || |+--------+ +----------+ | +--------+ +---------+ | +------+| Thread +----&amp;gt; selector +----- &amp;gt; buffer +---&amp;gt; channel +-----&amp;gt; OS |+--------+ +----------+ | +--------+ +---------+ | +------+| || +--------+ +---------+ |+-- &amp;gt; buffer +---&amp;gt; channel +--++--------+ +---------+ NIO读取含中文文本文件的例子 #  import java.</description>
+      <description>IO与NIO读取数据 #  +--------+ +--------+ +------+| Thread +------------------------------------&amp;gt; stream +-----&amp;gt; OS |+--------+ +--------+ +------++--------+ +---------++-- &amp;gt; buffer +---&amp;gt; channel +--+| +--------+ +---------+ || |+--------+ +----------+ | +--------+ +---------+ | +------+| Thread +----&amp;gt; selector +----- &amp;gt; buffer +---&amp;gt; channel +-----&amp;gt; OS |+--------+ +----------+ | +--------+ +---------+ | +------+| || +--------+ +---------+ |+-- &amp;gt; buffer +---&amp;gt; channel +--++--------+ +---------+NIO读取含中文文本文件的例子 #  import java.</description>
     </item>
     
   </channel>
