@@ -2,6 +2,8 @@
 title: "firewalld manual"
 date: 2019-08-23T20:02:00+08:00
 draft: false
+tags: 
+    - linux
 ---
 from https://www.cnblogs.com/xxoome/p/7115614.html
 
