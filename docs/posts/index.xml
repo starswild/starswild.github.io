@@ -266,7 +266,7 @@ code example #  import network wifi = network.WLAN(network.STA_IF) wifi.active(T
     </item>
     
     <item>
-      <title>Python实例手册</title>
+      <title>Python 2 实例手册</title>
       <link>https://starwild.github.io/posts/Python-2-handbook/</link>
       <pubDate>Fri, 16 Mar 2018 15:33:36 +0800</pubDate>
       

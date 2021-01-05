@@ -1,5 +1,5 @@
 ---
-title: "Python实例手册"
+title: "Python 2 实例手册"
 date: 2018-03-16T15:33:36+08:00
 draft: false
 ---
