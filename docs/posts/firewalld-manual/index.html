@@ -6,36 +6,30 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="from https://www.cnblogs.com/xxoome/p/7115614.html
-1、查看firewall服务状态
-systemctl status firewalld
-2、查看firewall的状态
-firewall-cmd &ndash;state
-3、开启、重启、关闭、firewalld.service服务
-开启 #  service firewalld start
+1、查看firewall服务状态 #  systemctl status firewalld
+2、查看firewall的状态 #  firewall-cmd &ndash;state
+3、开启、重启、关闭、firewalld.service服务 #  开启 #  service firewalld start
 重启 #  service firewalld restart
-关闭 #  service firewalld stop 4、查看防火墙规则
-firewall-cmd &ndash;list-all
+关闭 #  service firewalld stop
+4、查看防火墙规则 #  firewall-cmd &ndash;list-all
 查询端口是否开放 #  firewall-cmd &ndash;query-port=8080/tcp
 开放80端口 #  firewall-cmd &ndash;permanent &ndash;add-port=80/tcp
 移除端口 #  firewall-cmd &ndash;permanent &ndash;remove-port=8080/tcp
 #重启防火墙(修改配置后要重启防火墙) firewall-cmd &ndash;reload
-参数解释 #  1、firwall-cmd：是Linux提供的操作firewall的一个工具； 2、&ndash;permanent：表示设置为持久； 3、&ndash;add-port：标识添加的端口；">
+5、参数解释 #  1、firwall-cmd：是Linux提供的操作firewall的一个工具； 2、&ndash;permanent：表示设置为持久； 3、&ndash;add-port：标识添加的端口；">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="firewalld manual" />
 <meta property="og:description" content="from https://www.cnblogs.com/xxoome/p/7115614.html
-1、查看firewall服务状态
-systemctl status firewalld
-2、查看firewall的状态
-firewall-cmd &ndash;state
-3、开启、重启、关闭、firewalld.service服务
-开启 #  service firewalld start
+1、查看firewall服务状态 #  systemctl status firewalld
+2、查看firewall的状态 #  firewall-cmd &ndash;state
+3、开启、重启、关闭、firewalld.service服务 #  开启 #  service firewalld start
 重启 #  service firewalld restart
-关闭 #  service firewalld stop 4、查看防火墙规则
-firewall-cmd &ndash;list-all
+关闭 #  service firewalld stop
+4、查看防火墙规则 #  firewall-cmd &ndash;list-all
 查询端口是否开放 #  firewall-cmd &ndash;query-port=8080/tcp
 开放80端口 #  firewall-cmd &ndash;permanent &ndash;add-port=80/tcp
 移除端口 #  firewall-cmd &ndash;permanent &ndash;remove-port=8080/tcp
 #重启防火墙(修改配置后要重启防火墙) firewall-cmd &ndash;reload
-参数解释 #  1、firwall-cmd：是Linux提供的操作firewall的一个工具； 2、&ndash;permanent：表示设置为持久； 3、&ndash;add-port：标识添加的端口；" />
+5、参数解释 #  1、firwall-cmd：是Linux提供的操作firewall的一个工具； 2、&ndash;permanent：表示设置为持久； 3、&ndash;add-port：标识添加的端口；" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://starwild.github.io/posts/firewalld-manual/" />
 <meta property="article:published_time" content="2019-08-23T20:02:00+08:00" />
@@ -44,7 +38,7 @@ firewall-cmd &ndash;list-all
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
-<script defer src="/en.search.min.110ee9ddb66bb9a84b7af71cff8c3bfc28ea7d2746471b9c15ff05ed86b77e1b.js" integrity="sha256-EQ7p3bZruahLevcc/4w7/CjqfSdGRxucFf8F7Ya3fhs="></script>
+<script defer src="/en.search.min.537f255f753e5b30595098b83e983efcc91cafbf1f0cc72c852627c30807bf67.js" integrity="sha256-U38lX3U&#43;WzBZUJi4Ppg&#43;/Mkcr78fDMcshSYnwwgHv2c="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -145,13 +139,27 @@ https://github.com/alex-shpak/hugo-book
     
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#开启">开启</a></li>
-    <li><a href="#重启">重启</a></li>
-    <li><a href="#关闭">关闭</a></li>
-    <li><a href="#查询端口是否开放">查询端口是否开放</a></li>
-    <li><a href="#开放80端口">开放80端口</a></li>
-    <li><a href="#移除端口">移除端口</a></li>
-    <li><a href="#参数解释">参数解释</a></li>
+    <li>
+      <ul>
+        <li><a href="#1查看firewall服务状态">1、查看firewall服务状态</a></li>
+        <li><a href="#2查看firewall的状态">2、查看firewall的状态</a></li>
+        <li><a href="#3开启重启关闭firewalldservice服务">3、开启、重启、关闭、firewalld.service服务</a>
+          <ul>
+            <li><a href="#开启">开启</a></li>
+            <li><a href="#重启">重启</a></li>
+            <li><a href="#关闭">关闭</a></li>
+          </ul>
+        </li>
+        <li><a href="#4查看防火墙规则">4、查看防火墙规则</a>
+          <ul>
+            <li><a href="#查询端口是否开放">查询端口是否开放</a></li>
+            <li><a href="#开放80端口">开放80端口</a></li>
+            <li><a href="#移除端口">移除端口</a></li>
+          </ul>
+        </li>
+        <li><a href="#5参数解释">5、参数解释</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -178,49 +186,61 @@ https://github.com/alex-shpak/hugo-book
 
 
   <p><p>from <a href="https://www.cnblogs.com/xxoome/p/7115614.html">https://www.cnblogs.com/xxoome/p/7115614.html</a></p>
-<p>1、查看firewall服务状态</p>
+<h2 id="1查看firewall服务状态">
+  1、查看firewall服务状态
+  <a class="anchor" href="#1%e6%9f%a5%e7%9c%8bfirewall%e6%9c%8d%e5%8a%a1%e7%8a%b6%e6%80%81">#</a>
+</h2>
 <p>systemctl status firewalld</p>
-<p>2、查看firewall的状态</p>
+<h2 id="2查看firewall的状态">
+  2、查看firewall的状态
+  <a class="anchor" href="#2%e6%9f%a5%e7%9c%8bfirewall%e7%9a%84%e7%8a%b6%e6%80%81">#</a>
+</h2>
 <p>firewall-cmd &ndash;state</p>
-<p>3、开启、重启、关闭、firewalld.service服务</p>
-<h1 id="开启">
+<h2 id="3开启重启关闭firewalldservice服务">
+  3、开启、重启、关闭、firewalld.service服务
+  <a class="anchor" href="#3%e5%bc%80%e5%90%af%e9%87%8d%e5%90%af%e5%85%b3%e9%97%adfirewalldservice%e6%9c%8d%e5%8a%a1">#</a>
+</h2>
+<h3 id="开启">
   开启
   <a class="anchor" href="#%e5%bc%80%e5%90%af">#</a>
-</h1>
+</h3>
 <p>service firewalld start</p>
-<h1 id="重启">
+<h3 id="重启">
   重启
   <a class="anchor" href="#%e9%87%8d%e5%90%af">#</a>
-</h1>
+</h3>
 <p>service firewalld restart</p>
-<h1 id="关闭">
+<h3 id="关闭">
   关闭
   <a class="anchor" href="#%e5%85%b3%e9%97%ad">#</a>
-</h1>
-<p>service firewalld stop
-4、查看防火墙规则</p>
+</h3>
+<p>service firewalld stop</p>
+<h2 id="4查看防火墙规则">
+  4、查看防火墙规则
+  <a class="anchor" href="#4%e6%9f%a5%e7%9c%8b%e9%98%b2%e7%81%ab%e5%a2%99%e8%a7%84%e5%88%99">#</a>
+</h2>
 <p>firewall-cmd &ndash;list-all</p>
-<h1 id="查询端口是否开放">
+<h3 id="查询端口是否开放">
   查询端口是否开放
   <a class="anchor" href="#%e6%9f%a5%e8%af%a2%e7%ab%af%e5%8f%a3%e6%98%af%e5%90%a6%e5%bc%80%e6%94%be">#</a>
-</h1>
+</h3>
 <p>firewall-cmd &ndash;query-port=8080/tcp</p>
-<h1 id="开放80端口">
+<h3 id="开放80端口">
   开放80端口
   <a class="anchor" href="#%e5%bc%80%e6%94%be80%e7%ab%af%e5%8f%a3">#</a>
-</h1>
+</h3>
 <p>firewall-cmd &ndash;permanent &ndash;add-port=80/tcp</p>
-<h1 id="移除端口">
+<h3 id="移除端口">
   移除端口
   <a class="anchor" href="#%e7%a7%bb%e9%99%a4%e7%ab%af%e5%8f%a3">#</a>
-</h1>
+</h3>
 <p>firewall-cmd &ndash;permanent &ndash;remove-port=8080/tcp</p>
 <p>#重启防火墙(修改配置后要重启防火墙)
 firewall-cmd &ndash;reload</p>
-<h1 id="参数解释">
-  参数解释
-  <a class="anchor" href="#%e5%8f%82%e6%95%b0%e8%a7%a3%e9%87%8a">#</a>
-</h1>
+<h2 id="5参数解释">
+  5、参数解释
+  <a class="anchor" href="#5%e5%8f%82%e6%95%b0%e8%a7%a3%e9%87%8a">#</a>
+</h2>
 <p>1、firwall-cmd：是Linux提供的操作firewall的一个工具；
 2、&ndash;permanent：表示设置为持久；
 3、&ndash;add-port：标识添加的端口；</p>
@@ -272,13 +292,27 @@ firewall-cmd &ndash;reload</p>
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#开启">开启</a></li>
-    <li><a href="#重启">重启</a></li>
-    <li><a href="#关闭">关闭</a></li>
-    <li><a href="#查询端口是否开放">查询端口是否开放</a></li>
-    <li><a href="#开放80端口">开放80端口</a></li>
-    <li><a href="#移除端口">移除端口</a></li>
-    <li><a href="#参数解释">参数解释</a></li>
+    <li>
+      <ul>
+        <li><a href="#1查看firewall服务状态">1、查看firewall服务状态</a></li>
+        <li><a href="#2查看firewall的状态">2、查看firewall的状态</a></li>
+        <li><a href="#3开启重启关闭firewalldservice服务">3、开启、重启、关闭、firewalld.service服务</a>
+          <ul>
+            <li><a href="#开启">开启</a></li>
+            <li><a href="#重启">重启</a></li>
+            <li><a href="#关闭">关闭</a></li>
+          </ul>
+        </li>
+        <li><a href="#4查看防火墙规则">4、查看防火墙规则</a>
+          <ul>
+            <li><a href="#查询端口是否开放">查询端口是否开放</a></li>
+            <li><a href="#开放80端口">开放80端口</a></li>
+            <li><a href="#移除端口">移除端口</a></li>
+          </ul>
+        </li>
+        <li><a href="#5参数解释">5、参数解释</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
