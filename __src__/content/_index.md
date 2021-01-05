@@ -5,12 +5,10 @@ draft: fase
 ---
 
 life is struggle
-```
-
-<----
 
 
+[Blog](https://page.i23.ink/posts/)
 
-```
+
 
 
