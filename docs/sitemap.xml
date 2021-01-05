@@ -108,6 +108,16 @@
   </url>
   
   <url>
+    <loc>https://starwild.github.io/tags/golang/</loc>
+    <lastmod>2019-07-04T01:06:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://starwild.github.io/tags/</loc>
+    <lastmod>2019-07-04T01:06:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://starwild.github.io/posts/%E9%98%B2%E6%AD%A2SSH%E6%9A%B4%E5%8A%9B%E6%94%BB%E5%87%BB/</loc>
     <lastmod>2018-03-19T23:50:49+08:00</lastmod>
   </url>
@@ -194,11 +204,6 @@
   
   <url>
     <loc>https://starwild.github.io/tags/database/</loc>
-    <lastmod>2017-10-19T19:25:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://starwild.github.io/tags/</loc>
     <lastmod>2017-10-19T19:25:00+08:00</lastmod>
   </url>
   
