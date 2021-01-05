@@ -1,16 +1,17 @@
 #!/bin/sh
 BASE="$(dirname "$0")"
+HUGO=$BASE/bin/hugo
 pushd $BASE
 
 ARGS="  -D \
 		--config config.yaml"
 
 build() {
-	hugo $ARGS -d ../docs
+	$HUGO $ARGS -d ../docs
 }
 
 server() {
-	hugo server $ARGS -p 58005 --bind 172.27.0.15 --baseURL localhost --disableFastRender
+	$HUGO server $ARGS -p 58005 --bind 172.27.0.15 --baseURL localhost --disableFastRender
 }
 
 commit() {
