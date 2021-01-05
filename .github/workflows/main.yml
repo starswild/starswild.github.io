@@ -38,6 +38,6 @@ jobs:
         
       # push change to main
       - name: Push changes
-        uses: ad-m/github-push-action@main
+        uses: starwild/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
