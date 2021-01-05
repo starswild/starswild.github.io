@@ -1,5 +1,6 @@
 #!/bin/sh
-pushd "$(dirname "$0")"
+BASE="$(dirname "$0")"
+pushd $BASE
 
 ARGS="  -D \
 		--config config.yaml"
@@ -12,13 +13,24 @@ server() {
 	hugo server $ARGS -p 58005 --bind 172.27.0.15 --baseURL localhost --disableFastRender
 }
 
-while getopts ':bs' P; do 
+commit() {
+	pushd $BASE/..
+	git add .
+	git commit -m "$(date +%Y-%m-%d\ %H:%M:%S)"
+	git push origin main
+}
+
+
+while getopts ':bsc' P; do 
 	case $P in
 		b)
 			build
 		;;
 		s)
 			server
+		;;
+		c)
+			commit
 		;;
 		?)
 			echo "usage: `basename $0` [options]"
