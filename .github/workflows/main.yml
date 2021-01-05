@@ -34,10 +34,10 @@ jobs:
           git config --global user.email z@i23.ink
           git config --global user.name z
           git add .
-          git commit -m "update" -a
+          git commit -m "action build $(date +%Y-%m-%d\ %H:%M:%S)" -a
         
       # push change to main
       - name: Push changes
-        uses: starwild/github-push-action@master
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
