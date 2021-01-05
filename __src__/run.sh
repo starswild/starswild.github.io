@@ -1,6 +1,9 @@
 #!/bin/sh
 BASE="$(dirname "$0")"
 HUGO=$BASE/bin/hugo
+
+chmod +x $HUGO
+
 pushd $BASE
 
 ARGS="  -D \
