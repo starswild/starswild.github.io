@@ -8,8 +8,12 @@ tags:
     from https://www.cnblogs.com/xxoome/p/7115614.html
 
 ## 查看状态
+```bash
+# 查看服务状态
 systemctl status firewalld
+# 查看防火墙本身状态
 firewall-cmd --state
+```
  
 
 ## 开启、重启、关闭
