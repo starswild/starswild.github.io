@@ -5,7 +5,7 @@ draft: false
 tags: 
     - linux
 ---
-from https://www.cnblogs.com/xxoome/p/7115614.html
+    from https://www.cnblogs.com/xxoome/p/7115614.html
 
 ## 查看状态
 systemctl status firewalld
@@ -35,7 +35,7 @@ firewall-cmd --state
     `firewall-cmd --permanent --remove-port=8080/tcp`
 
 
-## 俘虏
+## 附录
 1. firewall-cmd 是Linux提供的操作firewall的一个工具
 1. firewall-cmd 底层使用iptable或者nftable
 1. firewall-cmd 是centos默认的防火墙管理工具
