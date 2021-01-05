@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [ build ]
+  # pull_request:
+    # branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,10 +27,17 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: build_and_push
-        run: bash $GITHUB_WORKSPACE/__src__/run.sh -b -c
+        run: cd $GITHUB_WORKSPACE && bash __src__/run.sh -b
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: commit
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          git config --global user.email z@i23.ink
+          git config --global user.name z
+          git add .
+          git commit -m "update" -a
+        
+      # push change to main
+      - name: Push changes
+        uses: ad-m/github-push-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
