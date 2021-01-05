@@ -13,27 +13,28 @@ firewall-cmd --state
  
 
 ## 开启、重启、关闭
-
-开启
-    service firewalld start
-重启
-    service firewalld restart
-关闭
-    service firewalld stop
-重载
-    firewall-cmd --reload
+```bash
+# 开启
+service firewalld start
+# 重启
+service firewalld restart
+# 关闭
+service firewalld stop
+# 重载
+firewall-cmd --reload
+```
 
 ## 规则变更
-
-查看防火墙规则
-    `firewall-cmd --list-all`
-查询端口是否开放
-    `firewall-cmd --query-port=8080/tcp`
-开放80端口
-    `firewall-cmd --permanent --add-port=80/tcp`
-移除端口
-    `firewall-cmd --permanent --remove-port=8080/tcp`
-
+```bash
+# 查看防火墙规则
+firewall-cmd --list-all
+# 查询端口是否开放
+firewall-cmd --query-port=8080/tcp
+# 开放80端口
+firewall-cmd --permanent --add-port=80/tcp
+# 移除端口
+firewall-cmd --permanent --remove-port=8080/tcp
+```
 
 ## 附录
 1. firewall-cmd 是Linux提供的操作firewall的一个工具
