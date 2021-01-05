@@ -4,7 +4,7 @@ HUGO=$BASE/bin/hugo
 
 chmod +x $HUGO
 
-pushd $BASE
+cd $BASE
 
 ARGS="  -D \
 		--config config.yaml"
@@ -42,5 +42,3 @@ while getopts ':bsc' P; do
 done
 
 shift $(($OPTIND - 1))
-
-popd
