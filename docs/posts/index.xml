@@ -51,28 +51,6 @@ Lsyncd搭建同步镜像-用Lsyncd实现本地和远程服务器之间实时同�
     </item>
     
     <item>
-      <title>gb28181_rest docker </title>
-      <link>https://starwild.github.io/posts/gb28181_rest-docker-/</link>
-      <pubDate>Sun, 25 Aug 2019 11:24:00 +0800</pubDate>
-      
-      <guid>https://starwild.github.io/posts/gb28181_rest-docker-/</guid>
-      <description>启动mysql服务 sudo docker run -p 3306:3306 &amp;ndash;name gb28181_mysql -v /home/z/docker/etc/mysql/my.cnf:/etc/mysql/my.cnf -d mariadb
-sudo docker run -d -p 3306:3306 -v /home/z/docker/mysql/data:/var/lib/mysql -v /home/z/docker/etc/mysql/my.cnf:/etc/mysql/my.cnf -e MYSQL_PASS=&amp;ldquo;root&amp;rdquo; tutum/mysql
-docker run
-&amp;ndash;detach
-&amp;ndash;publish=33006:3306
-&amp;ndash;restart=always
-&amp;ndash;privileged=true
-&amp;ndash;env=MYSQL_ROOT_PASSWORD=root
-&amp;ndash;name=mysql
-tutum/mysql
-&amp;ndash;character-set-server=utf8
-&amp;ndash;collation-server=utf8_general_ci
-&amp;ndash;default-authentication-plugin=mysql_native_password &amp;ndash;lower_case_table_names=1 ———————————————— 版权声明：本文为CSDN博主「fengzi-fengzi」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/qq_31864653/article/details/90769142
-/usr/sbin/mysqld &amp;ndash;basedir=/usr &amp;ndash;datadir=/var/lib/mysql &amp;ndash;plugin-dir=/usr/lib/mysql/plugin &amp;ndash;user=mysql &amp;ndash;log-error=/var/log/mysql/error.log &amp;ndash;pid-file=/var/run/mysqld/mysqld.pid &amp;ndash;socket=/var/run/mysqld/mysqld.sock &amp;ndash;port=3306 ######################################################################################### mkdir -p /root/docker/etc/mysql sudo docker run &amp;ndash;name gb28181_mysql -d -p 33006:3306 &amp;ndash;privileged=true -v /home/docker/root/etc/mysql:/etc/mysql -v /home/docker/root/var/lib/mysql:/var/lib/mysql -e MYSQL_PASS=&amp;ldquo;root&amp;rdquo; tutum/mysql docker exec -ti 7b3b /bin/bash</description>
-    </item>
-    
-    <item>
       <title>yum manual</title>
       <link>https://starwild.github.io/posts/yum-manual/</link>
       <pubDate>Sun, 25 Aug 2019 11:03:00 +0800</pubDate>

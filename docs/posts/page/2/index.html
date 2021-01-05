@@ -10,12 +10,12 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://starwild.github.io/posts/" />
-<meta property="og:updated_time" content="2021-01-05T20:23:03+08:00" />
+<meta property="og:updated_time" content="2021-01-05T17:30:51+00:00" />
 <title>Posts | starwild</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
-<script defer src="/en.search.min.f96d65d7f947d7f48757c37b3afc1cd068a1649cecfef762b549348b206a4a27.js" integrity="sha256-&#43;W1l1/lH1/SHV8N7Ovwc0GihZJzs/vditUk0iyBqSic="></script>
+<script defer src="/en.search.min.35ece3091617bcd45bce7b16b9304f12b2369671f27157a5259c39b6b5f026a9.js" integrity="sha256-NezjCRYXvNRbznsWuTBPErI2lnHycVelJZw5trXwJqk="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <link rel="alternate" type="application/rss+xml" href="https://starwild.github.io/posts/index.xml" title="starwild" />
@@ -162,27 +162,6 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/bash-shell-manual/">bash shell manual</a>
-    </h2>
-    
-  <h5>August 21, 2019</h5>
-
-
-
-  
-
-  
-
-
-    <p>删除  清空屏幕, &lt;ctrl+e&gt; 光标跳至命令结尾 &lt;ctrl+a&gt; 光标跳至命令开始 &lt;ctrl+b&gt; 光标左移一个字母 &lt;ctrl+f&gt; 光标右移一个字母 &lt;ctrl+t&gt; 交换光标位置前的两个字符 &lt;ctrl+h&gt; 删除光标前一个字符 &lt;ctrl+w&gt; 移除光标前的一个单词 &lt;ctrl+u&gt; 清除光标前至行首间的所有内容 &lt;ctrl+k&gt; 清除光标后至行尾的内容 &lt;ctrl+y&gt; 粘贴或者恢复上次的删除 &lt;ctrl+p&gt; 前一个命令 &lt;ctrl+n&gt; 后一个命令 &lt;ctrl+r&gt; 历史命令搜索  中断当前的命令并返回Shell  中断当前的通信或从文件中退出 &lt;ctrl+z&gt; 暂停当前进程bg后台运行,fg转到前台
-while [ 1 ]; do sleep 1; ll; done # 无限循环 while [ $i -lt 10 ]; do echo $i;let &ldquo;i=$i+1&rdquo;; done # 有限循环 cat raw.txt | while read line; do echo $line; done # readline until [ 1 = 0 ]; do sleep 1; ll; done # 无限循环 for i in /media/m* ; do ls -l $i; done # 与目录资源结合 if [ 1 -eq 1 ]; then ll ;fi # test常用判断 if [[ 0 -eq 0 &amp;&amp; 1 -eq 0 ]]; then ll ;fi if [ 0 -eq 0 -a 1 -eq 0 ]; then ll ;fi if [ !
-        <a href="/posts/bash-shell-manual/">...</a>
-      
-    </p>
-  </article>
   
   <article class="markdown book-post">
     <h2>
@@ -378,6 +357,24 @@ code example #  import network wifi = network.WLAN(network.STA_IF) wifi.active(T
     </p>
   </article>
   
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/SSH%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%E7%AC%94%E8%AE%B0/">SSH相关操作笔记</a>
+    </h2>
+    
+  <h5>March 16, 2018</h5>
+
+
+
+  
+
+  
+
+
+    <p> ssh登录 ssh root@localhost ssh -l root -p 22 localhost ssh免密码登录 ssh-keygen ssh-copy-id -i ~/.ssh/id_rsa.pub root@localhost 复制文件 scp root@localhsot:/root/hello.zip ~/hello.zip  
+    </p>
+  </article>
+  
 
   
 <ul class="pagination">
@@ -400,13 +397,10 @@ code example #  import network wifi = network.WLAN(network.STA_IF) wifi.active(T
     <a class="page-link" href="/posts/page/4/">4</a>
   </li>
   <li class="page-item">
-    <a class="page-link" href="/posts/page/5/">5</a>
-  </li>
-  <li class="page-item">
     <a href="/posts/page/3/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
   </li>
   <li class="page-item">
-    <a href="/posts/page/5/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    <a href="/posts/page/4/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
   </li>
 </ul>
 
