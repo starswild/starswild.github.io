@@ -1,5 +1,5 @@
 #!/bin/sh
-BASE="$(dirname "$0")"
+BASE="$(cd "$(dirname "$0")" && pwd)"
 HUGO=$BASE/bin/hugo
 
 chmod +x $HUGO
