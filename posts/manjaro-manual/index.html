@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.80.0-DEV" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="修改软件源 sudo pacman-mirrors -i -c China -m rank sudo pacman -Syyu 打开pamac-manager，开启aur
+安装中文字体，否则有些程序会乱码（比如wps，vlc） pacman -S wqy-zenhei ttf-fireflysung
+安装输入法 sudo pacman -S fcitx-im #默认全部安装 sudo pacman -S fcitx-configtool sudo pacman -S fcitx-sogoupinyin sudo nano ~/.xprofile
+export GTK_IM_MODULE=fcitxexport QT_IM_MODULE=fcitxexport XMODIFIERS=&quot;@im=fcitx&quot; 用户目录改英文 export LANG=en_US xdg-user-dirs-gtk-update export LANG=zh_CN
+oh-my-zsh chsh -s /bin/zsh sh -c &ldquo;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+vim ~/.zshrc plugins=( git zsh-syntax-highlighting zsh-autosuggestions )">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="manjaro- manual" />
+<meta property="og:description" content="修改软件源 sudo pacman-mirrors -i -c China -m rank sudo pacman -Syyu 打开pamac-manager，开启aur
+安装中文字体，否则有些程序会乱码（比如wps，vlc） pacman -S wqy-zenhei ttf-fireflysung
+安装输入法 sudo pacman -S fcitx-im #默认全部安装 sudo pacman -S fcitx-configtool sudo pacman -S fcitx-sogoupinyin sudo nano ~/.xprofile
+export GTK_IM_MODULE=fcitxexport QT_IM_MODULE=fcitxexport XMODIFIERS=&quot;@im=fcitx&quot; 用户目录改英文 export LANG=en_US xdg-user-dirs-gtk-update export LANG=zh_CN
+oh-my-zsh chsh -s /bin/zsh sh -c &ldquo;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+vim ~/.zshrc plugins=( git zsh-syntax-highlighting zsh-autosuggestions )" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://starwild.github.io/posts/manjaro-manual/" />
+<meta property="article:published_time" content="2019-07-20T10:12:00+08:00" />
+<meta property="article:modified_time" content="2019-07-20T10:12:00+08:00" />
+<title>manjaro- manual | starwild</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.07a16f0aaa89d1d0a229bf1b7ce1f0c5e901525238b28609fced2a01f90218e3.js" integrity="sha256-B6FvCqqJ0dCiKb8bfOHwxekBUlI4soYJ/O0qAfkCGOM="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>starwild</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- - [Docs](/docs/) -->
+<ul>
+<li>
+  <a href="/posts/">Blog</a></li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/starwild" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>manjaro- manual</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents"></nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/manjaro-manual/">manjaro- manual</a>
+  </h1>
+  
+  <h5>July 20, 2019</h5>
+
+
+
+  
+
+  
+
+
+  <p><p>修改软件源
+sudo pacman-mirrors -i -c China -m rank
+sudo pacman -Syyu
+打开pamac-manager，开启aur</p>
+<p>安装中文字体，否则有些程序会乱码（比如wps，vlc）
+pacman -S wqy-zenhei ttf-fireflysung</p>
+<p>安装输入法
+sudo pacman -S fcitx-im #默认全部安装
+sudo pacman -S fcitx-configtool
+sudo pacman -S fcitx-sogoupinyin
+sudo nano ~/.xprofile</p>
+<pre><code>export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=&quot;@im=fcitx&quot;
+</code></pre>
+<p>用户目录改英文
+export LANG=en_US
+xdg-user-dirs-gtk-update
+export LANG=zh_CN</p>
+<p>oh-my-zsh
+chsh -s /bin/zsh
+sh -c &ldquo;$(curl -fsSL <a href="https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)%22">https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</a></p>
+<p>cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+git clone <a href="https://github.com/zsh-users/zsh-autosuggestions">https://github.com/zsh-users/zsh-autosuggestions</a> ~/.oh-my-zsh/plugins/zsh-autosuggestions
+git clone <a href="https://github.com/zsh-users/zsh-syntax-highlighting.git">https://github.com/zsh-users/zsh-syntax-highlighting.git</a> ~/.oh-my-zsh/plugins/zsh-syntax-highlighting</p>
+<p>vim ~/.zshrc
+plugins=(
+git
+zsh-syntax-highlighting
+zsh-autosuggestions
+)</p>
+<p>source ~/.zshrc</p>
+<p>修改字体优先级
+/etc/fonts/conf.d/65-nonlatin.conf</p>
+<p>清除Gnome占用IDEA的快捷键 Ctrl + Alt + Left
+gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-left
+['<Control><Alt>Left']</p>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/starwild/starwild.github.io/edit/main/__src__/content/posts/manjaro-%20manual.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents"></nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

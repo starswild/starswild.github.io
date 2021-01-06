@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.80.0-DEV" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="最近在微信看到一篇文章提到了面试常问的知识点。尝试着去回答这些问题，发现好多都回答不上来，或者讲不清楚。以后抽些时间把不清楚的问题的答案都补全。
+ 面试常问的知识点？ #  1）集合相关问题（必问）： #  HashMap、LinkedHashMap、ConcurrentHashMap、ArrayList、LinkedList的底层实现。 #  HashMap的底层实现 #  Java8以前，HashMap由数组存储节点，节点与节点之间构成链表。从Java8开始，HashMap的key超过8个，会被转换为红黑树结构。
+链表结构的HashMap #  Entry被存储在table数组中。HashMap默认构造方法会构造空间为16，负载系数为0.75的table数组。key通过散列计算直接获得table上存储Entry的下标地址hashcode。table中存储的Entry数量超过数组空间乘以负载系数时，数组就会进行resize，数组长度翻倍。由于resize需要重新计算key的hashcode，比较耗费性能，如果能预估key的数量，可以在构造时指定初始空间大小。如果存着key的hashcode相同时，第一个加入key的next引用指向第二个加入的key，以此类推形成链表。在JDK8或以上里，如果一个hashcode对应的链表节点超过8个时，链表会被重新整理为红黑树。如果一个hashcode对应的链表是红黑树，而节点又少于6个时，红黑树又会被重新整理为链表。
+/** * The table, resized as necessary. Length MUST Always be a power of two. */ transient Entry[] table; static class Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; { final K key; V value; Entry&lt;K,V&gt; next; final int hash; …… } 红黑树结构的HashMap #  HashMap和Hashtable的区别。 #  ArrayList、LinkedList、Vector的区别。 #  HashMap和ConcurrentHashMap的区别。 #  HashMap和LinkedHashMap的区别。 #  HashMap是线程安全的吗。 #  ConcurrentHashMap是怎么实现线程安全的。 #  2）线程相关问题（必问）： #  创建线程的3种方式。 什么是线程安全。 Runnable接口和Callable接口的区别。 wait方法和sleep方法的区别。 synchronized、Lock、ReentrantLock、ReadWriteLock。 介绍下CAS(无锁技术)。 什么是ThreadLocal。 创建线程池的4种方式。 ThreadPoolExecutor的内部工作原理。 分布式环境下，怎么保证线程安全。 想要朝这方面发展或者真心有兴趣的。可以找我要一些基础的学习视频，Q号码：3300863615，这个是免费的，希望同学找我要的时候不要有理所应当的态度，毕竟都是我的心血，希望你是真的有一颗想要学好java的心，我也会尽所能的去帮助你成为一名优秀的程序员。">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="容易遗忘的知识点" />
+<meta property="og:description" content="最近在微信看到一篇文章提到了面试常问的知识点。尝试着去回答这些问题，发现好多都回答不上来，或者讲不清楚。以后抽些时间把不清楚的问题的答案都补全。
+ 面试常问的知识点？ #  1）集合相关问题（必问）： #  HashMap、LinkedHashMap、ConcurrentHashMap、ArrayList、LinkedList的底层实现。 #  HashMap的底层实现 #  Java8以前，HashMap由数组存储节点，节点与节点之间构成链表。从Java8开始，HashMap的key超过8个，会被转换为红黑树结构。
+链表结构的HashMap #  Entry被存储在table数组中。HashMap默认构造方法会构造空间为16，负载系数为0.75的table数组。key通过散列计算直接获得table上存储Entry的下标地址hashcode。table中存储的Entry数量超过数组空间乘以负载系数时，数组就会进行resize，数组长度翻倍。由于resize需要重新计算key的hashcode，比较耗费性能，如果能预估key的数量，可以在构造时指定初始空间大小。如果存着key的hashcode相同时，第一个加入key的next引用指向第二个加入的key，以此类推形成链表。在JDK8或以上里，如果一个hashcode对应的链表节点超过8个时，链表会被重新整理为红黑树。如果一个hashcode对应的链表是红黑树，而节点又少于6个时，红黑树又会被重新整理为链表。
+/** * The table, resized as necessary. Length MUST Always be a power of two. */ transient Entry[] table; static class Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; { final K key; V value; Entry&lt;K,V&gt; next; final int hash; …… } 红黑树结构的HashMap #  HashMap和Hashtable的区别。 #  ArrayList、LinkedList、Vector的区别。 #  HashMap和ConcurrentHashMap的区别。 #  HashMap和LinkedHashMap的区别。 #  HashMap是线程安全的吗。 #  ConcurrentHashMap是怎么实现线程安全的。 #  2）线程相关问题（必问）： #  创建线程的3种方式。 什么是线程安全。 Runnable接口和Callable接口的区别。 wait方法和sleep方法的区别。 synchronized、Lock、ReentrantLock、ReadWriteLock。 介绍下CAS(无锁技术)。 什么是ThreadLocal。 创建线程池的4种方式。 ThreadPoolExecutor的内部工作原理。 分布式环境下，怎么保证线程安全。 想要朝这方面发展或者真心有兴趣的。可以找我要一些基础的学习视频，Q号码：3300863615，这个是免费的，希望同学找我要的时候不要有理所应当的态度，毕竟都是我的心血，希望你是真的有一颗想要学好java的心，我也会尽所能的去帮助你成为一名优秀的程序员。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://starwild.github.io/posts/%E5%AE%B9%E6%98%93%E9%81%97%E5%BF%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/" />
+<meta property="article:published_time" content="2017-11-12T10:42:00+08:00" />
+<meta property="article:modified_time" content="2017-11-12T10:42:00+08:00" />
+<title>容易遗忘的知识点 | starwild</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.07a16f0aaa89d1d0a229bf1b7ce1f0c5e901525238b28609fced2a01f90218e3.js" integrity="sha256-B6FvCqqJ0dCiKb8bfOHwxekBUlI4soYJ/O0qAfkCGOM="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>starwild</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- - [Docs](/docs/) -->
+<ul>
+<li>
+  <a href="/posts/">Blog</a></li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/starwild" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>容易遗忘的知识点</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#面试常问的知识点">面试常问的知识点？</a>
+      <ul>
+        <li><a href="#1集合相关问题必问">1）集合相关问题（必问）：</a>
+          <ul>
+            <li><a href="#hashmaplinkedhashmapconcurrenthashmaparraylistlinkedlist的底层实现">HashMap、LinkedHashMap、ConcurrentHashMap、ArrayList、LinkedList的底层实现。</a></li>
+            <li><a href="#hashmap和hashtable的区别">HashMap和Hashtable的区别。</a></li>
+            <li><a href="#arraylistlinkedlistvector的区别">ArrayList、LinkedList、Vector的区别。</a></li>
+            <li><a href="#hashmap和concurrenthashmap的区别">HashMap和ConcurrentHashMap的区别。</a></li>
+            <li><a href="#hashmap和linkedhashmap的区别">HashMap和LinkedHashMap的区别。</a></li>
+            <li><a href="#hashmap是线程安全的吗">HashMap是线程安全的吗。</a></li>
+            <li><a href="#concurrenthashmap是怎么实现线程安全的">ConcurrentHashMap是怎么实现线程安全的。</a></li>
+          </ul>
+        </li>
+        <li><a href="#2线程相关问题必问">2）线程相关问题（必问）：</a></li>
+        <li><a href="#3jvm相关问题">3）JVM相关问题：</a></li>
+        <li><a href="#4设计模式相关问题必问">4）设计模式相关问题（必问）：</a></li>
+        <li><a href="#5数据库相关问题针对mysql必问">5）数据库相关问题，针对Mysql（必问）：</a></li>
+        <li><a href="#6框架相关问题">6）框架相关问题：</a></li>
+        <li><a href="#7其他遇到问题">7）其他遇到问题：</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/%E5%AE%B9%E6%98%93%E9%81%97%E5%BF%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/">容易遗忘的知识点</a>
+  </h1>
+  
+  <h5>November 12, 2017</h5>
+
+
+
+  
+
+  
+
+
+  <p><blockquote>
+<p>最近在微信看到一篇文章提到了面试常问的知识点。尝试着去回答这些问题，发现好多都回答不上来，或者讲不清楚。以后抽些时间把不清楚的问题的答案都补全。</p>
+</blockquote>
+<h1 id="面试常问的知识点">
+  面试常问的知识点？
+  <a class="anchor" href="#%e9%9d%a2%e8%af%95%e5%b8%b8%e9%97%ae%e7%9a%84%e7%9f%a5%e8%af%86%e7%82%b9">#</a>
+</h1>
+<h2 id="1集合相关问题必问">
+  1）集合相关问题（必问）：
+  <a class="anchor" href="#1%e9%9b%86%e5%90%88%e7%9b%b8%e5%85%b3%e9%97%ae%e9%a2%98%e5%bf%85%e9%97%ae">#</a>
+</h2>
+<h3 id="hashmaplinkedhashmapconcurrenthashmaparraylistlinkedlist的底层实现">
+  HashMap、LinkedHashMap、ConcurrentHashMap、ArrayList、LinkedList的底层实现。
+  <a class="anchor" href="#hashmaplinkedhashmapconcurrenthashmaparraylistlinkedlist%e7%9a%84%e5%ba%95%e5%b1%82%e5%ae%9e%e7%8e%b0">#</a>
+</h3>
+<h4 id="hashmap的底层实现">
+  HashMap的底层实现
+  <a class="anchor" href="#hashmap%e7%9a%84%e5%ba%95%e5%b1%82%e5%ae%9e%e7%8e%b0">#</a>
+</h4>
+<p>Java8以前，HashMap由数组存储节点，节点与节点之间构成链表。从Java8开始，HashMap的key超过8个，会被转换为红黑树结构。</p>
+<h5 id="链表结构的hashmap">
+  链表结构的HashMap
+  <a class="anchor" href="#%e9%93%be%e8%a1%a8%e7%bb%93%e6%9e%84%e7%9a%84hashmap">#</a>
+</h5>
+<p>Entry被存储在table数组中。HashMap默认构造方法会构造空间为16，负载系数为0.75的table数组。key通过散列计算直接获得table上存储Entry的下标地址hashcode。table中存储的Entry数量超过数组空间乘以负载系数时，数组就会进行resize，数组长度翻倍。由于resize需要重新计算key的hashcode，比较耗费性能，如果能预估key的数量，可以在构造时指定初始空间大小。如果存着key的hashcode相同时，第一个加入key的next引用指向第二个加入的key，以此类推形成链表。在JDK8或以上里，如果一个hashcode对应的链表节点超过8个时，链表会被重新整理为红黑树。如果一个hashcode对应的链表是红黑树，而节点又少于6个时，红黑树又会被重新整理为链表。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">/**
+</span><span style="color:#75715e">* The table, resized as necessary. Length MUST Always be a power of two.
+</span><span style="color:#75715e"> */</span>
+<span style="color:#66d9ef">transient</span> Entry<span style="color:#f92672">[]</span> table<span style="color:#f92672">;</span>
+ 
+<span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Entry</span><span style="color:#f92672">&lt;</span>K<span style="color:#f92672">,</span>V<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">implements</span> Map<span style="color:#f92672">.</span><span style="color:#a6e22e">Entry</span><span style="color:#f92672">&lt;</span>K<span style="color:#f92672">,</span>V<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">final</span> K key<span style="color:#f92672">;</span>
+    V value<span style="color:#f92672">;</span>
+    Entry<span style="color:#f92672">&lt;</span>K<span style="color:#f92672">,</span>V<span style="color:#f92672">&gt;</span> next<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> hash<span style="color:#f92672">;</span>
+    <span style="color:#960050;background-color:#1e0010">……</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h5 id="红黑树结构的hashmap">
+  红黑树结构的HashMap
+  <a class="anchor" href="#%e7%ba%a2%e9%bb%91%e6%a0%91%e7%bb%93%e6%9e%84%e7%9a%84hashmap">#</a>
+</h5>
+<h3 id="hashmap和hashtable的区别">
+  HashMap和Hashtable的区别。
+  <a class="anchor" href="#hashmap%e5%92%8chashtable%e7%9a%84%e5%8c%ba%e5%88%ab">#</a>
+</h3>
+<h3 id="arraylistlinkedlistvector的区别">
+  ArrayList、LinkedList、Vector的区别。
+  <a class="anchor" href="#arraylistlinkedlistvector%e7%9a%84%e5%8c%ba%e5%88%ab">#</a>
+</h3>
+<h3 id="hashmap和concurrenthashmap的区别">
+  HashMap和ConcurrentHashMap的区别。
+  <a class="anchor" href="#hashmap%e5%92%8cconcurrenthashmap%e7%9a%84%e5%8c%ba%e5%88%ab">#</a>
+</h3>
+<h3 id="hashmap和linkedhashmap的区别">
+  HashMap和LinkedHashMap的区别。
+  <a class="anchor" href="#hashmap%e5%92%8clinkedhashmap%e7%9a%84%e5%8c%ba%e5%88%ab">#</a>
+</h3>
+<h3 id="hashmap是线程安全的吗">
+  HashMap是线程安全的吗。
+  <a class="anchor" href="#hashmap%e6%98%af%e7%ba%bf%e7%a8%8b%e5%ae%89%e5%85%a8%e7%9a%84%e5%90%97">#</a>
+</h3>
+<h3 id="concurrenthashmap是怎么实现线程安全的">
+  ConcurrentHashMap是怎么实现线程安全的。
+  <a class="anchor" href="#concurrenthashmap%e6%98%af%e6%80%8e%e4%b9%88%e5%ae%9e%e7%8e%b0%e7%ba%bf%e7%a8%8b%e5%ae%89%e5%85%a8%e7%9a%84">#</a>
+</h3>
+<h2 id="2线程相关问题必问">
+  2）线程相关问题（必问）：
+  <a class="anchor" href="#2%e7%ba%bf%e7%a8%8b%e7%9b%b8%e5%85%b3%e9%97%ae%e9%a2%98%e5%bf%85%e9%97%ae">#</a>
+</h2>
+<p>创建线程的3种方式。 
+什么是线程安全。 
+Runnable接口和Callable接口的区别。 
+wait方法和sleep方法的区别。 
+synchronized、Lock、ReentrantLock、ReadWriteLock。 
+介绍下CAS(无锁技术)。 
+什么是ThreadLocal。 
+创建线程池的4种方式。 
+ThreadPoolExecutor的内部工作原理。 
+分布式环境下，怎么保证线程安全。 
+想要朝这方面发展或者真心有兴趣的。可以找我要一些基础的学习视频，Q号码：3300863615，这个是免费的，希望同学找我要的时候不要有理所应当的态度，毕竟都是我的心血，希望你是真的有一颗想要学好java的心，我也会尽所能的去帮助你成为一名优秀的程序员。</p>
+<h2 id="3jvm相关问题">
+  3）JVM相关问题：
+  <a class="anchor" href="#3jvm%e7%9b%b8%e5%85%b3%e9%97%ae%e9%a2%98">#</a>
+</h2>
+<p>介绍下垃圾收集机制（在什么时候，对什么，做了什么）。 
+垃圾收集有哪些算法，各自的特点。 
+类加载的过程。 双亲委派模型。 
+有哪些类加载器。 
+能不能自己写一个类叫java.lang.String。</p>
+<h2 id="4设计模式相关问题必问">
+  4）设计模式相关问题（必问）：
+  <a class="anchor" href="#4%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e7%9b%b8%e5%85%b3%e9%97%ae%e9%a2%98%e5%bf%85%e9%97%ae">#</a>
+</h2>
+<p>先问你熟悉哪些设计模式，然后再具体问你某个设计模式具体实现和相关扩展问题。</p>
+<h2 id="5数据库相关问题针对mysql必问">
+  5）数据库相关问题，针对Mysql（必问）：
+  <a class="anchor" href="#5%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9b%b8%e5%85%b3%e9%97%ae%e9%a2%98%e9%92%88%e5%af%b9mysql%e5%bf%85%e9%97%ae">#</a>
+</h2>
+<p>给题目让你手写SQL。 
+有没有SQL优化经验。 
+Mysql索引的数据结构。 
+SQL怎么进行优化。 
+SQL关键字的执行顺序。 
+有哪几种索引。 
+什么时候该（不该）建索引。 
+Explain包含哪些列。 
+Explain的Type列有哪几种值。</p>
+<h2 id="6框架相关问题">
+  6）框架相关问题：
+  <a class="anchor" href="#6%e6%a1%86%e6%9e%b6%e7%9b%b8%e5%85%b3%e9%97%ae%e9%a2%98">#</a>
+</h2>
+<p>Hibernate和Mybatis的区别。 
+Spring MVC和Struts2的区别。 
+Spring用了哪些设计模式。 
+Spring中AOP主要用来做什么。 
+Spring注入bean的方式。 
+什么是IOC，什么是依赖注入。 
+Spring是单例还是多例，怎么修改。 
+Spring事务隔离级别和传播性。 
+介绍下Mybatis/Hibernate的缓存机制。 
+Mybatis的mapper文件中#和$的区别。 
+Mybatis的mapper文件中resultType和resultMap的区别。 
+Mybatis中DAO层接口没有写实现类，Mapper中的方法和DAO接口方法是怎么绑定到一起的，其内部是怎么实现的。</p>
+<h2 id="7其他遇到问题">
+  7）其他遇到问题：
+  <a class="anchor" href="#7%e5%85%b6%e4%bb%96%e9%81%87%e5%88%b0%e9%97%ae%e9%a2%98">#</a>
+</h2>
+<p>介绍下栈和队列。 
+IO和NIO的区别。 
+接口和抽象类的区别。 
+int和Integer的自动拆箱/装箱相关问题。 常量池相关问题。 
+==和equals的区别。 
+重载和重写的区别。 
+String和StringBuilder、StringBuffer的区别。 
+静态变量、实例变量、局部变量线程安全吗，为什么。 try、catch、finally都有return语句时执行哪个。 
+介绍下B树、二叉树。 
+ajax的4个字母分别是什么意思。 
+xml全称是什么。 
+分布式锁的实现。 
+分布式session存储解决方案。 
+常用的linux命令。</p>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/starwild/starwild.github.io/edit/main/__src__/content/posts/%e5%ae%b9%e6%98%93%e9%81%97%e5%bf%98%e7%9a%84%e7%9f%a5%e8%af%86%e7%82%b9.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#面试常问的知识点">面试常问的知识点？</a>
+      <ul>
+        <li><a href="#1集合相关问题必问">1）集合相关问题（必问）：</a>
+          <ul>
+            <li><a href="#hashmaplinkedhashmapconcurrenthashmaparraylistlinkedlist的底层实现">HashMap、LinkedHashMap、ConcurrentHashMap、ArrayList、LinkedList的底层实现。</a></li>
+            <li><a href="#hashmap和hashtable的区别">HashMap和Hashtable的区别。</a></li>
+            <li><a href="#arraylistlinkedlistvector的区别">ArrayList、LinkedList、Vector的区别。</a></li>
+            <li><a href="#hashmap和concurrenthashmap的区别">HashMap和ConcurrentHashMap的区别。</a></li>
+            <li><a href="#hashmap和linkedhashmap的区别">HashMap和LinkedHashMap的区别。</a></li>
+            <li><a href="#hashmap是线程安全的吗">HashMap是线程安全的吗。</a></li>
+            <li><a href="#concurrenthashmap是怎么实现线程安全的">ConcurrentHashMap是怎么实现线程安全的。</a></li>
+          </ul>
+        </li>
+        <li><a href="#2线程相关问题必问">2）线程相关问题（必问）：</a></li>
+        <li><a href="#3jvm相关问题">3）JVM相关问题：</a></li>
+        <li><a href="#4设计模式相关问题必问">4）设计模式相关问题（必问）：</a></li>
+        <li><a href="#5数据库相关问题针对mysql必问">5）数据库相关问题，针对Mysql（必问）：</a></li>
+        <li><a href="#6框架相关问题">6）框架相关问题：</a></li>
+        <li><a href="#7其他遇到问题">7）其他遇到问题：</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

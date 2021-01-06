@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.80.0-DEV" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Posts" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://starwild.github.io/posts/" />
+<meta property="og:updated_time" content="2020-05-10T20:50:00+08:00" />
+<title>Posts | starwild</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.07a16f0aaa89d1d0a229bf1b7ce1f0c5e901525238b28609fced2a01f90218e3.js" integrity="sha256-B6FvCqqJ0dCiKb8bfOHwxekBUlI4soYJ/O0qAfkCGOM="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<link rel="alternate" type="application/rss+xml" href="https://starwild.github.io/posts/index.xml" title="starwild" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>starwild</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- - [Docs](/docs/) -->
+<ul>
+<li>
+  <a href="/posts/"class=active>Blog</a></li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/starwild" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Posts</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav>
+  <ul>
+  
+    
+    <li class="book-section-flat">
+      <strong>Categories</strong>
+      <ul>
+      
+      </ul>
+    </li>
+    
+  
+    
+    <li class="book-section-flat">
+      <strong>Tags</strong>
+      <ul>
+      
+        <li class="flex justify-between">
+          <a href="/tags/linux/">linux</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/golang/">golang</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/database/">database</a>
+          <span>1</span>
+        </li>
+      
+      </ul>
+    </li>
+    
+  
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/Java%E8%BF%9B%E8%A1%8C%E8%AE%BF%E9%97%AEHttps/">Java进行访问Https</a>
+    </h2>
+    
+  <h5>October 27, 2017</h5>
+
+
+
+  
+
+  
+
+
+    <p>导入证书 keytool -import -file test.crt -keystore ca_certs  信任所有证书 HttpsURLConnection.setDefaultHostnameVerifier(new HostnameVerifier() { @Override public boolean verify(String s, SSLSession sslSession) { return true; } }); try { SSLContext sslc = SSLContext.getInstance(&#34;TLS&#34;); sslc.init(null, new TrustManager[]{new X509TrustManager() { @Override public void checkClientTrusted(X509Certificate[] x509Certificates, String s) throws CertificateException { } @Override public void checkServerTrusted(X509Certificate[] x509Certificates, String s) throws CertificateException { } @Override public X509Certificate[] getAcceptedIssuers() { return null; } }}, null); } catch (Exception e) { e.
+        <a href="/posts/Java%E8%BF%9B%E8%A1%8C%E8%AE%BF%E9%97%AEHttps/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/Web%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8/">Web接口设计之数据安全</a>
+    </h2>
+    
+  <h5>October 26, 2017</h5>
+
+
+
+  
+
+  
+
+
+    <p>最近有一个暴露在外网的接口服务需要加密。有了一些自己的想法，现记录下来。
+层次一 #  层次二 #  层次三 #  传输层加密 #  Http明文传输接口报文非常不安全，必须使用HTTPS来做传输层加密，防止报文数被简单截取。
+调用权限验证 #  做法来自于微信公众号开发中使用appid、nonce一次性随机数、盐、timestamp时间戳、用户名和密码来验证接口权限和建立双方互信。 客户端先向服务器发送获取token的请求，服务器验签后提供token给客户端。客户端调用接口时直接提供token，服务检查token是否存在、过期在根据情况提供api服务。
+访问控制列表 #  服务器判断用户的api请求是否在访问控制列表中，如果用户没有所需功能的权限，返回错误信息。java平台爱能够保护web安全的常见框架如Spring Security、Apache Shiro。
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/%E6%94%B9%E9%80%A0%E8%BF%87%E5%90%8E%E7%9A%84typecho%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7%E6%A0%8F.PNG/">改造过后的typecho编辑工具栏.PNG</a>
+    </h2>
+    
+  <h5>October 20, 2017</h5>
+
+
+
+  
+
+  
+
+
+    <p>;s:41:&ldquo;改造过后的typecho编辑工具栏.PNG&rdquo;;s:4:&ldquo;path&rdquo;;s:35:&quot;/usr/uploads/2017/10/1551369649.png&quot;;s:4:&ldquo;size&rdquo;;i:3910;s:4:&ldquo;type&rdquo;;s:3:&ldquo;png&rdquo;;s:4:&ldquo;mime&rdquo;;s:9:&ldquo;image/png&rdquo;;}
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/ACIDCAP%E5%92%8CBASE/">ACID、CAP和BASE</a>
+    </h2>
+    
+  <h5>October 19, 2017</h5>
+
+
+
+  
+
+  
+  <div>
+    
+      <a href="/tags/database/">database</a>
+  </div>
+  
+
+
+    <p>#  ACID #  Atomicity #  Consistency #  Isolation #  Durability #  CAP #  Consistency #  Availability #  Partition tolerance #  BASE #  Basically Available Soft state Eventual #  
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/%E5%A4%A7%E5%A4%B4%E4%B8%8E%E5%B0%8F%E5%A4%B4/">大头与小头</a>
+    </h2>
+    
+  <h5>October 18, 2017</h5>
+
+
+
+  
+
+  
+
+
+    <p>Little-Endian&amp;Big-Endian
+例子 #  整数：6699 如果左边是起始地址0，右边无限大。 大头：数据从左到右存放-&gt;1A2B 小头：数据从右到左存放-&gt;2B1A
+代码 #  int main(void) { int i = 0x12345678; if(*((char*)&amp;i) == 0x12) printf(&#34;大端&#34;); else printf(&#34;小端&#34;); return 0; } 
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E5%85%A8binary-safe/">二进制安全（binary safe）</a>
+    </h2>
+    
+  <h5>October 18, 2017</h5>
+
+
+
+  
+
+  
+
+
+    <p>C语言的字符串依赖“\0”来识别字符串的末尾。如果一个需要存储的字符串中含有“\0”，那么C语言的字符串就不适合。二进制安全是不依赖于数据本身的某种格式来处理数据。 Redis中的SDS字符串使用了len变量来记录字符串的长度，原始数据使用字节数组来存储。任何形式的数据包括但不限于图片，声音，程序，文本。
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/typecho-%E5%BE%AE%E8%B0%83/">typecho 微调</a>
+    </h2>
+    
+  <h5>October 17, 2017</h5>
+
+
+
+  
+
+  
+
+
+    <p>主题与插件 #  主题：Moricolor 插件：
+ Access	获取访客信息 Adminer	Adminer for Typecho Blog Platform AjaxComments	Ajax 内置嵌套评论 AppStore	Typecho 应用商店 APlayer for Typecho | Meting	APlayer for Typecho TpCache	Typecho缓存插件  typecho本身 #  typecho编辑器的工具栏在浏览器窗口过窄时，比如用手机打开，就会出现按钮“丢失”。工具栏的id和class都为wmd-button-row，问题出在css文件&rsquo;admin/css/style.css&rsquo;中高度的设置为26px，改成auto就可以了。
+.wmd-button-row{list-style:none;margin:0;padding:0;height:26px;line-height:1;} 原来的CSS样式 修改过后的工具栏在手机上也可以使用了。
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/Redis-%E4%BB%8B%E7%BB%8D/">Redis 介绍</a>
+    </h2>
+    
+  <h5>October 17, 2017</h5>
+
+
+
+  
+
+  
+
+
+    <p>Redis应用介绍# #  引文 #  简介 #  Redis诞生于2009年，是一个用ANSI C写成，基于键值对的可持久化开源内存数据库，最新版本为4.0.2。它提供对多种抽象数据结构的支持。授权类型为对商业友好的BSD授权。Redis是“REmote DIctionary Server”中大写字母的缩写。在DB-Engines排行上，经常被评为最受欢迎的键值对数据库。
+对编程语言的支持 #  Redis支持众多编程语言，包括常见的C/C++，C#，GO，Java, JavaScript（Nodejs）, PHP, Python, Ruby等。
+数据结构 #  使Redis变得流行的原因包括它内建多种实用的数据结构。Redis支持对数据的原子操作，对Set类型的集合操作等高级命令。目前Redis可支持的数据结构有string, lists, map, set, sorted set, bitmap, HyperLogLog, geo。
+原子性 #  Redis的单个操作有是原 子性，多个操作支持使用事务来保证数据安全。
+持久化 #  通常Redis将所有数据都放在内存中以加快操作速度。为了保障数据的安全，Redis提供了持久化的方案。用户可以选择使用RDB（Redis database ）快照，每隔一段时间将Redis在内存中的数据完整地写入到磁盘中，或者使用AOF（append-only file）来定时将数据变更日志写入到磁盘中,来增加系统的鲁棒性。
+主从（master-slave）复制 #  主从复制有利于系统读取速度，和数据冗余。Redis的master可以支持任意个slave。slave本身又可以作为其他slave的master。master-slave组成的集群就成了一个树形结构。Redis实现了完整的发布订阅功能。slave订阅一个channel以后，可以收到发送给master的消息，由此更新整个master-slave结构。
+性能 #  因为不必把变更写入磁盘，与需要遵守ACID的传统数据库相比，Redis有更高的效率，很容易支持10万/s以上的读写频率。除了AOF操作会多出一个线程外，通常一个Redis实例只有一个线程用于数据操作。因此，单个Redis不能并行执行任务，比如执行存储过程。
+集群 #  Redis在3.0版本推出了集群功能。Redis集群致力于在不使用代理额异步复制的情况下实现1000个节点以内的高性能线性伸缩。对集群写入时，能尽量保证写入的一致性。当有mater或者slave宕机时，集群能够自我调节，自动平衡分配master和slave。
+安装 #   redis在windows平台还没有官方支持。但是用户可以使用cygwin在windows下面编译使用。
+ $ wget http://download.redis.io/releases/redis-4.0.2.tar.gz $ tar xzf redis-4.0.2.tar.gz $ cd redis-4.
+        <a href="/posts/Redis-%E4%BB%8B%E7%BB%8D/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/Docker%E4%BD%BF%E7%94%A8/">Docker使用</a>
+    </h2>
+    
+  <h5>October 17, 2017</h5>
+
+
+
+  
+
+  
+
+
+    <p># 使用docker安装neo4j sudo apt install docker.io docker pull neo4j docker run -p 7474:7474 -p 7687:7687 -v $HOME/neo4j/data:/data neo4j 
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/posts/IO%E6%A8%A1%E5%9E%8B%E4%B8%8ENIO%E6%A8%A1%E5%9E%8B/">IO模型与NIO模型</a>
+    </h2>
+    
+  <h5>October 16, 2017</h5>
+
+
+
+  
+
+  
+
+
+    <p>IO与NIO读取数据 #  +--------+ +--------+ +------+| Thread +------------------------------------&gt; stream +-----&gt; OS |+--------+ +--------+ +------++--------+ +---------++-- &gt; buffer +---&gt; channel +--+| +--------+ +---------+ || |+--------+ +----------+ | +--------+ +---------+ | +------+| Thread +----&gt; selector +----- &gt; buffer +---&gt; channel +-----&gt; OS |+--------+ +----------+ | +--------+ +---------+ | +------+| || +--------+ +---------+ |+-- &gt; buffer +---&gt; channel +--++--------+ +---------+NIO读取含中文文本文件的例子 #  import java.
+        <a href="/posts/IO%E6%A8%A1%E5%9E%8B%E4%B8%8ENIO%E6%A8%A1%E5%9E%8B/">...</a>
+      
+    </p>
+  </article>
+  
+
+  
+<ul class="pagination">
+  <li class="page-item">
+    <a href="/posts/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+  </li>
+  <li class="page-item">
+    <a href="/posts/page/3/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/posts/">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/posts/page/2/">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/posts/page/3/">3</a>
+  </li>
+  <li class="page-item active">
+    <a class="page-link" href="/posts/page/4/">4</a>
+  </li>
+  <li class="page-item disabled">
+    <a  class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+  </li>
+  <li class="page-item">
+    <a href="/posts/page/4/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+  </li>
+</ul>
+
+
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav>
+  <ul>
+  
+    
+    <li class="book-section-flat">
+      <strong>Categories</strong>
+      <ul>
+      
+      </ul>
+    </li>
+    
+  
+    
+    <li class="book-section-flat">
+      <strong>Tags</strong>
+      <ul>
+      
+        <li class="flex justify-between">
+          <a href="/tags/linux/">linux</a>
+          <span>2</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/golang/">golang</a>
+          <span>1</span>
+        </li>
+      
+        <li class="flex justify-between">
+          <a href="/tags/database/">database</a>
+          <span>1</span>
+        </li>
+      
+      </ul>
+    </li>
+    
+  
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

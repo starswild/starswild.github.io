@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.80.0-DEV" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="##多线程
+CPython的实现中因为GIL的存在，Python的多线程实际上是单线程。multiprocessing包用于多进程处理，但此进程是系统级的进程。
+from multiprocessing import Pool import random,time def work(i): print(i) time.sleep((random.random()*0.5)) print(i[0],i[1]) if __name__ == &#34;__main__&#34;: print(&#39;start&#39;) data = [(&#39;a&#39;,2),(&#39;b&#39;,3),(&#39;c&#39;,4)] # 第一种用法 p = Pool(2) for x in p.imap(work, data): pass print(&#39;done&#39;) # 第二种用法 p0 = Pool(2) p0.map_async(work,data) p0.close() # pool无法再放入进程，pool内进程执行完成后销毁 # p0.terminate() 直接销毁进程池  p0.join() # 第三种用法 print(&#39;map_async_done&#39;) p1 = Pool(2) p1.apply_async(func=work,args=((1,2),)) p1.close() # p1.terminate() p1.join() print(&#39;done&#39;) jupyter-notobook #  展示二进制图片
+from IPython.display import Image,display display(Image(data=)) ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Python笔记" />
+<meta property="og:description" content="##多线程
+CPython的实现中因为GIL的存在，Python的多线程实际上是单线程。multiprocessing包用于多进程处理，但此进程是系统级的进程。
+from multiprocessing import Pool import random,time def work(i): print(i) time.sleep((random.random()*0.5)) print(i[0],i[1]) if __name__ == &#34;__main__&#34;: print(&#39;start&#39;) data = [(&#39;a&#39;,2),(&#39;b&#39;,3),(&#39;c&#39;,4)] # 第一种用法 p = Pool(2) for x in p.imap(work, data): pass print(&#39;done&#39;) # 第二种用法 p0 = Pool(2) p0.map_async(work,data) p0.close() # pool无法再放入进程，pool内进程执行完成后销毁 # p0.terminate() 直接销毁进程池  p0.join() # 第三种用法 print(&#39;map_async_done&#39;) p1 = Pool(2) p1.apply_async(func=work,args=((1,2),)) p1.close() # p1.terminate() p1.join() print(&#39;done&#39;) jupyter-notobook #  展示二进制图片
+from IPython.display import Image,display display(Image(data=)) " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://starwild.github.io/posts/Python-notes/" />
+<meta property="article:published_time" content="2019-08-03T21:33:00+08:00" />
+<meta property="article:modified_time" content="2019-08-03T21:33:00+08:00" />
+<title>Python笔记 | starwild</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.07a16f0aaa89d1d0a229bf1b7ce1f0c5e901525238b28609fced2a01f90218e3.js" integrity="sha256-B6FvCqqJ0dCiKb8bfOHwxekBUlI4soYJ/O0qAfkCGOM="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>starwild</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- - [Docs](/docs/) -->
+<ul>
+<li>
+  <a href="/posts/">Blog</a></li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/starwild" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Python笔记</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#jupyter-notobook">jupyter-notobook</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/Python-notes/">Python笔记</a>
+  </h1>
+  
+  <h5>August 3, 2019</h5>
+
+
+
+  
+
+  
+
+
+  <p><p>##多线程</p>
+<p>CPython的实现中因为GIL的存在，Python的多线程实际上是单线程。multiprocessing包用于多进程处理，但此进程是系统级的进程。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> multiprocessing <span style="color:#f92672">import</span> Pool
+<span style="color:#f92672">import</span> random<span style="color:#f92672">,</span>time
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">work</span>(i):
+    <span style="color:#66d9ef">print</span>(i)
+    time<span style="color:#f92672">.</span>sleep((random<span style="color:#f92672">.</span>random()<span style="color:#f92672">*</span><span style="color:#ae81ff">0.5</span>))
+    <span style="color:#66d9ef">print</span>(i[<span style="color:#ae81ff">0</span>],i[<span style="color:#ae81ff">1</span>])
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;start&#39;</span>)
+    data <span style="color:#f92672">=</span> [(<span style="color:#e6db74">&#39;a&#39;</span>,<span style="color:#ae81ff">2</span>),(<span style="color:#e6db74">&#39;b&#39;</span>,<span style="color:#ae81ff">3</span>),(<span style="color:#e6db74">&#39;c&#39;</span>,<span style="color:#ae81ff">4</span>)]
+
+    <span style="color:#75715e"># 第一种用法</span>
+    p <span style="color:#f92672">=</span> Pool(<span style="color:#ae81ff">2</span>)
+    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> p<span style="color:#f92672">.</span>imap(work, data):
+        <span style="color:#66d9ef">pass</span>
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;done&#39;</span>)
+    
+    <span style="color:#75715e"># 第二种用法</span>
+    p0 <span style="color:#f92672">=</span> Pool(<span style="color:#ae81ff">2</span>)
+    p0<span style="color:#f92672">.</span>map_async(work,data)
+    p0<span style="color:#f92672">.</span>close() <span style="color:#75715e"># pool无法再放入进程，pool内进程执行完成后销毁</span>
+    <span style="color:#75715e"># p0.terminate() 直接销毁进程池 </span>
+    p0<span style="color:#f92672">.</span>join()
+
+    <span style="color:#75715e"># 第三种用法</span>
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;map_async_done&#39;</span>)
+    p1 <span style="color:#f92672">=</span> Pool(<span style="color:#ae81ff">2</span>)
+    p1<span style="color:#f92672">.</span>apply_async(func<span style="color:#f92672">=</span>work,args<span style="color:#f92672">=</span>((<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>),))
+    p1<span style="color:#f92672">.</span>close()
+    <span style="color:#75715e"># p1.terminate()</span>
+    p1<span style="color:#f92672">.</span>join()
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;done&#39;</span>)
+</code></pre></div><h2 id="jupyter-notobook">
+  jupyter-notobook
+  <a class="anchor" href="#jupyter-notobook">#</a>
+</h2>
+<p>展示二进制图片</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> IPython.display <span style="color:#f92672">import</span> Image,display
+display(Image(data<span style="color:#f92672">=</span>))
+</code></pre></div></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/starwild/starwild.github.io/edit/main/__src__/content/posts/Python%20notes.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#jupyter-notobook">jupyter-notobook</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
