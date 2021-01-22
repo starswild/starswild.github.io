@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on starwild</title>
-    <link>https://starwild.github.io/docs/</link>
+    <link>https://page.i23.ink/docs/</link>
     <description>Recent content in Docs on starwild</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://starwild.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://page.i23.ink/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Page One</title>
-      <link>https://starwild.github.io/docs/page-one/</link>
+      <link>https://page.i23.ink/docs/page-one/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://starwild.github.io/docs/page-one/</guid>
+      <guid>https://page.i23.ink/docs/page-one/</guid>
       <description></description>
     </item>
     

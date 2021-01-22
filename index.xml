@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>starwild</title>
-    <link>https://starwild.github.io/</link>
+    <link>https://page.i23.ink/</link>
     <description>Recent content on starwild</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Dec 2020 21:44:18 +0800</lastBuildDate><atom:link href="https://starwild.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Dec 2020 21:44:18 +0800</lastBuildDate><atom:link href="https://page.i23.ink/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Page One</title>
-      <link>https://starwild.github.io/docs/page-one/</link>
+      <link>https://page.i23.ink/docs/page-one/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://starwild.github.io/docs/page-one/</guid>
+      <guid>https://page.i23.ink/docs/page-one/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux library</title>
-      <link>https://starwild.github.io/posts/linux-library/</link>
+      <link>https://page.i23.ink/posts/linux-library/</link>
       <pubDate>Sun, 10 May 2020 20:50:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/linux-library/</guid>
+      <guid>https://page.i23.ink/posts/linux-library/</guid>
       <description>定位动态库文件 locate libGL.so
 打印载入动态库的过程 export LD_DEBUG=libs
 打印出当前缓存文件所保存的所有共享库的名字 ldconfig -p</description>
@@ -28,10 +28,10 @@
     
     <item>
       <title>Rust 入门之安装</title>
-      <link>https://starwild.github.io/posts/Rust-%E5%85%A5%E9%97%A8%E4%B9%8B%E5%AE%89%E8%A3%85/</link>
+      <link>https://page.i23.ink/posts/Rust-%E5%85%A5%E9%97%A8%E4%B9%8B%E5%AE%89%E8%A3%85/</link>
       <pubDate>Sun, 16 Feb 2020 22:03:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/Rust-%E5%85%A5%E9%97%A8%E4%B9%8B%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://page.i23.ink/posts/Rust-%E5%85%A5%E9%97%A8%E4%B9%8B%E5%AE%89%E8%A3%85/</guid>
       <description>准备工具 官方网站 https://www.rust-lang.org/。 镜像站点 https://lug.ustc.edu.cn/wiki/mirrors/help/rust-crates
 export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 set RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static set RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
@@ -42,19 +42,19 @@ set RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static set RUSTUP_UPDATE
     
     <item>
       <title>记一次grub引导配置</title>
-      <link>https://starwild.github.io/posts/%E8%AE%B0%E4%B8%80%E6%AC%A1grub%E5%BC%95%E5%AF%BC%E9%85%8D%E7%BD%AE/</link>
+      <link>https://page.i23.ink/posts/%E8%AE%B0%E4%B8%80%E6%AC%A1grub%E5%BC%95%E5%AF%BC%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Wed, 05 Feb 2020 16:24:43 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/%E8%AE%B0%E4%B8%80%E6%AC%A1grub%E5%BC%95%E5%AF%BC%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://page.i23.ink/posts/%E8%AE%B0%E4%B8%80%E6%AC%A1grub%E5%BC%95%E5%AF%BC%E9%85%8D%E7%BD%AE/</guid>
       <description>Centos7 启动过程中进入grub2的启动菜单。菜单中默认的第一个启动项的内核已经不存在，启动失败。 尝试更改/boot/efi/centos/grub.conf， 发现与启动菜单中的内核版本号对不上。 使用fdisk -l 查看，发现有单独的efi分区/sda1 。 当前系统的/boot/分区挂载的是/sda2。 所以前面修改的/boot/efi/centos/grub.conf其实是/sda2中的文件。 尝试挂载/sda1，系统提示unknown filesystem type vfat 搜索答案无果，偶然发现 fdisk 提示 分区为 msdos 格式。 使用 mount -t msdos /dev/sda1 /mnt/ 挂载成功。 修改grub.conf配置文件，注释无效的第一个启动项，系统重启成功。</description>
     </item>
     
     <item>
       <title>lsyncd同步</title>
-      <link>https://starwild.github.io/posts/lsyncd%E5%90%8C%E6%AD%A5/</link>
+      <link>https://page.i23.ink/posts/lsyncd%E5%90%8C%E6%AD%A5/</link>
       <pubDate>Tue, 03 Sep 2019 08:42:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/lsyncd%E5%90%8C%E6%AD%A5/</guid>
+      <guid>https://page.i23.ink/posts/lsyncd%E5%90%8C%E6%AD%A5/</guid>
       <description>参考
 几大实时同步工具比较 https://www.cnblogs.com/zxci/p/6243574.html
 Lsyncd搭建同步镜像-用Lsyncd实现本地和远程服务器之间实时同步 https://www.cnblogs.com/jiangzhaowei/p/8298416.html</description>
@@ -62,19 +62,19 @@ Lsyncd搭建同步镜像-用Lsyncd实现本地和远程服务器之间实时同�
     
     <item>
       <title>yum manual</title>
-      <link>https://starwild.github.io/posts/yum-manual/</link>
+      <link>https://page.i23.ink/posts/yum-manual/</link>
       <pubDate>Sun, 25 Aug 2019 11:03:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/yum-manual/</guid>
+      <guid>https://page.i23.ink/posts/yum-manual/</guid>
       <description>下载包以及依赖包离线安装 yum install yum-utils yumdownloader &amp;ndash;resolve &amp;ndash;destdir /home/z/myrpm/ mariadb-server</description>
     </item>
     
     <item>
       <title>systemd manual</title>
-      <link>https://starwild.github.io/posts/systemd-manual/</link>
+      <link>https://page.i23.ink/posts/systemd-manual/</link>
       <pubDate>Sat, 24 Aug 2019 16:52:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/systemd-manual/</guid>
+      <guid>https://page.i23.ink/posts/systemd-manual/</guid>
       <description>使用脚本启动主程序，在使用systemd时，需要删除nohup启动，切保证启动脚本中不会报错。
 参考 http://www.jinbuguo.com/systemd/systemd.index.html http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
 cp test.service /usr/lib/systemd/system
@@ -85,10 +85,10 @@ test.service
     
     <item>
       <title>crontab manual</title>
-      <link>https://starwild.github.io/posts/crontab-manual/</link>
+      <link>https://page.i23.ink/posts/crontab-manual/</link>
       <pubDate>Sat, 24 Aug 2019 12:34:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/crontab-manual/</guid>
+      <guid>https://page.i23.ink/posts/crontab-manual/</guid>
       <description>参考: https://www.cnblogs.com/longjshz/p/5779215.html
 crontab -u root -e 59 18 * * * root /sbin/poweroff
 注意：命令和脚本名要使用完整路径</description>
@@ -96,10 +96,10 @@ crontab -u root -e 59 18 * * * root /sbin/poweroff
     
     <item>
       <title>openssl ca make</title>
-      <link>https://starwild.github.io/posts/openssl-ca-make/</link>
+      <link>https://page.i23.ink/posts/openssl-ca-make/</link>
       <pubDate>Fri, 23 Aug 2019 20:58:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/openssl-ca-make/</guid>
+      <guid>https://page.i23.ink/posts/openssl-ca-make/</guid>
       <description>简单版 自签名证书 原文链接：https://blog.csdn.net/zheyiw/article/details/88909697
 1，自制CA私钥 openssl genrsa -des3 -out ca.key 4096 2，自制CA证书 openssl req -new -x509 -days 3650 -key ca.key -out ca.crt
 3，自制Server私钥，生成免密码版本 openssl genrsa -des3 -out server.key 4096 openssl rsa -in server.key -out server.nosecret.key 4，制作csr文件 openssl req -new -key server.key -out server.csr 5，用CA证书私钥对csr签名（CA不能用X509，这点需要注意）生成Server证书 openssl ca -days 3650 -in server.csr -cert ca.crt -keyfile ca.key -out server.crt
@@ -108,57 +108,57 @@ crontab -u root -e 59 18 * * * root /sbin/poweroff
     
     <item>
       <title>firewalld manual</title>
-      <link>https://starwild.github.io/posts/firewalld-manual/</link>
+      <link>https://page.i23.ink/posts/firewalld-manual/</link>
       <pubDate>Fri, 23 Aug 2019 20:02:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/firewalld-manual/</guid>
+      <guid>https://page.i23.ink/posts/firewalld-manual/</guid>
       <description>https://www.cnblogs.com/xxoome/p/7115614.html 查看状态 # 查看服务状态 systemctl status firewalld # 查看防火墙本身状态 firewall-cmd --state 开启、重启、关闭 # 开启 service firewalld start # 重启 service firewalld restart # 关闭 service firewalld stop # 重载 firewall-cmd --reload 规则变更 # 查看防火墙规则 firewall-cmd --list-all # 查询端口是否开放 firewall-cmd --query-port=8080/tcp # 开放80端口 firewall-cmd --permanent --add-port=80/tcp # 移除端口 firewall-cmd --permanent --remove-port=8080/tcp 附录  firewall-cmd 是Linux提供的操作firewall的一个工具 firewall-cmd 底层使用iptable或者nftable firewall-cmd 是centos默认的防火墙管理工具 其他类似工具还有ufw，出现在ubuntu及其衍生版本  </description>
     </item>
     
     <item>
       <title>bash shell manual</title>
-      <link>https://starwild.github.io/posts/bash-shell-manual/</link>
+      <link>https://page.i23.ink/posts/bash-shell-manual/</link>
       <pubDate>Wed, 21 Aug 2019 22:21:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/bash-shell-manual/</guid>
+      <guid>https://page.i23.ink/posts/bash-shell-manual/</guid>
       <description>删除  清空屏幕, &amp;lt;ctrl+e&amp;gt; 光标跳至命令结尾 &amp;lt;ctrl+a&amp;gt; 光标跳至命令开始 &amp;lt;ctrl+b&amp;gt; 光标左移一个字母 &amp;lt;ctrl+f&amp;gt; 光标右移一个字母 &amp;lt;ctrl+t&amp;gt; 交换光标位置前的两个字符 &amp;lt;ctrl+h&amp;gt; 删除光标前一个字符 &amp;lt;ctrl+w&amp;gt; 移除光标前的一个单词 &amp;lt;ctrl+u&amp;gt; 清除光标前至行首间的所有内容 &amp;lt;ctrl+k&amp;gt; 清除光标后至行尾的内容 &amp;lt;ctrl+y&amp;gt; 粘贴或者恢复上次的删除 &amp;lt;ctrl+p&amp;gt; 前一个命令 &amp;lt;ctrl+n&amp;gt; 后一个命令 &amp;lt;ctrl+r&amp;gt; 历史命令搜索  中断当前的命令并返回Shell  中断当前的通信或从文件中退出 &amp;lt;ctrl+z&amp;gt; 暂停当前进程bg后台运行,fg转到前台
 while [ 1 ]; do sleep 1; ll; done # 无限循环 while [ $i -lt 10 ]; do echo $i;let &amp;ldquo;i=$i+1&amp;rdquo;; done # 有限循环 cat raw.txt | while read line; do echo $line; done # readline until [ 1 = 0 ]; do sleep 1; ll; done # 无限循环 for i in /media/m* ; do ls -l $i; done # 与目录资源结合 if [ 1 -eq 1 ]; then ll ;fi # test常用判断 if [[ 0 -eq 0 &amp;amp;&amp;amp; 1 -eq 0 ]]; then ll ;fi if [ 0 -eq 0 -a 1 -eq 0 ]; then ll ;fi if [ !</description>
     </item>
     
     <item>
       <title>archlinux manual</title>
-      <link>https://starwild.github.io/posts/archlinux-manual/</link>
+      <link>https://page.i23.ink/posts/archlinux-manual/</link>
       <pubDate>Sun, 18 Aug 2019 19:50:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/archlinux-manual/</guid>
+      <guid>https://page.i23.ink/posts/archlinux-manual/</guid>
       <description>GPT分区 + GRUB + BIOS启动 https://www.jianshu.com/p/be0f47f376b1</description>
     </item>
     
     <item>
       <title>PyQt5 使用笔记</title>
-      <link>https://starwild.github.io/posts/PyQt5-%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</link>
+      <link>https://page.i23.ink/posts/PyQt5-%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sun, 18 Aug 2019 01:43:21 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/PyQt5-%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://page.i23.ink/posts/PyQt5-%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</guid>
       <description>文件对话
 directory1 = QFileDialog.getExistingDirectory(self, &amp;#34;选取文件夹&amp;#34;, &amp;#34;C:/&amp;#34;) #起始路径 fileName1, filetype = QFileDialog.getOpenFileName(self, &amp;#34;选取文件&amp;#34;, &amp;#34;C:/&amp;#34;, &amp;#34;All Files (*);;Text Files (*.txt)&amp;#34;) #设置文件扩展名过滤,注意用双分号间隔 files, ok1 = QFileDialog.getOpenFileNames(self, &amp;#34;多文件选择&amp;#34;, &amp;#34;C:/&amp;#34;, &amp;#34;All Files (*);;Text Files (*.txt)&amp;#34;) fileName2, ok2 = QFileDialog.getSaveFileName(self, &amp;#34;文件保存&amp;#34;, &amp;#34;C:/&amp;#34;, &amp;#34;All Files (*);;Text Files (*.txt)&amp;#34;) </description>
     </item>
     
     <item>
       <title>Django笔记</title>
-      <link>https://starwild.github.io/posts/Django%E7%AC%94%E8%AE%B0/</link>
+      <link>https://page.i23.ink/posts/Django%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sun, 04 Aug 2019 00:26:44 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/Django%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://page.i23.ink/posts/Django%E7%AC%94%E8%AE%B0/</guid>
       <description>python manage.py migrate python manage.py createsuperuser</description>
     </item>
     
     <item>
       <title>Python笔记</title>
-      <link>https://starwild.github.io/posts/Python-notes/</link>
+      <link>https://page.i23.ink/posts/Python-notes/</link>
       <pubDate>Sat, 03 Aug 2019 21:33:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/Python-notes/</guid>
+      <guid>https://page.i23.ink/posts/Python-notes/</guid>
       <description>##多线程
 CPython的实现中因为GIL的存在，Python的多线程实际上是单线程。multiprocessing包用于多进程处理，但此进程是系统级的进程。
 from multiprocessing import Pool import random,time def work(i): print(i) time.sleep((random.random()*0.5)) print(i[0],i[1]) if __name__ == &amp;#34;__main__&amp;#34;: print(&amp;#39;start&amp;#39;) data = [(&amp;#39;a&amp;#39;,2),(&amp;#39;b&amp;#39;,3),(&amp;#39;c&amp;#39;,4)] # 第一种用法 p = Pool(2) for x in p.imap(work, data): pass print(&amp;#39;done&amp;#39;) # 第二种用法 p0 = Pool(2) p0.map_async(work,data) p0.close() # pool无法再放入进程，pool内进程执行完成后销毁 # p0.terminate() 直接销毁进程池  p0.join() # 第三种用法 print(&amp;#39;map_async_done&amp;#39;) p1 = Pool(2) p1.apply_async(func=work,args=((1,2),)) p1.close() # p1.terminate() p1.join() print(&amp;#39;done&amp;#39;) jupyter-notobook 展示二进制图片
@@ -167,10 +167,10 @@ from IPython.display import Image,display display(Image(data=)) </description>
     
     <item>
       <title>manjaro- manual</title>
-      <link>https://starwild.github.io/posts/manjaro-manual/</link>
+      <link>https://page.i23.ink/posts/manjaro-manual/</link>
       <pubDate>Sat, 20 Jul 2019 10:12:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/manjaro-manual/</guid>
+      <guid>https://page.i23.ink/posts/manjaro-manual/</guid>
       <description>修改软件源 sudo pacman-mirrors -i -c China -m rank sudo pacman -Syyu 打开pamac-manager，开启aur
 安装中文字体，否则有些程序会乱码（比如wps，vlc） pacman -S wqy-zenhei ttf-fireflysung
 安装输入法 sudo pacman -S fcitx-im #默认全部安装 sudo pacman -S fcitx-configtool sudo pacman -S fcitx-sogoupinyin sudo nano ~/.xprofile
@@ -182,10 +182,10 @@ vim ~/.zshrc plugins=( git zsh-syntax-highlighting zsh-autosuggestions )</descri
     
     <item>
       <title>MicroPython With ESP32</title>
-      <link>https://starwild.github.io/posts/MicroPython-With-ESP32/</link>
+      <link>https://page.i23.ink/posts/MicroPython-With-ESP32/</link>
       <pubDate>Mon, 08 Jul 2019 00:43:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/MicroPython-With-ESP32/</guid>
+      <guid>https://page.i23.ink/posts/MicroPython-With-ESP32/</guid>
       <description>install esptool pip install esptool sudo esptool.py &amp;ndash;chip esp32 &amp;ndash;port /dev/ttyUSB0 erase_flash #download fireware http://www.micropython.org/download#esp32 sudo esptool.py &amp;ndash;chip esp32 &amp;ndash;port /dev/ttyUSB0 write_flash -z 0x1000 ~/install/esp32-20190707-v1.11-126-g7c2e83324.bin picocom -b 115200 /dev/ttyUSB0
 install emp-ide http://www.1zlab.com/wiki/micropython-esp32/emp-ide-userguide/
 code example import network wifi = network.WLAN(network.STA_IF) wifi.active(True) wifi.connect(&amp;#39;zzz&amp;#39;, &amp;#39;zhangxin&amp;#39;) import upip upip.install(&amp;#39;emp-1zlab&amp;#39;) from emp_boot import set_boot_mode set_boot_mode() #led from machine import Pin import time led = Pin(16, Pin.OUT) c = 10 while (c &amp;gt; 0): print(c) c -= 1 print(&amp;#34;on&amp;#34;) led.</description>
@@ -193,28 +193,28 @@ code example import network wifi = network.WLAN(network.STA_IF) wifi.active(True
     
     <item>
       <title>CGO 资料收集</title>
-      <link>https://starwild.github.io/posts/CGO-%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/</link>
+      <link>https://page.i23.ink/posts/CGO-%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/</link>
       <pubDate>Thu, 04 Jul 2019 01:06:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/CGO-%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/</guid>
+      <guid>https://page.i23.ink/posts/CGO-%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/</guid>
       <description>go通过swig封装、调用c++共享库的技术总结 https://www.cnblogs.com/terencezhou/p/10059156.html</description>
     </item>
     
     <item>
       <title>防止SSH暴力攻击</title>
-      <link>https://starwild.github.io/posts/%E9%98%B2%E6%AD%A2SSH%E6%9A%B4%E5%8A%9B%E6%94%BB%E5%87%BB/</link>
+      <link>https://page.i23.ink/posts/%E9%98%B2%E6%AD%A2SSH%E6%9A%B4%E5%8A%9B%E6%94%BB%E5%87%BB/</link>
       <pubDate>Mon, 19 Mar 2018 23:50:49 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/%E9%98%B2%E6%AD%A2SSH%E6%9A%B4%E5%8A%9B%E6%94%BB%E5%87%BB/</guid>
+      <guid>https://page.i23.ink/posts/%E9%98%B2%E6%AD%A2SSH%E6%9A%B4%E5%8A%9B%E6%94%BB%E5%87%BB/</guid>
       <description>解除登录限制 #!/bin/bash  IP=$1 if [ -n &amp;#34;$IP&amp;#34; ];then if [[ $IP =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]];then service denyhosts stop sed -i &amp;#34;/$IP/d&amp;#34; /etc/hosts.deny sed -i &amp;#34;/$IP/d&amp;#34; /var/lib/denyhosts/hosts-valid sed -i &amp;#34;/$IP/d&amp;#34; /var/lib/denyhosts/users-hosts sed -i &amp;#34;/$IP/d&amp;#34; /var/lib/denyhosts/hosts sed -i &amp;#34;/$IP/d&amp;#34; /var/lib/denyhosts/hosts-root sed -i &amp;#34;/$IP/d&amp;#34; /var/lib/denyhosts/hosts-restricted iptables -D INPUT -s $IP -j DROP echo $IP remove from Denyhosts service denyhosts start else echo &amp;#34;This is not IP&amp;#34; fi else echo &amp;#34;IP is empty&amp;#34; fi 记录登录日志 vim /etc/ssh/sshd_config SyslogFacility AUTHPRIV LogLevel INFO</description>
     </item>
     
     <item>
       <title>数据结构中的树</title>
-      <link>https://starwild.github.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E6%A0%91/</link>
+      <link>https://page.i23.ink/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E6%A0%91/</link>
       <pubDate>Mon, 19 Mar 2018 00:03:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E6%A0%91/</guid>
+      <guid>https://page.i23.ink/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E6%A0%91/</guid>
       <description>###二叉树
  每个父节点只能有两个子节点 ###二叉搜索树   二叉搜索树，既能像顺序数组一样进行二叉搜索，又能像链表一样在数据中间自由插入新数据
   每个父节点只能有两个子节点 左节点&amp;lt;父节点&amp;lt;右节点 ###AVL树   AVL树保持自平衡，防止因数据偏斜到使树退化成链表的情况。
@@ -229,28 +229,28 @@ code example import network wifi = network.WLAN(network.STA_IF) wifi.active(True
     
     <item>
       <title>SSH相关操作笔记</title>
-      <link>https://starwild.github.io/posts/SSH%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%E7%AC%94%E8%AE%B0/</link>
+      <link>https://page.i23.ink/posts/SSH%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Fri, 16 Mar 2018 21:59:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/SSH%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://page.i23.ink/posts/SSH%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%E7%AC%94%E8%AE%B0/</guid>
       <description> ssh登录 ssh root@localhost ssh -l root -p 22 localhost ssh免密码登录 ssh-keygen ssh-copy-id -i ~/.ssh/id_rsa.pub root@localhost 复制文件 scp root@localhsot:/root/hello.zip ~/hello.zip  </description>
     </item>
     
     <item>
       <title>Python 2 实例手册</title>
-      <link>https://starwild.github.io/posts/Python-2-handbook/</link>
+      <link>https://page.i23.ink/posts/Python-2-handbook/</link>
       <pubDate>Fri, 16 Mar 2018 15:33:36 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/Python-2-handbook/</guid>
+      <guid>https://page.i23.ink/posts/Python-2-handbook/</guid>
       <description>Python实例手册 说明 手册制作: 雪松 littlepy reboot更新日期: 2014-10-29欢迎系统运维加入Q群: 198173206 # 加群请回答问题欢迎运维开发加入Q群: 365534424 # 不定期技术分享请使用&amp;quot;notepad++&amp;quot;打开此文档,&amp;quot;alt+0&amp;quot;将函数折叠后方便查阅请勿删除信息，转载请说明出处，抵制不道德行为。错误在所难免，还望指正！# python实例手册下载地址:http://hi.baidu.com/quanzhou722/item/cf4471f8e23d3149932af2a7# shell实例手册最新下载地址:http://hi.baidu.com/quanzhou722/item/f4a4f3c9eb37f02d46d5c0d9# LazyManage运维批量管理软件下载[shell]:http://hi.baidu.com/quanzhou722/item/4ccf7e88a877eaccef083d1a# LazyManage运维批量管理软件下载[python]:http://hi.baidu.com/quanzhou722/item/4213db3626a949fe96f88d3c 1 基础 查看帮助  import osfor i in dir(os):print i # 模块的方法help(os.path) # 方法的帮助 调试  python -m trace -t aaaaaa.py pip模块安装  yum install python-pip # centos安装pipsudo apt-get install python-pip # ubuntu安装pippip官方安装脚本wget https://raw.</description>
     </item>
     
     <item>
       <title>Shell实例手册</title>
-      <link>https://starwild.github.io/posts/Shell%E5%AE%9E%E4%BE%8B%E6%89%8B%E5%86%8C/</link>
+      <link>https://page.i23.ink/posts/Shell%E5%AE%9E%E4%BE%8B%E6%89%8B%E5%86%8C/</link>
       <pubDate>Fri, 16 Mar 2018 15:24:36 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/Shell%E5%AE%9E%E4%BE%8B%E6%89%8B%E5%86%8C/</guid>
+      <guid>https://page.i23.ink/posts/Shell%E5%AE%9E%E4%BE%8B%E6%89%8B%E5%86%8C/</guid>
       <description>Shell实例手册
 0说明{
 手册制作: 雪松更新日期: 2013-12-06欢迎系统运维加入Q群: 198173206请使用&amp;quot;notepad++&amp;quot;打开此文档,&amp;quot;alt+0&amp;quot;将函数折叠后方便查阅请勿删除信息，转载请说明出处，抵制不道德行为。错误在所难免，还望指正！# shell实例手册最新下载地址:http://hi.baidu.com/quanzhou722/item/f4a4f3c9eb37f02d46d5c0d9# LazyManage系统批量管理软件下载(shell):http://hi.baidu.com/quanzhou722/item/4ccf7e88a877eaccef083d1a# python实例手册下载地址:http://hi.baidu.com/quanzhou722/item/cf4471f8e23d3149932af2a7 }
@@ -260,29 +260,29 @@ touch file # 创建空白文件rm -rf 目录名 # 不提示删除非空目录(-
     
     <item>
       <title>开发环境的Mysql安装</title>
-      <link>https://starwild.github.io/posts/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84Mysql%E5%AE%89%E8%A3%85/</link>
+      <link>https://page.i23.ink/posts/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84Mysql%E5%AE%89%E8%A3%85/</link>
       <pubDate>Fri, 16 Mar 2018 11:46:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84Mysql%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://page.i23.ink/posts/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84Mysql%E5%AE%89%E8%A3%85/</guid>
       <description> 初始化 mysql &amp;ndash;initialize 配置文件 [client] default-character-set=utf8 [mysqld] port=3306 default-storage-engine=INNODB character-set-server=utf8 collation-server=utf8_general_ci 启动 mysql &amp;ndash;console &amp;ndash;explict_default_for_timestamp=true 连接 mysql -uroot -p 管理 mysqladmin -uroot -p password mysqladmin -uroot shutdown  </description>
     </item>
     
     <item>
       <title>Emacs 使用精要</title>
-      <link>https://starwild.github.io/posts/Emacs-%E4%BD%BF%E7%94%A8%E7%B2%BE%E8%A6%81/</link>
+      <link>https://page.i23.ink/posts/Emacs-%E4%BD%BF%E7%94%A8%E7%B2%BE%E8%A6%81/</link>
       <pubDate>Fri, 16 Mar 2018 11:36:43 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/Emacs-%E4%BD%BF%E7%94%A8%E7%B2%BE%E8%A6%81/</guid>
+      <guid>https://page.i23.ink/posts/Emacs-%E4%BD%BF%E7%94%A8%E7%B2%BE%E8%A6%81/</guid>
       <description>使用emacs的daemon模式快速使用emacsclient -nw 启动emacs
 # alias emacs alias emacsd=&amp;#39;emacs --daemon&amp;#39; alias e=&amp;#39;emacsclient -t&amp;#39; alias ec=&amp;#39;emacsclient -c&amp;#39; # run emacs daemon [[ -z $(ps -C &amp;#39;emacs --daemon&amp;#39; -o pid=) ]] &amp;amp;&amp;amp; emacsd # add kill emacs function function kill-emacs(){ emacsclient -e &amp;#34;(kill-emacs)&amp;#34; emacs_pid=$( ps -C &amp;#39;emacs --daemon&amp;#39; -o pid= ) if [[ -n &amp;#34;${emacs_pid}&amp;#34; ]];then kill -9 &amp;#34;${emacs_pid}&amp;#34; fi } </description>
     </item>
     
     <item>
       <title>容易遗忘的知识点</title>
-      <link>https://starwild.github.io/posts/%E5%AE%B9%E6%98%93%E9%81%97%E5%BF%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <link>https://page.i23.ink/posts/%E5%AE%B9%E6%98%93%E9%81%97%E5%BF%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
       <pubDate>Sun, 12 Nov 2017 10:42:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/%E5%AE%B9%E6%98%93%E9%81%97%E5%BF%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <guid>https://page.i23.ink/posts/%E5%AE%B9%E6%98%93%E9%81%97%E5%BF%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
       <description>最近在微信看到一篇文章提到了面试常问的知识点。尝试着去回答这些问题，发现好多都回答不上来，或者讲不清楚。以后抽些时间把不清楚的问题的答案都补全。
  面试常问的知识点？ 1）集合相关问题（必问）： HashMap、LinkedHashMap、ConcurrentHashMap、ArrayList、LinkedList的底层实现。 HashMap的底层实现 Java8以前，HashMap由数组存储节点，节点与节点之间构成链表。从Java8开始，HashMap的key超过8个，会被转换为红黑树结构。
 链表结构的HashMap Entry被存储在table数组中。HashMap默认构造方法会构造空间为16，负载系数为0.75的table数组。key通过散列计算直接获得table上存储Entry的下标地址hashcode。table中存储的Entry数量超过数组空间乘以负载系数时，数组就会进行resize，数组长度翻倍。由于resize需要重新计算key的hashcode，比较耗费性能，如果能预估key的数量，可以在构造时指定初始空间大小。如果存着key的hashcode相同时，第一个加入key的next引用指向第二个加入的key，以此类推形成链表。在JDK8或以上里，如果一个hashcode对应的链表节点超过8个时，链表会被重新整理为红黑树。如果一个hashcode对应的链表是红黑树，而节点又少于6个时，红黑树又会被重新整理为链表。
@@ -292,10 +292,10 @@ touch file # 创建空白文件rm -rf 目录名 # 不提示删除非空目录(-
     
     <item>
       <title>实例化需求学习第一部分</title>
-      <link>https://starwild.github.io/posts/%E5%AE%9E%E4%BE%8B%E5%8C%96%E9%9C%80%E6%B1%82%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</link>
+      <link>https://page.i23.ink/posts/%E5%AE%9E%E4%BE%8B%E5%8C%96%E9%9C%80%E6%B1%82%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</link>
       <pubDate>Sat, 11 Nov 2017 13:32:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/%E5%AE%9E%E4%BE%8B%E5%8C%96%E9%9C%80%E6%B1%82%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</guid>
+      <guid>https://page.i23.ink/posts/%E5%AE%9E%E4%BE%8B%E5%8C%96%E9%9C%80%E6%B1%82%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</guid>
       <description>最近公司在推进实例化需求。在info上找到了《实例化需求》这本书的电子版，瞬间剁手赶紧买下来学习一下。
  先介绍一下作者Gojko Adzic。战略软件交付顾问，专注敏捷和精益开发。尤其擅长敏捷测试、实例化需求和行为驱动开发。感觉头衔不是很多啊，是不是介绍得太谦虚了。 内容提要：本书是在世界各地调查了多个短腿交付过程后的经验总结。书中介绍了这些团队如何在很短的周期内说明需求、开发软件，并交付正确的、无缺陷的产品；为团队在实施实例化需求说明是使用的模式、想法和工件创建了一致的语言；展示了案例中的团队用来实现实例需求说明原则的关键性实践；并在案例分析部分展示了一些团队实施实例化需求说明的历程。本书适合与项目管理、开发、测试、交付有关的人员阅读。
 看看现状 在实施敏捷的实践有很多，这些方法大多都带有实现敏捷或者精益的目的，比如极限编程、Scrum、看板。 大多公司在做敏捷时都会结合多种敏捷实践，组合中使用自己团队的敏捷方法。在将需求变成产品的过程中，人们有许多用于描述需求并使之作为业务、SA、开发、测试、UX都能看得多的中间语言的实践。以下实践名字不同但是作法确实一致的。
@@ -318,19 +318,19 @@ touch file # 创建空白文件rm -rf 目录名 # 不提示删除非空目录(-
     
     <item>
       <title>实例化需求封面.jpg</title>
-      <link>https://starwild.github.io/posts/%E5%AE%9E%E4%BE%8B%E5%8C%96%E9%9C%80%E6%B1%82%E5%B0%81%E9%9D%A2.jpg/</link>
+      <link>https://page.i23.ink/posts/%E5%AE%9E%E4%BE%8B%E5%8C%96%E9%9C%80%E6%B1%82%E5%B0%81%E9%9D%A2.jpg/</link>
       <pubDate>Sat, 11 Nov 2017 13:20:10 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/%E5%AE%9E%E4%BE%8B%E5%8C%96%E9%9C%80%E6%B1%82%E5%B0%81%E9%9D%A2.jpg/</guid>
+      <guid>https://page.i23.ink/posts/%E5%AE%9E%E4%BE%8B%E5%8C%96%E9%9C%80%E6%B1%82%E5%B0%81%E9%9D%A2.jpg/</guid>
       <description>;s:25:&amp;ldquo;实例化需求封面.jpg&amp;rdquo;;s:4:&amp;ldquo;path&amp;rdquo;;s:35:&amp;quot;/usr/uploads/2017/11/3462487182.jpg&amp;quot;;s:4:&amp;ldquo;size&amp;rdquo;;i:15026;s:4:&amp;ldquo;type&amp;rdquo;;s:3:&amp;ldquo;jpg&amp;rdquo;;s:4:&amp;ldquo;mime&amp;rdquo;;s:10:&amp;ldquo;image/jpeg&amp;rdquo;;}</description>
     </item>
     
     <item>
       <title>敏捷武士笔记</title>
-      <link>https://starwild.github.io/posts/%E6%95%8F%E6%8D%B7%E6%AD%A6%E5%A3%AB%E7%AC%94%E8%AE%B0/</link>
+      <link>https://page.i23.ink/posts/%E6%95%8F%E6%8D%B7%E6%AD%A6%E5%A3%AB%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Fri, 03 Nov 2017 19:11:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/%E6%95%8F%E6%8D%B7%E6%AD%A6%E5%A3%AB%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://page.i23.ink/posts/%E6%95%8F%E6%8D%B7%E6%AD%A6%E5%A3%AB%E7%AC%94%E8%AE%B0/</guid>
       <description>Part1 敏捷简介 每周交付一些有价值的东西  要将大问题拆分为许多小问题&amp;ndash;逐步完成目标 要将注意力集中与最重要的事务&amp;ndash;可工作的软件 确保正在交付的软件可以工作&amp;ndash;充分测试 寻求反馈&amp;ndash;UAT 必要时可以改变过程&amp;ndash;延期 要勇于负责&amp;ndash;设定质量、进度、期望值  敏捷计划如何生效 排列用户故事由高级特性组成。根据优先级排列高级特性与用户故事。如果进度无法保证时，应改变计划减少用户故事来保证质量。制定不切实际的计划，只能祈求奇迹的发生。如果一个项目一直通过祈求奇迹的方式运行，那是多么地糟糕和失控。与业务开诚布公地说明风险、人力和需求的关系，让业务做出明确的决定。与其幻想着在有限的时间和资源内交付完美的软件，还不如期待最后会发生奇迹。
 “完成”的意思就是“完成” 详细的计划和设计以及测试设计不代表完成了所需的代码。实际编写代码时会遇到比设计过程中更多的问题。关联系统的错误可能导致编码无法继续，历史遗留的bug会让你花费更多的时间。多次更改让bug错综复杂，测试计划覆盖无法全面。设计文档不能说明任务完成了一半，它只是一份备忘录，让你有更多精力发现编码或测试前没有考虑到的问题。
 三条简单准则   在项目的初期不可能收集到所有的需求。 不管你收集到什么需求，最终他们肯定会发生变化。 总会由任务超时、超支。   接受第一条：即使没有完全准备好，也要大胆开始收集需求的敏捷旅程。 接受第二条：不必害怕需求变更，变化无可避免，不如想想如何调整计划。 接受第三条：任务超时或者超支时，不要感到有压力。对于变化频繁的项目来说，这只是正常状态。唯一能做的是设置号任务的优先级，把有限的资源用在紧急的任务中。 一旦接受以上三条简单的项目准则，那些在软件交付过程中经常困扰你的紧张和焦虑感就会消失。
@@ -339,38 +339,38 @@ XXXXXCrystal X XX ScrumXXXXX XXXXXXX XX XX XXX XXXX XXXXXX XXXXXXXXX X X X
     
     <item>
       <title>Redis 实验中遇到的一些问题</title>
-      <link>https://starwild.github.io/posts/Redis-%E5%AE%9E%E9%AA%8C%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link>
+      <link>https://page.i23.ink/posts/Redis-%E5%AE%9E%E9%AA%8C%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link>
       <pubDate>Thu, 02 Nov 2017 22:45:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/Redis-%E5%AE%9E%E9%AA%8C%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://page.i23.ink/posts/Redis-%E5%AE%9E%E9%AA%8C%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid>
       <description>如何在外网访问redis？ 在实例配置文件中修改以下配置：
  注释bind命令。  # bind 127.0.0.1 将保护模式改为no  protected-mode 打通防火墙  sudo ufw all 6379 </description>
     </item>
     
     <item>
       <title>linux网卡</title>
-      <link>https://starwild.github.io/posts/linux%E7%BD%91%E5%8D%A1/</link>
+      <link>https://page.i23.ink/posts/linux%E7%BD%91%E5%8D%A1/</link>
       <pubDate>Thu, 02 Nov 2017 21:56:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/linux%E7%BD%91%E5%8D%A1/</guid>
+      <guid>https://page.i23.ink/posts/linux%E7%BD%91%E5%8D%A1/</guid>
       <description># 找到可用的网卡 $ ifconfig -a # 添加网卡 $ sudo vim /etc/network/interfaces # 写入内容 iface enp0s9 inet dhcp # 启动网卡 $ ifup enp0s9 </description>
     </item>
     
     <item>
       <title>Java进行访问Https</title>
-      <link>https://starwild.github.io/posts/Java%E8%BF%9B%E8%A1%8C%E8%AE%BF%E9%97%AEHttps/</link>
+      <link>https://page.i23.ink/posts/Java%E8%BF%9B%E8%A1%8C%E8%AE%BF%E9%97%AEHttps/</link>
       <pubDate>Fri, 27 Oct 2017 14:47:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/Java%E8%BF%9B%E8%A1%8C%E8%AE%BF%E9%97%AEHttps/</guid>
+      <guid>https://page.i23.ink/posts/Java%E8%BF%9B%E8%A1%8C%E8%AE%BF%E9%97%AEHttps/</guid>
       <description>导入证书 keytool -import -file test.crt -keystore ca_certs  信任所有证书 HttpsURLConnection.setDefaultHostnameVerifier(new HostnameVerifier() { @Override public boolean verify(String s, SSLSession sslSession) { return true; } }); try { SSLContext sslc = SSLContext.getInstance(&amp;#34;TLS&amp;#34;); sslc.init(null, new TrustManager[]{new X509TrustManager() { @Override public void checkClientTrusted(X509Certificate[] x509Certificates, String s) throws CertificateException { } @Override public void checkServerTrusted(X509Certificate[] x509Certificates, String s) throws CertificateException { } @Override public X509Certificate[] getAcceptedIssuers() { return null; } }}, null); } catch (Exception e) { e.</description>
     </item>
     
     <item>
       <title>Web接口设计之数据安全</title>
-      <link>https://starwild.github.io/posts/Web%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8/</link>
+      <link>https://page.i23.ink/posts/Web%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8/</link>
       <pubDate>Thu, 26 Oct 2017 20:24:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/Web%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8/</guid>
+      <guid>https://page.i23.ink/posts/Web%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8/</guid>
       <description>最近有一个暴露在外网的接口服务需要加密。有了一些自己的想法，现记录下来。
 层次一 层次二 层次三 传输层加密 Http明文传输接口报文非常不安全，必须使用HTTPS来做传输层加密，防止报文数被简单截取。
 调用权限验证 做法来自于微信公众号开发中使用appid、nonce一次性随机数、盐、timestamp时间戳、用户名和密码来验证接口权限和建立双方互信。 客户端先向服务器发送获取token的请求，服务器验签后提供token给客户端。客户端调用接口时直接提供token，服务检查token是否存在、过期在根据情况提供api服务。
@@ -379,28 +379,28 @@ XXXXXCrystal X XX ScrumXXXXX XXXXXXX XX XX XXX XXXX XXXXXX XXXXXXXXX X X X
     
     <item>
       <title>改造过后的typecho编辑工具栏.PNG</title>
-      <link>https://starwild.github.io/posts/%E6%94%B9%E9%80%A0%E8%BF%87%E5%90%8E%E7%9A%84typecho%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7%E6%A0%8F.PNG/</link>
+      <link>https://page.i23.ink/posts/%E6%94%B9%E9%80%A0%E8%BF%87%E5%90%8E%E7%9A%84typecho%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7%E6%A0%8F.PNG/</link>
       <pubDate>Fri, 20 Oct 2017 07:49:03 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/%E6%94%B9%E9%80%A0%E8%BF%87%E5%90%8E%E7%9A%84typecho%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7%E6%A0%8F.PNG/</guid>
+      <guid>https://page.i23.ink/posts/%E6%94%B9%E9%80%A0%E8%BF%87%E5%90%8E%E7%9A%84typecho%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7%E6%A0%8F.PNG/</guid>
       <description>;s:41:&amp;ldquo;改造过后的typecho编辑工具栏.PNG&amp;rdquo;;s:4:&amp;ldquo;path&amp;rdquo;;s:35:&amp;quot;/usr/uploads/2017/10/1551369649.png&amp;quot;;s:4:&amp;ldquo;size&amp;rdquo;;i:3910;s:4:&amp;ldquo;type&amp;rdquo;;s:3:&amp;ldquo;png&amp;rdquo;;s:4:&amp;ldquo;mime&amp;rdquo;;s:9:&amp;ldquo;image/png&amp;rdquo;;}</description>
     </item>
     
     <item>
       <title>ACID、CAP和BASE</title>
-      <link>https://starwild.github.io/posts/ACIDCAP%E5%92%8CBASE/</link>
+      <link>https://page.i23.ink/posts/ACIDCAP%E5%92%8CBASE/</link>
       <pubDate>Thu, 19 Oct 2017 19:25:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/ACIDCAP%E5%92%8CBASE/</guid>
+      <guid>https://page.i23.ink/posts/ACIDCAP%E5%92%8CBASE/</guid>
       <description> ACID Atomicity Consistency Isolation Durability CAP Consistency Availability Partition tolerance BASE Basically Available Soft state Eventual </description>
     </item>
     
     <item>
       <title>大头与小头</title>
-      <link>https://starwild.github.io/posts/%E5%A4%A7%E5%A4%B4%E4%B8%8E%E5%B0%8F%E5%A4%B4/</link>
+      <link>https://page.i23.ink/posts/%E5%A4%A7%E5%A4%B4%E4%B8%8E%E5%B0%8F%E5%A4%B4/</link>
       <pubDate>Wed, 18 Oct 2017 22:20:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/%E5%A4%A7%E5%A4%B4%E4%B8%8E%E5%B0%8F%E5%A4%B4/</guid>
+      <guid>https://page.i23.ink/posts/%E5%A4%A7%E5%A4%B4%E4%B8%8E%E5%B0%8F%E5%A4%B4/</guid>
       <description>Little-Endian&amp;amp;Big-Endian
 例子 整数：6699 如果左边是起始地址0，右边无限大。 大头：数据从左到右存放-&amp;gt;1A2B 小头：数据从右到左存放-&amp;gt;2B1A
 代码 int main(void) { int i = 0x12345678; if(*((char*)&amp;amp;i) == 0x12) printf(&amp;#34;大端&amp;#34;); else printf(&amp;#34;小端&amp;#34;); return 0; } </description>
@@ -408,19 +408,19 @@ XXXXXCrystal X XX ScrumXXXXX XXXXXXX XX XX XXX XXXX XXXXXX XXXXXXXXX X X X
     
     <item>
       <title>二进制安全（binary safe）</title>
-      <link>https://starwild.github.io/posts/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E5%85%A8binary-safe/</link>
+      <link>https://page.i23.ink/posts/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E5%85%A8binary-safe/</link>
       <pubDate>Wed, 18 Oct 2017 17:36:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E5%85%A8binary-safe/</guid>
+      <guid>https://page.i23.ink/posts/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E5%85%A8binary-safe/</guid>
       <description>C语言的字符串依赖“\0”来识别字符串的末尾。如果一个需要存储的字符串中含有“\0”，那么C语言的字符串就不适合。二进制安全是不依赖于数据本身的某种格式来处理数据。 Redis中的SDS字符串使用了len变量来记录字符串的长度，原始数据使用字节数组来存储。任何形式的数据包括但不限于图片，声音，程序，文本。</description>
     </item>
     
     <item>
       <title>typecho 微调</title>
-      <link>https://starwild.github.io/posts/typecho-%E5%BE%AE%E8%B0%83/</link>
+      <link>https://page.i23.ink/posts/typecho-%E5%BE%AE%E8%B0%83/</link>
       <pubDate>Tue, 17 Oct 2017 16:30:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/typecho-%E5%BE%AE%E8%B0%83/</guid>
+      <guid>https://page.i23.ink/posts/typecho-%E5%BE%AE%E8%B0%83/</guid>
       <description>主题与插件 主题：Moricolor 插件：
  Access	获取访客信息 Adminer	Adminer for Typecho Blog Platform AjaxComments	Ajax 内置嵌套评论 AppStore	Typecho 应用商店 APlayer for Typecho | Meting	APlayer for Typecho TpCache	Typecho缓存插件  typecho本身 typecho编辑器的工具栏在浏览器窗口过窄时，比如用手机打开，就会出现按钮“丢失”。工具栏的id和class都为wmd-button-row，问题出在css文件&amp;rsquo;admin/css/style.css&amp;rsquo;中高度的设置为26px，改成auto就可以了。
 .wmd-button-row{list-style:none;margin:0;padding:0;height:26px;line-height:1;} 原来的CSS样式 修改过后的工具栏在手机上也可以使用了。</description>
@@ -428,10 +428,10 @@ XXXXXCrystal X XX ScrumXXXXX XXXXXXX XX XX XXX XXXX XXXXXX XXXXXXXXX X X X
     
     <item>
       <title>Redis 介绍</title>
-      <link>https://starwild.github.io/posts/Redis-%E4%BB%8B%E7%BB%8D/</link>
+      <link>https://page.i23.ink/posts/Redis-%E4%BB%8B%E7%BB%8D/</link>
       <pubDate>Tue, 17 Oct 2017 13:45:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/Redis-%E4%BB%8B%E7%BB%8D/</guid>
+      <guid>https://page.i23.ink/posts/Redis-%E4%BB%8B%E7%BB%8D/</guid>
       <description>Redis应用介绍# 引文 简介 Redis诞生于2009年，是一个用ANSI C写成，基于键值对的可持久化开源内存数据库，最新版本为4.0.2。它提供对多种抽象数据结构的支持。授权类型为对商业友好的BSD授权。Redis是“REmote DIctionary Server”中大写字母的缩写。在DB-Engines排行上，经常被评为最受欢迎的键值对数据库。
 对编程语言的支持 Redis支持众多编程语言，包括常见的C/C++，C#，GO，Java, JavaScript（Nodejs）, PHP, Python, Ruby等。
 数据结构 使Redis变得流行的原因包括它内建多种实用的数据结构。Redis支持对数据的原子操作，对Set类型的集合操作等高级命令。目前Redis可支持的数据结构有string, lists, map, set, sorted set, bitmap, HyperLogLog, geo。
@@ -446,19 +446,19 @@ XXXXXCrystal X XX ScrumXXXXX XXXXXXX XX XX XXX XXXX XXXXXX XXXXXXXXX X X X
     
     <item>
       <title>Docker使用</title>
-      <link>https://starwild.github.io/posts/Docker%E4%BD%BF%E7%94%A8/</link>
+      <link>https://page.i23.ink/posts/Docker%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Tue, 17 Oct 2017 11:23:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/Docker%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://page.i23.ink/posts/Docker%E4%BD%BF%E7%94%A8/</guid>
       <description># 使用docker安装neo4j sudo apt install docker.io docker pull neo4j docker run -p 7474:7474 -p 7687:7687 -v $HOME/neo4j/data:/data neo4j </description>
     </item>
     
     <item>
       <title>IO模型与NIO模型</title>
-      <link>https://starwild.github.io/posts/IO%E6%A8%A1%E5%9E%8B%E4%B8%8ENIO%E6%A8%A1%E5%9E%8B/</link>
+      <link>https://page.i23.ink/posts/IO%E6%A8%A1%E5%9E%8B%E4%B8%8ENIO%E6%A8%A1%E5%9E%8B/</link>
       <pubDate>Mon, 16 Oct 2017 22:12:00 +0800</pubDate>
       
-      <guid>https://starwild.github.io/posts/IO%E6%A8%A1%E5%9E%8B%E4%B8%8ENIO%E6%A8%A1%E5%9E%8B/</guid>
+      <guid>https://page.i23.ink/posts/IO%E6%A8%A1%E5%9E%8B%E4%B8%8ENIO%E6%A8%A1%E5%9E%8B/</guid>
       <description>IO与NIO读取数据 +--------+ +--------+ +------+| Thread +------------------------------------&amp;gt; stream +-----&amp;gt; OS |+--------+ +--------+ +------++--------+ +---------++-- &amp;gt; buffer +---&amp;gt; channel +--+| +--------+ +---------+ || |+--------+ +----------+ | +--------+ +---------+ | +------+| Thread +----&amp;gt; selector +----- &amp;gt; buffer +---&amp;gt; channel +-----&amp;gt; OS |+--------+ +----------+ | +--------+ +---------+ | +------+| || +--------+ +---------+ |+-- &amp;gt; buffer +---&amp;gt; channel +--++--------+ +---------+NIO读取含中文文本文件的例子 import java.</description>
     </item>
     
