@@ -9,16 +9,16 @@
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://starwild.github.io/posts/" />
-<meta property="og:updated_time" content="2020-05-10T20:50:00+08:00" />
+<meta property="og:url" content="https://page.i23.ink/posts/" />
+<meta property="og:updated_time" content="2021-01-22T12:26:45+08:00" />
 <title>Posts | starwild</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
-<script defer src="/en.search.min.07a16f0aaa89d1d0a229bf1b7ce1f0c5e901525238b28609fced2a01f90218e3.js" integrity="sha256-B6FvCqqJ0dCiKb8bfOHwxekBUlI4soYJ/O0qAfkCGOM="></script>
+<script defer src="/en.search.min.859f5dc087c3b318a38c550b282c0201377d7679a5e515831d018b6c7f2c2adf.js" integrity="sha256-hZ9dwIfDsxijjFULKCwCATd9dnml5RWDHQGLbH8sKt8="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
-<link rel="alternate" type="application/rss+xml" href="https://starwild.github.io/posts/index.xml" title="starwild" />
+<link rel="alternate" type="application/rss+xml" href="https://page.i23.ink/posts/index.xml" title="starwild" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -177,7 +177,12 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-    <p>定位动态库文件 #  locate libGL.so
+    <p>linux内的动态库、可执行程序统一用elf称呼
+增加elf动态库查询位置 #  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:YOUR_PATH
+打印elf #  strings xxx.so
+读取elf依赖 #  readelf xxx.so
+查看elf动态库链接 #  ldd xxx.so
+定位动态库文件 #  locate libGL.so
 打印载入动态库的过程 #  export LD_DEBUG=libs
 打印出当前缓存文件所保存的所有共享库的名字 #  ldconfig -p
     </p>
@@ -352,7 +357,7 @@ crontab -u root -e 59 18 * * * root /sbin/poweroff
   
 
 
-    <p>from https://www.cnblogs.com/xxoome/p/7115614.html 查看状态 #  # 查看服务状态 systemctl status firewalld # 查看防火墙本身状态 firewall-cmd --state 开启、重启、关闭 #  # 开启 service firewalld start # 重启 service firewalld restart # 关闭 service firewalld stop # 重载 firewall-cmd --reload 规则变更 #  # 查看防火墙规则 firewall-cmd --list-all # 查询端口是否开放 firewall-cmd --query-port=8080/tcp # 开放80端口 firewall-cmd --permanent --add-port=80/tcp # 移除端口 firewall-cmd --permanent --remove-port=8080/tcp 附录 #   firewall-cmd 是Linux提供的操作firewall的一个工具 firewall-cmd 底层使用iptable或者nftable firewall-cmd 是centos默认的防火墙管理工具 其他类似工具还有ufw，出现在ubuntu及其衍生版本  
+    <p>https://www.cnblogs.com/xxoome/p/7115614.html 查看状态 #  # 查看服务状态 systemctl status firewalld # 查看防火墙本身状态 firewall-cmd --state 开启、重启、关闭 #  # 开启 service firewalld start # 重启 service firewalld restart # 关闭 service firewalld stop # 重载 firewall-cmd --reload 规则变更 #  # 查看防火墙规则 firewall-cmd --list-all # 查询端口是否开放 firewall-cmd --query-port=8080/tcp # 开放80端口 firewall-cmd --permanent --add-port=80/tcp # 移除端口 firewall-cmd --permanent --remove-port=8080/tcp 附录 #   firewall-cmd 是Linux提供的操作firewall的一个工具 firewall-cmd 底层使用iptable或者nftable firewall-cmd 是centos默认的防火墙管理工具 其他类似工具还有ufw，出现在ubuntu及其衍生版本  
     </p>
   </article>
   

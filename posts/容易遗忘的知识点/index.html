@@ -15,14 +15,14 @@
 链表结构的HashMap #  Entry被存储在table数组中。HashMap默认构造方法会构造空间为16，负载系数为0.75的table数组。key通过散列计算直接获得table上存储Entry的下标地址hashcode。table中存储的Entry数量超过数组空间乘以负载系数时，数组就会进行resize，数组长度翻倍。由于resize需要重新计算key的hashcode，比较耗费性能，如果能预估key的数量，可以在构造时指定初始空间大小。如果存着key的hashcode相同时，第一个加入key的next引用指向第二个加入的key，以此类推形成链表。在JDK8或以上里，如果一个hashcode对应的链表节点超过8个时，链表会被重新整理为红黑树。如果一个hashcode对应的链表是红黑树，而节点又少于6个时，红黑树又会被重新整理为链表。
 /** * The table, resized as necessary. Length MUST Always be a power of two. */ transient Entry[] table; static class Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; { final K key; V value; Entry&lt;K,V&gt; next; final int hash; …… } 红黑树结构的HashMap #  HashMap和Hashtable的区别。 #  ArrayList、LinkedList、Vector的区别。 #  HashMap和ConcurrentHashMap的区别。 #  HashMap和LinkedHashMap的区别。 #  HashMap是线程安全的吗。 #  ConcurrentHashMap是怎么实现线程安全的。 #  2）线程相关问题（必问）： #  创建线程的3种方式。 什么是线程安全。 Runnable接口和Callable接口的区别。 wait方法和sleep方法的区别。 synchronized、Lock、ReentrantLock、ReadWriteLock。 介绍下CAS(无锁技术)。 什么是ThreadLocal。 创建线程池的4种方式。 ThreadPoolExecutor的内部工作原理。 分布式环境下，怎么保证线程安全。 想要朝这方面发展或者真心有兴趣的。可以找我要一些基础的学习视频，Q号码：3300863615，这个是免费的，希望同学找我要的时候不要有理所应当的态度，毕竟都是我的心血，希望你是真的有一颗想要学好java的心，我也会尽所能的去帮助你成为一名优秀的程序员。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://starwild.github.io/posts/%E5%AE%B9%E6%98%93%E9%81%97%E5%BF%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/" />
+<meta property="og:url" content="https://page.i23.ink/posts/%E5%AE%B9%E6%98%93%E9%81%97%E5%BF%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/" />
 <meta property="article:published_time" content="2017-11-12T10:42:00+08:00" />
 <meta property="article:modified_time" content="2017-11-12T10:42:00+08:00" />
 <title>容易遗忘的知识点 | starwild</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
-<script defer src="/en.search.min.07a16f0aaa89d1d0a229bf1b7ce1f0c5e901525238b28609fced2a01f90218e3.js" integrity="sha256-B6FvCqqJ0dCiKb8bfOHwxekBUlI4soYJ/O0qAfkCGOM="></script>
+<script defer src="/en.search.min.859f5dc087c3b318a38c550b282c0201377d7679a5e515831d018b6c7f2c2adf.js" integrity="sha256-hZ9dwIfDsxijjFULKCwCATd9dnml5RWDHQGLbH8sKt8="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <!--
@@ -324,7 +324,7 @@ xml全称是什么。
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/starwild/starwild.github.io/edit/main/__src__/content/posts/%e5%ae%b9%e6%98%93%e9%81%97%e5%bf%98%e7%9a%84%e7%9f%a5%e8%af%86%e7%82%b9.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/starwild/hugo/edit/main/content/posts/%e5%ae%b9%e6%98%93%e9%81%97%e5%bf%98%e7%9a%84%e7%9f%a5%e8%af%86%e7%82%b9.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
